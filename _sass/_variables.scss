@@ -1,0 +1,72 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+
+/* Colors */
+$color-primary: #00549a;
+$color-secondary: #00549a;
+$gray-dark: #323232;
+
+$color-success: #377f31;
+$color-danger: #880e14;
+$color-warning: #dba909;
+$color-code: #dd1144;
+
+$color-gray-dark: #808080;
+$color-gray-light: #e5e5e5;
+
+/* Background color */
+$body-bg:  #fff !default;
+
+/* Global text color on `<body>`. */
+$text-color: $gray-dark !default;
+
+/* Links color */
+$link-color: $color-primary;
+$link-hover-color: $color-primary;
+
+/* Fonts */
+$font-primary: 'Open Sans', sans-serif, Arial;
+$font-secondary: Georgia, Times, serif;
+$font-monospace: Menlo, Monaco, 'Courier New', monospace;
+$font-size: 14px !default;
+$font-size-large: ceil(($font-size * 1.25)) !default; // ~18px
+$font-size-small: ceil(($font-size * 0.85)) !default; // ~12px
+
+
+/* Line height*/
+$line-height: 1.428571429 !default; // 20/14
+/* Computed line-height (`font-size` * `line-height`) */
+$line-height-computed: floor(($font-size * $line-height)) !default; // ~20px
+
+
+/* Headings */
+$headings-font-family: $font-primary;
+$headings-font-weight: bold;
+$headings-line-height: 100%;
+$headings-color: $color-primary;
+
+$font-size-h1: floor(($font-size * 2.6)) !default; // ~36px
+$font-size-h2: floor(($font-size * 2.15)) !default; // ~30px
+$font-size-h3: ceil(($font-size * 1.7)) !default; // ~24px
+$font-size-h4: ceil(($font-size * 1.25)) !default; // ~18px
+$font-size-h5: $font-size !default;
+$font-size-h6: ceil(($font-size * 0.85)) !default; // ~12px
+
+/* Padding, margin */
+$padding-vertical: 6px !default;
+$padding-horizontal: 12px !default;
+
+$padding-large-vertical: 10px !default;
+$padding-large-horizontal: 16px !default;
+
+$padding-small-vertical: 5px !default;
+$padding-small-horizontal: 10px !default;
+
+$padding-xs-vertical: 1px !default;
+$padding-xs-horizontal: 5px !default;
+
+$line-height-large: 1.33 !default;
+$line-height-small: 1.5 !default;
+
+$border-radius: 5px !default;
+$border-radius-large: 10px !default;
+$border-radius-small: 3px !default;
