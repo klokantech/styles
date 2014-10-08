@@ -12,3 +12,5 @@ defaults:
       path: "" # empty string for all files
     values:
       layout: "default"
+
+baseurl: "/styles"
