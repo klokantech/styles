@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv='X-UA-Compatible' content='IE=edge' />
+  <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0' />
+
+  <title>Test – KlokanTech Styles</title>
+
+  <meta name="author" content="KlokanTech Styles" />
+  <meta name="description" content="The company web style guide" />
+  
+  <link href="/base.css" rel="stylesheet" />
+</head>
+<body>
+  
+<ul>
+
+<li><a href="/base.css"> </a></li>
+
+<li><a href="/"> Styles</a></li>
+
+<li><a href="/test/"> Test</a></li>
+
+</ul>
+  
+<h1 id="this-is-an-example-site-for-sass-integration-in-jekyll">This is an example site for Sass integration in Jekyll</h1>
+
+<p>You have two kinds of Sass files:</p>
+
+<ol>
+  <li>Main files, which you wish to be output as CSS files</li>
+  <li>Partials, which are used by main files in <code>@import</code> statements</li>
+</ol>
+
+<p>Main files are like pages – they go where you want them to be output, and they contain the YAML front matter (<code>---</code> lines) at the top. Partials are like hidden Jekyll data, so they go in an underscored directory, which defaults to <code>_sass</code>. You site might look like this:</p>
+
+<pre><code>.
+| - _sass
+  | - _typography.scss
+  | - _layout.scss
+  | - _colors.scss
+| - stylesheets
+  | - screen.scss
+  | - print.scss
+</code></pre>
+
+<p>And so on.</p>
+
+<p>The output, in your <code>_site</code> directory, would look like this:</p>
+
+<pre><code>.
+| - stylesheets
+  | - screen.css
+  | - print.css
+</code></pre>
+
+<p>Boom! Now you have just your SCSS/Sass converted over to CSS with all the proper inputs.</p>
+
+</body>
+</html>
