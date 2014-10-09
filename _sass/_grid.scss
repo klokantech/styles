@@ -1,28 +1,10 @@
 /* Grid */
 
-$grid-sizes: ( // name: width
-  col1: 8.3333,
-  col2: 16.6666,
-  col3: 25.0000,
-  col4: 33.3333,
-  col5: 41.6666,
-  col6: 50.0000,
-  col7: 58.3333,
-  col8: 66.6666,
-  col9: 75.0000, 
-  col10: 83.3333, 
-  col11: 91.6666, 
-  col12: 100, 
-);
-
-$sc-small: 480px;
-$sc-medium: 768px;
-$sc-large: 992px;
-
-$grid-screens: ( // screen, include offsets (boolean)
-	($sc-small, false),
-	($sc-medium, false),
-	($sc-medium, true)
+$grid-screens: ( 
+// screen, include offsets (boolean)
+  ($sc-small, false),
+  ($sc-medium, false),
+  ($sc-medium, true)
 );
 
 .container {
@@ -43,16 +25,9 @@ $grid-screens: ( // screen, include offsets (boolean)
   }
 }
 
-.grid-img {
-  @extend %grid-base;
-}
-
-
-/* Reverses order of grid for content choreography */
+/* Reverses order of blocks in grid*/
 .flip {float: right;}
 
-
-/* Add columns to grid on bigger screens */
 @each $screen, $offset in ($grid-screens){
   @media (min-width: $screen) {
     @each $grid, $width in ($grid-sizes) {
@@ -72,7 +47,7 @@ $grid-screens: ( // screen, include offsets (boolean)
     }
     @if $offset {
       @each $grid, $width in ($grid-sizes) {
-         .offset-#{$grid} {
+         .offset#{str-slice($grid, 4)} {
           margin-left: $width + 0%;
         }
       }
@@ -81,6 +56,10 @@ $grid-screens: ( // screen, include offsets (boolean)
 }
 
 /* Image grid */ 
+/*
+.grid-img {
+  @extend %grid-base;
+}*/
 /*.row-img {
   @media (min-width: $bp-xsmall)  {width: 50%;}
   @media (min-width: $bp-small) {width: 33.33333333333%;}

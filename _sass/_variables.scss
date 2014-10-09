@@ -77,3 +77,22 @@ $container-max: 1124px;
 $container-width: 95%;
 
 /* Grid */
+$sc-small: 480px;
+$sc-medium: 768px;
+$sc-large: 992px;
+
+$grid-sizes: ( 
+// name: width
+  col1: 8.3333,
+  col2: 16.6666,
+  col3: 25.0000,
+  col4: 33.3333,
+  col5: 41.6666,
+  col6: 50.0000,
+  col7: 58.3333,
+  col8: 66.6666,
+  col9: 75.0000, 
+  col10: 83.3333, 
+  col11: 91.6666, 
+  col12: 100, 
+);
