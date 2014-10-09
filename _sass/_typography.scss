@@ -57,3 +57,16 @@ a {
     text-decoration: underline;
   }
 }
+
+strong, b{
+  font-weight: bold;
+}
+
+em, i{
+  font-style: italic;
+}
+
+abbr{
+  cursor: help;
+  border-bottom: 1px dotted;
+}

@@ -1,9 +1,12 @@
-@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700&subset=latin,latin-ext);
+
+//TODO: https://github.com/twbs/bootstrap-sass/blob/d5625c907168b6311be122b99d89614e02448475/assets/stylesheets/bootstrap/_scaffolding.scss
 
 /* Colors */
 $color-primary: #00549a;
 $color-secondary: #00549a;
-$gray-dark: #323232;
+$gray-dark: #505050;
+$gray-light: #505050;
 
 $color-success: #377f31;
 $color-danger: #880e14;
