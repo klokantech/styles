@@ -2,9 +2,9 @@
 
 $grid-screens: ( 
 // screen, include offsets (boolean)
-  ($sc-small, false),
-  ($sc-medium, false),
-  ($sc-medium, true)
+($sc-small, false),
+($sc-medium, false),
+($sc-medium, true)
 );
 
 .container {
@@ -25,7 +25,7 @@ $grid-screens: (
   }
 }
 
-/* Reverses order of blocks in grid*/
+/* Reverses order of blocks in grid */
 .flip {float: right;}
 
 @each $screen, $offset in ($grid-screens){
@@ -34,39 +34,32 @@ $grid-screens: (
       @if $screen < $sc-medium {
         .#{$grid} {
           @if $width >= 50 {
-          width: 100%;
+            width: 100%;
           } @else {
             width: 50%;
           }
         }
       } @else {
-        .#{$grid} {
-          width: $width + 0%;
-        }
+        .#{$grid} {width: $width + 0%;}
       }
     }
     @if $offset {
       @each $grid, $width in ($grid-sizes) {
-         .offset#{str-slice($grid, 4)} {
-          margin-left: $width + 0%;
-        }
+        .offset#{str-slice($grid, 4)} {margin-left: $width + 0%;}
       }
     }
   }
 }
 
-/* Image grid */ 
-/*
-.grid-img {
-  @extend %grid-base;
-}*/
-/*.row-img {
-  @media (min-width: $bp-xsmall)  {width: 50%;}
-  @media (min-width: $bp-small) {width: 33.33333333333%;}
-  @media (min-width: $bp-medium)  {width: 25%;}
-}*/
-
 /* Add clearfix */
 .container, .row {
   @extend .clearfix;
+}
+
+/* Image grid */ 
+.col-img {
+  border: none;
+  float: left;
+  @media (min-width: $sc-medium)  {width: 50%;}
+  @media (min-width: $sc-large)  {width: 25%;}
 }
