@@ -29,6 +29,17 @@ body {
 
 }
 
+.border-dark{
+  border: 1px $color-gray-dark solid;
+}
+
+.border-light{
+  border: 1px $color-gray-light solid;  
+}
+
+.border-primary{
+  border: 1px $color-primary solid;  
+}
 /* Clearfix */
 	
 .clearfix:before,
