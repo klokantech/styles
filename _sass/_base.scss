@@ -17,3 +17,26 @@ body {
 *:focus {
   outline: none;
 }
+
+.bg-dark{
+  background-color: $color-gray-dark;
+  color: $color-gray-light;
+}
+
+.bg-light{
+  background-color: $color-gray-light;
+  color: $color-gray-dark;
+
+}
+
+/* Clearfix*/
+	
+.clearfix:before,
+.clearfix:after {
+  display: table;
+  content: "";
+}
+
+.clearfix:after {
+  clear: both;
+}

@@ -5,22 +5,20 @@
 /* Colors */
 $color-primary: #00549a;
 $color-secondary: #00549a;
-$gray-dark: #505050;
-$gray-light: #505050;
 
 $color-success: #377f31;
 $color-danger: #880e14;
 $color-warning: #dba909;
 $color-code: #dd1144;
 
-$color-gray-dark: #808080;
-$color-gray-light: #e5e5e5;
+$color-gray-dark: #707070;
+$color-gray-light: #f9f9f9;
 
 /* Background color */
 $body-bg:  #fff !default;
 
 /* Global text color on `<body>`. */
-$text-color: $gray-dark !default;
+$text-color: $color-gray-dark !default;
 
 /* Links color */
 $link-color: $color-primary;
@@ -73,3 +71,9 @@ $line-height-small: 1.5 !default;
 $border-radius: 5px !default;
 $border-radius-large: 10px !default;
 $border-radius-small: 3px !default;
+
+/* Container */
+$container-max: 1124px;
+$container-width: 95%;
+
+/* Grid */
