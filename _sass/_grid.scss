@@ -81,3 +81,6 @@ $grid-screens: (
   @media (min-width: $sc-medium)  {width: 50%;}
   @media (min-width: $sc-large)  {width: 25%;}
 }
+.col-img img{
+  width: 100%;
+}
