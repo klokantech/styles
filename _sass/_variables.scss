@@ -96,3 +96,11 @@ $grid-sizes: (
   col11: 91.6666, 
   col12: 100, 
 );
+
+/* Helpers */
+/* Corners for rounding */
+$radius-all: 5px;
+$radius-top-left: $radius-all;
+$radius-top-right: $radius-all;
+$radius-bottom-right: $radius-all;
+$radius-bottom-left: $radius-all;
