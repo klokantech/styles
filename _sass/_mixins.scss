@@ -1,0 +1,51 @@
+/* Mixins */
+@mixin btn(){
+  display:inline-block;
+  text-align: center;
+  margin: 0;
+  position: relative;
+  border: none;
+  cursor: pointer;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  font-weight: bold;
+  text-decoration: none;
+  vertical-align: middle;
+  background-image: none;
+}
+
+@mixin btn-color($color, $background, $border) {
+  color: $color;
+  background-color: $background;
+  border: $border;
+  border-color: $border;
+
+  &:hover,
+    &:focus,
+    &:active,
+    &.active{
+    color: $color;
+/*  background-color: lighten($background, 10%);
+    border-color: lighten($border, 10%); */
+    background-color: $background;
+    border-color: $border;
+  }
+}
+
+@mixin btn-size($height, $padding, $font-size, $border, $radius, $scale) {
+  height: $height * $scale;
+  font-size: $font-size * $scale;
+  padding: $padding * $scale;
+  border-width: $border * $scale;
+  border-style: solid;
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  border-radius: $radius;
+  text-decoration: none;
+  &:hover,
+    &:focus,
+    &:active,
+    &.active{
+    text-decoration: none;
+  }
+}

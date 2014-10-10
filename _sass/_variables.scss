@@ -1,7 +1,5 @@
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700&subset=latin,latin-ext);
 
-//TODO: https://github.com/twbs/bootstrap-sass/blob/d5625c907168b6311be122b99d89614e02448475/assets/stylesheets/bootstrap/_scaffolding.scss
-
 /* Colors */
 $color-primary: #00549a;
 $color-secondary: #00549a;
@@ -22,7 +20,7 @@ $text-color: $color-gray-dark !default;
 
 /* Links color */
 $link-color: $color-primary;
-$link-hover-color: $color-primary;
+$link-hover-color: lighten($color-primary, 8%);
 
 /* Fonts */
 $font-primary: 'Open Sans', sans-serif, Arial;
@@ -104,3 +102,27 @@ $radius-top-left: $radius-all;
 $radius-top-right: $radius-all;
 $radius-bottom-right: $radius-all;
 $radius-bottom-left: $radius-all;
+
+/* Buttons */
+$btn-color-bg: $color-primary;
+$btn-color: #fff;
+$btn-height: 40px;
+$btn-padding: 10px;
+$btn-radius: 3px;
+$btn-font-size: 13px;
+  
+$btn-border: 2px;
+$btn-small-scale: 0.8;
+
+/* butons colection */
+$btns: ( 
+//name, color, background-color
+  (null, #ffffff, $color-primary),
+  ("dark", #ffffff, darken($color-primary, 10%)),
+  ("light", #ffffff, lighten($color-primary, 10%)),
+  ("gray-dark", #ffffff, $color-gray-dark),
+  ("gray-light", #ffffff, $color-gray-light),
+  ("success", #ffffff, #00AA4A),
+  ("warning", #ffffff, #EF8A00),
+  ("danger", #ffffff, #EF3200)
+);

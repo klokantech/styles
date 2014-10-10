@@ -1,0 +1,47 @@
+/* Buttons */
+
+@each $name, $color, $bg-color in ($btns){
+  @if $name != null {
+    .btn-#{$name}{
+      @include btn();
+      @include btn-color(#{$color}, #{$bg-color}, #{$bg-color});
+      @include btn-size($btn-height, $btn-padding, $btn-font-size, $btn-border, $btn-radius, 1);
+    }
+    .btn-small-#{$name}{
+      @include btn();
+      @include btn-color(#{$color}, #{$bg-color}, #{$bg-color});
+      @include btn-size($btn-height, $btn-padding, $btn-font-size, $btn-border, $btn-radius, $btn-small-scale);
+    }
+    .btn-stroke-#{$name} {
+      @include btn();
+      @include btn-color(#{$bg-color}, #{$color}, #{$bg-color});
+      @include btn-size($btn-height, $btn-padding, $btn-font-size, $btn-border, $btn-radius, 1);
+    }
+    .btn-stroke-small-#{$name}{
+      @include btn();
+      @include btn-color(#{$bg-color}, #{$color}, #{$bg-color});
+      @include btn-size($btn-height, $btn-padding, $btn-font-size, $btn-border, $btn-radius, $btn-small-scale);
+    }
+  }@else{
+    .btn{
+      @include btn();
+      @include btn-color(#{$color}, #{$bg-color}, #{$bg-color});
+      @include btn-size($btn-height, $btn-padding, $btn-font-size, $btn-border, $btn-radius, 1);    
+    }
+    .btn-small{
+      @include btn();
+      @include btn-color(#{$color}, #{$bg-color}, #{$bg-color});
+      @include btn-size($btn-height, $btn-padding, $btn-font-size, $btn-border, $btn-radius, $btn-small-scale);
+    }
+    .btn-stroke{
+      @include btn();
+      @include btn-color(#{$bg-color}, #{$color}, #{$bg-color});
+      @include btn-size($btn-height, $btn-padding, $btn-font-size, $btn-border, $btn-radius, 1);
+    }
+    .btn-stroke-small{
+      @include btn();
+      @include btn-color(#{$bg-color}, #{$color}, #{$bg-color});
+      @include btn-size($btn-height, $btn-padding, $btn-font-size, $btn-border, $btn-radius, $btn-small-scale);
+    }
+  }
+}
