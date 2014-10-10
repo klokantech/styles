@@ -9,13 +9,13 @@ $color-danger: #880e14;
 $color-warning: #dba909;
 $color-code: #dd1144;
 
-$color-gray-dark: #707070;
-$color-gray-light: #f9f9f9;
+$color-gray-dark: #989898;
+$color-gray-light: #f6f6f6;
 
 /* Background color */
 $body-bg:  #fff !default;
 
-/* Global text color on `<body>`. */
+/* Global text color */
 $text-color: $color-gray-dark !default;
 
 /* Links color */
@@ -41,13 +41,13 @@ $line-height-computed: floor(($font-size * $line-height)) !default; // ~20px
 $headings-font-family: $font-primary;
 $headings-font-weight: bold;
 $headings-line-height: 100%;
-$headings-color: $color-primary;
+$headings-color: #393939;
 
-$font-size-h1: floor(($font-size * 2.6)) !default; // ~36px
-$font-size-h2: floor(($font-size * 2.15)) !default; // ~30px
-$font-size-h3: ceil(($font-size * 1.7)) !default; // ~24px
-$font-size-h4: ceil(($font-size * 1.25)) !default; // ~18px
-$font-size-h5: $font-size !default;
+$font-size-h1: floor(($font-size * 2.15)) !default; // ~30px
+$font-size-h2: floor(($font-size * 1.7)) !default; // ~24px
+$font-size-h3: ceil(($font-size * 1.25)) !default; // ~18px
+$font-size-h4: $font-size !default; 
+$font-size-h5: ceil(($font-size * 0.85)) !default; // ~12px
 $font-size-h6: ceil(($font-size * 0.85)) !default; // ~12px
 
 /* Padding, margin */
