@@ -62,11 +62,25 @@ strong, b{
   font-weight: bold;
 }
 
-em, i{
+em, i, cite{
   font-style: italic;
 }
 
-abbr{
+abbr, dfn{
   cursor: help;
   border-bottom: 1px dotted;
+}
+
+ul{
+  list-style-type: square;
+  margin: 0 20px;
+}
+
+ol{
+  list-style-type:lower-latin;
+  margin: 0 20px;
+}
+mark{
+  color: $headings-color;
+  background-color: $color-gray-light;
 }
