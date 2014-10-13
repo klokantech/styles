@@ -51,8 +51,8 @@ $font-size-h5: $font-size !default;
 $font-size-h6: ceil(($font-size * 0.85)) !default;
 
 /* Padding, margin */
-/*$padding-vertical: 6px !default;
-$padding-horizontal: 12px !default;*/
+$padding-vertical: 20px;
+$padding-horizontal: 20px;
 
 /*$padding-large-vertical: 10px !default;
 $padding-large-horizontal: 16px !default;
@@ -80,22 +80,22 @@ $sc-large: 992px;
 
 $grid-sizes: ( 
 // name: width
-  col1: 8.3333,
-  col2: 16.6666,
-  col3: 25.0000,
-  col4: 33.3333,
-  col5: 41.6666,
-  col6: 50.0000,
-  col7: 58.3333,
-  col8: 66.6666,
-  col9: 75.0000, 
-  col10: 83.3333, 
-  col11: 91.6666, 
-  col12: 100, 
+col1: 8.3333,
+col2: 16.6666,
+col3: 25.0000,
+col4: 33.3333,
+col5: 41.6666,
+col6: 50.0000,
+col7: 58.3333,
+col8: 66.6666,
+col9: 75.0000, 
+col10: 83.3333, 
+col11: 91.6666, 
+col12: 100, 
 );
 
-$grid-paddnig-horizontal: 20px;
-$grid-padding-vertical: 20px;
+$grid-paddnig-horizontal: $padding-horizontal;
+$grid-padding-vertical: $padding-vertical;
 $grid-margin-horizontal: 0;
 $grid-margin-vertical: 0;
 
@@ -114,31 +114,31 @@ $btn-height: 40px;
 $btn-padding: 10px;
 $btn-radius: 3px;
 $btn-font-size: 13px;
-  
+
 $btn-border: 2px;
 $btn-small-scale: 0.8;
 
 /* butons colection */
 $btns: (
 //name, color, background-color
-  (null, #ffffff, $color-primary),
-  ("dark", #ffffff, darken($color-primary, 10%)),
-  ("light", #ffffff, lighten($color-primary, 10%)),
-  ("gray-dark", #ffffff, $color-gray-dark),
-  ("gray-light", #ffffff, $color-gray-light),
-  ("success", #ffffff, #00AA4A),
-  ("warning", #ffffff, #EF8A00),
-  ("danger", #ffffff, #EF3200)
+(null, #ffffff, $color-primary),
+("dark", #ffffff, darken($color-primary, 10%)),
+("light", #ffffff, lighten($color-primary, 10%)),
+("gray-dark", #ffffff, $color-gray-dark),
+("gray-light", #ffffff, $color-gray-light),
+("success", #ffffff, #00AA4A),
+("warning", #ffffff, #EF8A00),
+("danger", #ffffff, #EF3200)
 );
 
 
 /* Border */
 $borders: (
 //('name', 'size', 'type', 'color')
-  ('primary', 1px, solid, $color-primary),
-  ('gray-dark', 1px, solid, $color-gray-dark),
-  ('gray-light', 1px, solid, $color-gray-light),
-  ('black', 1px, solid, #ffffff)
+('primary', 1px, solid, $color-primary),
+('gray-dark', 1px, solid, $color-gray-dark),
+('gray-light', 1px, solid, $color-gray-light),
+('black', 1px, solid, #ffffff)
 );
 
 $border-radius: 5px !default;
@@ -146,3 +146,14 @@ $border-radius-large: 10px !default;
 $border-radius-small: 3px !default;
 
 $hr-color: $text-color;
+
+/* Navbar */
+$navbar-height: 58px;
+$navbar-margin-bottom: 20px;
+
+$navbar-fixed-zindex: 100;
+$navbar-fixed-bgcolor: #000000;
+
+$navbar-link-color: $color-gray-light;
+$navbar-link-size: 14px;
+$navbar-link-hover-color: #ffffff;

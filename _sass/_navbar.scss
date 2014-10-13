@@ -1,0 +1,74 @@
+/* Navbar */
+
+.navbar {
+  position: relative;
+  min-height: $navbar-height; // Ensure a navbar always shows (e.g., without a .navbar-brand in collapsed mode)
+  margin-bottom: $navbar-margin-bottom;
+  border: 1px solid transparent;
+
+  // Prevent floats from breaking the navbar
+  @extend .clearfix;
+
+  /*  @media (min-width: $grid-float-breakpoint) {
+      border-radius: $navbar-border-radius;
+    }*/
+}
+
+.navbar-fixed-top{
+  position: fixed;
+  right: 0;
+  left: 0;
+  z-index: $navbar-fixed-zindex;
+  top: 0;
+  border-width: 0 0 1px;
+  background-color: $navbar-fixed-bgcolor;
+
+  .logo{
+    float: left;
+    height: $navbar-height;
+    margin: 0 $padding-horizontal;
+    img{
+      height: $navbar-height - ($navbar-height / 4);
+    }
+    a{
+      color: #ffffff;
+      font-size: 22px;
+      &:hover{
+        text-decoration: none;
+      }
+    }
+  }
+
+  .nav{
+    float: right;  
+    padding: 0 $padding-horizontal;
+    li{display: inline-block;} 
+    a{
+      color: $navbar-link-color;
+      text-decoration: none;
+      font-size: $navbar-link-size;
+      height: $navbar-height;
+      display: inline-block;
+      padding: 4 + ($navbar-height / 2) - ($navbar-link-size / 2) $padding-horizontal / 2;
+      line-height: 1;
+      &:hover, &:focus, .active{
+        color: $navbar-link-hover-color;
+        border-bottom: 5px solid $color-primary;
+      }
+    }
+    @media (max-width: $sc-medium) {
+      display: none;
+    }
+  }
+  .nav-min{
+    @media (min-width: $sc-medium) {
+      display: none;
+    }
+    @media (max-width: $sc-medium) {
+      display: block;
+    }
+    padding: ($navbar-height / 2) - 30;
+    font-size: 30px;
+    float: right;
+  }
+}
