@@ -12,11 +12,14 @@ $grid-screens: (
   width: $container-width;
   margin-left: auto;
   margin-right: auto;
+  padding: $container-padding-vertical $container-padding-horizontal;
 }
 
 %grid-base {
   float: left;
   width: 100%;
+  padding: $grid-padding-vertical $grid-paddnig-horizontal;
+  margin: $grid-margin-vertical $grid-margin-horizontal;
 }
 
 @each $grid, $width in ($grid-sizes) {
@@ -82,5 +85,5 @@ $grid-screens: (
   @media (min-width: $sc-large)  {width: 25%;}
 }
 .col-img img{
-  width: 100%;
+  width: 90%;
 }

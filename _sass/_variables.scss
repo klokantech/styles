@@ -51,10 +51,10 @@ $font-size-h5: $font-size !default;
 $font-size-h6: ceil(($font-size * 0.85)) !default;
 
 /* Padding, margin */
-$padding-vertical: 6px !default;
-$padding-horizontal: 12px !default;
+/*$padding-vertical: 6px !default;
+$padding-horizontal: 12px !default;*/
 
-$padding-large-vertical: 10px !default;
+/*$padding-large-vertical: 10px !default;
 $padding-large-horizontal: 16px !default;
 
 $padding-small-vertical: 5px !default;
@@ -64,7 +64,7 @@ $padding-xs-vertical: 1px !default;
 $padding-xs-horizontal: 5px !default;
 
 $line-height-large: 1.33 !default;
-$line-height-small: 1.5 !default;
+$line-height-small: 1.5 !default;*/
 
 $border-radius: 5px !default;
 $border-radius-large: 10px !default;
@@ -73,8 +73,11 @@ $border-radius-small: 3px !default;
 /* Container */
 $container-max: 1124px;
 $container-width: 95%;
+$container-padding-horizontal: 0;
+$container-padding-vertical: 0;
 
 /* Grid */
+//screen sizes
 $sc-small: 480px;
 $sc-medium: 768px;
 $sc-large: 992px;
@@ -94,6 +97,11 @@ $grid-sizes: (
   col11: 91.6666, 
   col12: 100, 
 );
+
+$grid-paddnig-horizontal: 20px;
+$grid-padding-vertical: 20px;
+$grid-margin-horizontal: 0;
+$grid-margin-vertical: 0;
 
 /* Helpers */
 /* Corners for rounding */
