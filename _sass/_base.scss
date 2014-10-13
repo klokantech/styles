@@ -18,6 +18,13 @@ body {
   outline: none;
 }
 
+hr, .hr{
+  margin-top:    $line-height-computed;
+  margin-bottom: $line-height-computed;
+  border: 0;
+  border-top: 1px solid $hr-color;
+}
+
 /* Boxes */
 .bg-dark{
   background-color: $color-gray-dark;
@@ -34,16 +41,13 @@ body {
   color: $color-gray-light;
 }
 
-.border-dark{
-  border: 1px $color-gray-dark solid;
-}
-
-.border-light{
-  border: 1px $color-gray-light solid;  
-}
-
-.border-primary{
-  border: 1px $color-primary solid;  
+/* Borders */
+@each $name, $size, $type, $color in ($borders){
+  .border-#{$name} {border: #{$size} #{$type} #{$color};}
+  .border-top-#{$name} {border-top: #{$size} #{$type} #{$color};}
+  .border-right-#{$name} {border-right: #{$size} #{$type} #{$color};}
+  .border-bottom-#{$name} {border-bottom: #{$size} #{$type} #{$color};}
+  .border-left-#{$name} {border-left: #{$size} #{$type} #{$color};}
 }
 
 /* Helpers */	

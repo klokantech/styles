@@ -66,10 +66,6 @@ $padding-xs-horizontal: 5px !default;
 $line-height-large: 1.33 !default;
 $line-height-small: 1.5 !default;*/
 
-$border-radius: 5px !default;
-$border-radius-large: 10px !default;
-$border-radius-small: 3px !default;
-
 /* Container */
 $container-max: 1124px;
 $container-width: 95%;
@@ -123,7 +119,7 @@ $btn-border: 2px;
 $btn-small-scale: 0.8;
 
 /* butons colection */
-$btns: ( 
+$btns: (
 //name, color, background-color
   (null, #ffffff, $color-primary),
   ("dark", #ffffff, darken($color-primary, 10%)),
@@ -134,3 +130,19 @@ $btns: (
   ("warning", #ffffff, #EF8A00),
   ("danger", #ffffff, #EF3200)
 );
+
+
+/* Border */
+$borders: (
+//('name', 'size', 'type', 'color')
+  ('primary', 1px, solid, $color-primary),
+  ('gray-dark', 1px, solid, $color-gray-dark),
+  ('gray-light', 1px, solid, $color-gray-light),
+  ('black', 1px, solid, #ffffff)
+);
+
+$border-radius: 5px !default;
+$border-radius-large: 10px !default;
+$border-radius-small: 3px !default;
+
+$hr-color: $text-color;
