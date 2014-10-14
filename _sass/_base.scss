@@ -100,5 +100,18 @@ hr, .hr{
 .center, .text-center{text-align: center;}
 
 /* Margins */
-.no-margins{margin: 0 !important;}
-.no-paddings{padding: 0 !important;}
+.no-margin{margin: 0 !important;}
+.no-margin-vertical{margin-top: 0 !important; margin-bottom: 0 !important;}
+.no-margin-horizontal{margin-left: 0 !important; margin-right: 0 !important;}
+.no-margin-top{margin-top: 0 !important;}
+.no-margin-right{margin-right: 0 !important;}
+.no-margin-bottom{margin-bottom: 0 !important;}
+.no-margin-left{margin-left: 0 !important;}
+
+.no-padding{padding: 0 !important;}
+.no-padding-vertical{padding-top: 0 !important; padding-bottom: 0 !important;}
+.no-padding-horizontal{padding-left: 0 !important; padding-right: 0 !important;}
+.no-padding-top{padding-top: 0 !important;}
+.no-padding-right{padding-right: 0 !important;}
+.no-padding-bottom{padding-bottom: 0 !important;}
+.no-padding-left{padding-left: 0 !important;}
