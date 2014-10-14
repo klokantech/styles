@@ -50,6 +50,10 @@ $font-size-h4: ceil(($font-size * 1.25)) !default;
 $font-size-h5: $font-size !default;
 $font-size-h6: ceil(($font-size * 0.85)) !default;
 
+$code-color-bg: $color-gray-light;
+$code-color: $color-gray-dark;
+$code-padding: 4px 6px;
+
 /* Padding, margin */
 $padding-vertical: 20px;
 $padding-horizontal: 20px;
