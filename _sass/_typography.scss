@@ -46,6 +46,14 @@ h6, .h6 { font-size: $font-size-h6; }
 p {
   margin: 0 0 ($line-height-computed / 2);
   font-size: $font-size;
+  
+  small, .small {
+    font-size: 65%;
+  }
+
+  big, .big {
+    font-size: 135%;
+  }
 }
 
 a {
