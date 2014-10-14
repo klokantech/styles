@@ -8,7 +8,7 @@
   @extend .clearfix;
 }
 
-.navbar-fixed-top{
+.navbar-top{
   position: fixed;
   right: 0;
   left: 0;
@@ -75,12 +75,20 @@
     padding: ($navbar-height / 2) - 30;
     font-size: 30px;
     float: right;
-    .icon{
+    #nav-mobile-btn{
+      height: $navbar-height;
+
       &:hover, &:active{
         cursor: pointer;
       }
+      &.active{
+        color: #ffffff;
+        border-bottom: 5px solid $color-primary;
+        margin: 0;
+      }
+
     }
-    .nav-mobile-nav{
+    #nav-mobile-nav{
       display: none;
       background-color: #ffffff;
       position: absolute;
@@ -98,11 +106,13 @@
         border-bottom: 1px solid $color-gray-light;
         &:hover, &:active{
           list-style-type: none;
+          text-decoration: none;
+          background-color: $color-gray-light;
         }
       }
-    }
-    .active{
-      display: block;
+      &.active{
+        display: block !important;
+      }
     }
   }
 }
