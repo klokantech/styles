@@ -1,39 +1,36 @@
 /* Navbar */
 
-.navbar {
-  position: relative;
-  min-height: $navbar-height;
-  margin-bottom: $navbar-margin-bottom;
-
+#navbar-top{
   @extend .clearfix;
-}
-
-.navbar-top{
+  position: relative;
+  min-height: $navbar-top-height;
+  margin-bottom: $navbar-top-margin-bottom;
   position: fixed;
   right: 0;
   left: 0;
-  z-index: $navbar-fixed-zindex;
+  z-index: $navbar-top-zindex;
   top: 0;
   border-width: 0 0 1px;
-  background-color: $navbar-fixed-bgcolor;
+  background-color: $navbar-top-bgcolor;
 
   .logo{
     float: left;
-    height: $navbar-height;
+    height: $navbar-top-height;
     margin: 0 $padding-horizontal;
     img{
-      height: $navbar-height - ($navbar-height / 4);
+      height: $navbar-top-height - ($navbar-top-height / 4);
     }
     h1{
-      font-size: 20px;
-      height: $navbar-height;
-      padding-top: $navbar-height - 20px - $navbar-fixed-padding-bottom;
+      font-size: $navbar-top-title-size;
+      height: $navbar-top-height;
+      padding-top: $navbar-top-height - $navbar-top-title-size - $navbar-top-padding-bottom;
       padding-right: $padding-horizontal / 2;
-      padding-bottom:  $navbar-fixed-padding-bottom;
+      padding-bottom:  $navbar-top-padding-bottom;
       padding-left: $padding-horizontal / 2;
       margin: 0;
+      white-space: nowrap;
       a{
-        color: #ffffff;
+        color: $navbar-top-title-color;
         &:hover{
           text-decoration: none;
         }
@@ -46,18 +43,18 @@
     padding: 0 $padding-horizontal;
     li{display: inline-block;} 
     a{
-      color: $navbar-link-color;
+      color: $navbar-top-link-color;
       text-decoration: none;
-      font-size: $navbar-link-size;
-      height: $navbar-height;
+      font-size: $navbar-top-link-size;
+      height: $navbar-top-height;
       display: inline-block;
-      padding-top: $navbar-height - $navbar-link-size - $navbar-fixed-padding-bottom;
+      padding-top: $navbar-top-height - $navbar-top-link-size - $navbar-top-padding-bottom;
       padding-right: $padding-horizontal / 2;
-      padding-bottom:  $navbar-fixed-padding-bottom;
+      padding-bottom:  $navbar-top-padding-bottom;
       padding-left: $padding-horizontal / 2;
       line-height: 1;
-      &:hover, &:focus, .active{
-        color: $navbar-link-hover-color;
+      &:hover, &:focus, &.active{
+        color: $navbar-top-link-hover-color;
         border-bottom: 5px solid $color-primary;
       }
     }
@@ -72,12 +69,11 @@
     @media (max-width: $sc-medium) {
       display: block;
     }
-    padding: ($navbar-height / 2) - 30;
+    padding: ($navbar-top-height / 2) - 30;
     font-size: 30px;
     float: right;
     #nav-mobile-btn{
-      height: $navbar-height;
-
+      height: $navbar-top-height;
       &:hover, &:active{
         cursor: pointer;
       }
@@ -86,18 +82,21 @@
         border-bottom: 5px solid $color-primary;
         margin: 0;
       }
-
     }
+    &::selection, &::-moz-selection{
+      background: transparent;
+    }
+
     #nav-mobile-nav{
       display: none;
       background-color: #ffffff;
       position: absolute;
-      top: $navbar-height;
+      top: $navbar-top-height;
       left: 0;
       right: 0;
       list-style-type: none;
-      font-size: $navbar-link-size;
-      padding:  $padding-horizontal / 2 $padding-horizontal 0 $padding-horizontal;
+      font-size: $navbar-top-link-size;
+      padding:  $padding-horizontal / 2 $padding-horizontal 0 $padding-horizontal 0;
       border-bottom: 1px solid $color-gray-dark;
       margin: 0;
       li a{

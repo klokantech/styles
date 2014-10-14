@@ -110,10 +110,10 @@ $radius-bottom-left: $radius-all;
 /* Buttons */
 $btn-color-bg: $color-primary;
 $btn-color: #fff;
-$btn-height: 40px;
-$btn-padding: 10px;
+$btn-height: 34px;
+$btn-padding: 6px;
 $btn-radius: 3px;
-$btn-font-size: 13px;
+$btn-font-size: 12px;
 
 $btn-border: 2px;
 $btn-small-scale: 0.8;
@@ -147,14 +147,19 @@ $border-radius-small: 3px !default;
 
 $hr-color: $text-color;
 
-/* Navbar */
-$navbar-height: 58px;
-$navbar-margin-bottom: 20px;
+/* Navbar top */
+$navbar-top-height: 50px;
+$navbar-top-margin-bottom: 20px;
 
-$navbar-fixed-zindex: 100;
-$navbar-fixed-bgcolor: #000000;
-$navbar-fixed-padding-bottom: 16px;
+$navbar-top-zindex: 100;
+$navbar-top-bgcolor: #000000;
+$navbar-top-padding-bottom: 16px;
 
-$navbar-link-color: $color-gray-light;
-$navbar-link-size: 14px;
-$navbar-link-hover-color: #ffffff;
+$navbar-top-title-size: 18px;
+$navbar-top-title-color: #ffffff;
+
+$navbar-top-link-color: $color-gray-light;
+$navbar-top-link-size: 13px;
+$navbar-top-link-hover-color: #ffffff;
+
+$navbar-top-link-hover-color: #ffffff;
