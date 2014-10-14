@@ -57,28 +57,11 @@ hr, .hr{
   content: "";
 }
 
-.clearfix:after {
-  clear: both;
-}
-
-.hidden{
-  display: none;
-}
-
-.center{ 
-  text-align: center;
-}
-
-.clip{
-  overflow: hidden;
-}
-.contain{
-  position: relative;
-}
-
-.circle{
-  border-radius: 50%;
-}
+.clearfix:after {clear: both;}
+.hidden{display: none;}
+.clip{overflow: hidden;}
+.contain{position: relative;}
+.circle{border-radius: 50%;}
 
 .round{
   -webkit-border-radius: $radius-all;
@@ -109,3 +92,9 @@ hr, .hr{
   -moz-border-radius-bottomleft: $radius-bottom-left;
   border-top-bottom-radius: $radius-bottom-left;
 }
+
+.float-left{float: left;}
+.float-right{float: right;}
+.text-left{text-align: left;}
+.text-right{text-align: right;}
+.center, .text-center{text-align: center;}

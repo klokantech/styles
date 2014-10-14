@@ -42,8 +42,13 @@
     </div> 
     <div class="container main">
       <div class="row">
+        <!-- content -->
+        <div class="col10 flip">
+          {{ content }}
+        </div>
+        <!-- end content -->
         <!-- nav-left -->
-        <div class="col2" style="padding-top: 60px;">
+        <div class="col2 flip text-right" style="padding-top: 60px;">
           <h4>Styleguide</h4>
           <h5 class="b"><a href="/styles/">CSS and styling</a></h5>
           <a href="/styles/#typography">Typography</a><br>
@@ -57,11 +62,6 @@
           <h5 class="b"><a href="/styles/html5">HTML and markup</a></h5>
         </div>
         <!-- end nav-left  -->
-        <!-- content -->
-        <div class="col10">
-          {{ content }}
-        </div>
-        <!-- end content -->
       </div>
     </div>
   </body>
