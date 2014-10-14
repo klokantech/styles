@@ -1,271 +1,248 @@
 ---
 title: Styles
 ---
-<div id="navbar-top">
-  <div class="container">
-    <div class="logo">
-      <h1><a href="http://maptiler.com">Klokan Technologies GmbH</a></h1>
-    </div>
-    <ul class="nav">
-      <li><a href="#typography">Typography</a></li>
-      <li><a href="#buttons">Buttons</a></li>
-      <li><a href="#borders">Borders</a></li>
-      <li><a href="#grid">Grid</a></li>
+
+<div class="row" id="typography">
+  <div class="col12">
+    <h1>KlokanTech Base CSS</h1>
+
+    <p>This is the repository for the base cascading styles.</p>
+
+    <h2>Typography</h2>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas dignissim molestie turpis, vitae faucibus sem consectetur ut. Vestibulum vitae tellus tellus. Nullam mollis, ligula non porttitor laoreet, sem metus semper neque, nec condimentum magna velit id risus. Nam cursus laoreet luctus. Aliquam ex tortor, congue nec interdum sit amet, euismod pellentesque arcu. Vivamus mi mauris, volutpat a orci ut, sodales rhoncus magna. Pellentesque posuere vel nulla ut accumsan. Aenean at ligula odio. Pellentesque pulvinar augue neque, sed ultricies enim viverra in. Ut quis nibh orci.</p>
+    <p>In vel convallis massa. Duis ultrices libero id augue ullamcorper vehicula. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Fusce id felis vel metus efficitur faucibus ut at nisi. Proin eros nisl, ultricies quis porta sed, mollis a erat. Duis ex nisl, pharetra maximus lacus nec, porttitor interdum diam. Nulla mattis eu risus sed imperdiet.</p>
+  </div>
+</div>
+<div class="row">
+  <div class="col3">
+    <p><a href="http://klokantech.com">hyperlink</a><br>
+      <dfn title="http://klokantech.com">defining</dfn><br>
+      <abbr title="http://klokantech.com">abbreviation</abbr><br>
+      <strong>strong</strong><br>
+      <b>bold</b><br>
+      <i>offset text typically styled in italic</i><br>
+      <cite>cited title of a work</cite><br>
+      <em>emphatic</em><br>
+      <ins>inserted text</ins><br>
+      <del>deleted text</del><br>
+      <mark>marked (highlighted) text</mark></p>
+  </div>
+  <div class="col3">
+    <h1>Heading</h1>
+    <h2>Heading</h2>
+    <h3>Heading</h3>
+    <h4>Heading</h4>
+    <h5>Heading</h5>
+    <h6>Heading</h6>
+  </div>
+  <div class="col3">
+    <h3>List ul</h3>
+    <ul>
+      <li>Mercator</li>
+      <li>WGS84</li>
+      <li>ETRS</li>
+      <li>UTM</li>
     </ul>
-    <div class="nav-mobile">
-      <div id="nav-mobile-btn">#</div>
-      <ul id="nav-mobile-nav">
-        <li><a href="#typography">Typography</a></li>
-        <li><a href="#buttons">Buttons</a></li>
-        <li><a href="#borders">Borders</a></li>
-        <li><a href="#grid">Grid</a></li>
-      </ul>
+  </div>
+  <div class="col3">
+    <h3>List ol</h3>
+    <ol>
+      <li>Mercator</li>
+      <li>WGS84</li>
+      <li>ETRS</li>
+      <li>UTM</li>
+    </ol>
+  </div>
+  <div class="col3">
+  </div>
+</div>
+<div class="row" id="buttons">
+  <div class="col12">
+    <h2>Buttons</h2>
+    <p>.btn-*</p>
+    <a class="btn" href="http://klokantech.com">Give me a map!</a>
+    <a class="btn-dark" href="http://klokantech.com">Give me a map!</a>
+    <a class="btn-light" href="http://klokantech.com">Give me a map!</a>
+    <a class="btn-gray-dark" href="http://klokantech.com">Gray dark</a>
+    <a class="btn-gray-light" href="http://klokantech.com">Gray light</a>
+    <a class="btn-success" href="http://klokantech.com">Success</a>
+    <a class="btn-warning" href="http://klokantech.com">Warning</a>
+    <a class="btn-danger" href="http://klokantech.com">Danger</a>
+    <br><br>
+    <p>.btn-small-*</p>
+    <a class="btn-small" href="http://klokantech.com">Give me a map!</a>
+    <a class="btn-small-dark" href="http://klokantech.com">Give me a map!</a>
+    <a class="btn-small-light" href="http://klokantech.com">Give me a map!</a>
+    <a class="btn-small-gray-dark" href="http://klokantech.com">Gray dark</a>
+    <a class="btn-small-gray-light" href="http://klokantech.com">Gray light</a>
+    <a class="btn-small-success" href="http://klokantech.com">Success</a>
+    <a class="btn-small-warning" href="http://klokantech.com">Warning</a>
+    <a class="btn-small-danger" href="http://klokantech.com">Danger</a>
+    <br> <br>     
+    <p>.btn-stroke-*</p>
+    <a class="btn-stroke" href="http://klokantech.com">Give me a map!</a>
+    <a class="btn-stroke-dark" href="http://klokantech.com">Give me a map!</a>
+    <a class="btn-stroke-light" href="http://klokantech.com">Give me a map!</a>
+    <a class="btn-stroke-gray-dark" href="http://klokantech.com">Gray dark</a>
+    <a class="btn-stroke-gray-light" href="http://klokantech.com">Gray light</a>
+    <a class="btn-stroke-success" href="http://klokantech.com">Success</a>
+    <a class="btn-stroke-warning" href="http://klokantech.com">Warning</a>
+    <a class="btn-stroke-danger" href="http://klokantech.com">Danger</a>      
+    <br><br>
+    <p>.btn-stroke-small-*</p>
+    <a class="btn-stroke-small" href="http://klokantech.com">Give me a map!</a>
+    <a class="btn-stroke-small-dark" href="http://klokantech.com">Give me a map!</a>
+    <a class="btn-stroke-small-light" href="http://klokantech.com">Give me a map!</a>
+    <a class="btn-stroke-small-gray-dark" href="http://klokantech.com">Gray dark</a>
+    <a class="btn-stroke-small-gray-light" href="http://klokantech.com">Gray light</a>
+    <a class="btn-stroke-small-success" href="http://klokantech.com">Success</a>
+    <a class="btn-stroke-small-warning" href="http://klokantech.com">Warning</a>
+    <a class="btn-stroke-small-danger" href="http://klokantech.com">Danger</a>
+  </div>
+</div>
+<div class="row" id="borders">
+  <div class="col12">
+    <h2>Borders</h2>
+    <div class="row">
+      <div class="col2 border-primary">border-*</div>
+      <div class="col2 offset1 border-top-primary">border-top-*</div>
+      <div class="col2 offset1 border-right-primary">border-right-*</div>
+      <div class="col2 offset1 border-bottom-primary">border-bottom-*</div>
+    </div>
+    <div class="row">
+      <h3>hr</h3>
+      <div class="col12 no-padding no-margin"><hr></div>
     </div>
   </div>
 </div>
-<div class="container">
-  <div class="row" id="typography">
-    <div class="col12">
-      <h1>KlokanTech Base CSS</h1>
-
-      <p>This is the repository for the base cascading styles.</p>
-
-      <h2>Typography</h2>
-
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas dignissim molestie turpis, vitae faucibus sem consectetur ut. Vestibulum vitae tellus tellus. Nullam mollis, ligula non porttitor laoreet, sem metus semper neque, nec condimentum magna velit id risus. Nam cursus laoreet luctus. Aliquam ex tortor, congue nec interdum sit amet, euismod pellentesque arcu. Vivamus mi mauris, volutpat a orci ut, sodales rhoncus magna. Pellentesque posuere vel nulla ut accumsan. Aenean at ligula odio. Pellentesque pulvinar augue neque, sed ultricies enim viverra in. Ut quis nibh orci.</p>
-      <p>In vel convallis massa. Duis ultrices libero id augue ullamcorper vehicula. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Fusce id felis vel metus efficitur faucibus ut at nisi. Proin eros nisl, ultricies quis porta sed, mollis a erat. Duis ex nisl, pharetra maximus lacus nec, porttitor interdum diam. Nulla mattis eu risus sed imperdiet.</p>
+<div class="row" id="boxes">
+  <div class="col12">
+    <h2>Boxes</h2>
+    <div class="row">
+      <div class="col3 border-primary">border-primary</div>
+      <div class="col3 bg-primary border-light">bg-primary border-light</div>
+      <div class="col3 bg-dark border-light">bg-dark border-light</div>
+      <div class="col3 bg-light border-dark">bg-light border-dark</div>
     </div>
   </div>
-  <div class="row">
-    <div class="col3">
-      <p><a href="http://klokantech.com">hyperlink</a><br>
-        <dfn title="http://klokantech.com">defining</dfn><br>
-        <abbr title="http://klokantech.com">abbreviation</abbr><br>
-        <strong>strong</strong><br>
-        <b>bold</b><br>
-        <i>offset text typically styled in italic</i><br>
-        <cite>cited title of a work</cite><br>
-        <em>emphatic</em><br>
-        <ins>inserted text</ins><br>
-        <del>deleted text</del><br>
-        <mark>marked (highlighted) text</mark></p>
-    </div>
-    <div class="col3">
-      <h1>Heading</h1>
-      <h2>Heading</h2>
-      <h3>Heading</h3>
-      <h4>Heading</h4>
-      <h5>Heading</h5>
-      <h6>Heading</h6>
-    </div>
-    <div class="col3">
-      <h3>List ul</h3>
-      <ul>
-        <li>Mercator</li>
-        <li>WGS84</li>
-        <li>ETRS</li>
-        <li>UTM</li>
-      </ul>
-    </div>
-    <div class="col3">
-      <h3>List ol</h3>
-      <ol>
-        <li>Mercator</li>
-        <li>WGS84</li>
-        <li>ETRS</li>
-        <li>UTM</li>
-      </ol>
-    </div>
-    <div class="col3">
-    </div>
-  </div>
-  <div class="row" id="buttons">
-    <div class="col12">
-      <h2>Buttons</h2>
-      <p>.btn-*</p>
-      <a class="btn" href="http://klokantech.com">Give me a map!</a>
-      <a class="btn-dark" href="http://klokantech.com">Give me a map!</a>
-      <a class="btn-light" href="http://klokantech.com">Give me a map!</a>
-      <a class="btn-gray-dark" href="http://klokantech.com">Gray dark</a>
-      <a class="btn-gray-light" href="http://klokantech.com">Gray light</a>
-      <a class="btn-success" href="http://klokantech.com">Success</a>
-      <a class="btn-warning" href="http://klokantech.com">Warning</a>
-      <a class="btn-danger" href="http://klokantech.com">Danger</a>
-      <br><br>
-      <p>.btn-small-*</p>
-      <a class="btn-small" href="http://klokantech.com">Give me a map!</a>
-      <a class="btn-small-dark" href="http://klokantech.com">Give me a map!</a>
-      <a class="btn-small-light" href="http://klokantech.com">Give me a map!</a>
-      <a class="btn-small-gray-dark" href="http://klokantech.com">Gray dark</a>
-      <a class="btn-small-gray-light" href="http://klokantech.com">Gray light</a>
-      <a class="btn-small-success" href="http://klokantech.com">Success</a>
-      <a class="btn-small-warning" href="http://klokantech.com">Warning</a>
-      <a class="btn-small-danger" href="http://klokantech.com">Danger</a>
-      <br> <br>     
-      <p>.btn-stroke-*</p>
-      <a class="btn-stroke" href="http://klokantech.com">Give me a map!</a>
-      <a class="btn-stroke-dark" href="http://klokantech.com">Give me a map!</a>
-      <a class="btn-stroke-light" href="http://klokantech.com">Give me a map!</a>
-      <a class="btn-stroke-gray-dark" href="http://klokantech.com">Gray dark</a>
-      <a class="btn-stroke-gray-light" href="http://klokantech.com">Gray light</a>
-      <a class="btn-stroke-success" href="http://klokantech.com">Success</a>
-      <a class="btn-stroke-warning" href="http://klokantech.com">Warning</a>
-      <a class="btn-stroke-danger" href="http://klokantech.com">Danger</a>      
-      <br><br>
-      <p>.btn-stroke-small-*</p>
-      <a class="btn-stroke-small" href="http://klokantech.com">Give me a map!</a>
-      <a class="btn-stroke-small-dark" href="http://klokantech.com">Give me a map!</a>
-      <a class="btn-stroke-small-light" href="http://klokantech.com">Give me a map!</a>
-      <a class="btn-stroke-small-gray-dark" href="http://klokantech.com">Gray dark</a>
-      <a class="btn-stroke-small-gray-light" href="http://klokantech.com">Gray light</a>
-      <a class="btn-stroke-small-success" href="http://klokantech.com">Success</a>
-      <a class="btn-stroke-small-warning" href="http://klokantech.com">Warning</a>
-      <a class="btn-stroke-small-danger" href="http://klokantech.com">Danger</a>
-    </div>
-  </div>
-  <div class="row" id="borders">
-    <div class="col12">
-      <h2>borders</h2>
-      <div class="row">
-        <div class="col2 border-primary">border-*</div>
-        <div class="col2 offset1 border-top-primary">border-top-*</div>
-        <div class="col2 offset1 border-right-primary">border-right-*</div>
-        <div class="col2 offset1 border-bottom-primary">border-bottom-*</div>
+</div>
+<div class="row" id="helpers">
+  <div class="col12">
+    <div class="row2">
+      <h2>Helpers</h2>
+      <div class="col1 round bg-primary center">
+        <p>.round</p>
       </div>
-      <div class="row">
-        <h3>hr</h3>
-        <div class="col12 no-padding no-margin"><hr></div>
+      <div class="col1 offset1 round-top-left bg-primary center">
+        <p>.round-left-top</p>
+      </div>
+      <div class="col1 offset1 round-bottom-right bg-primary center">
+        <p>.round-right-bottom</p>
+      </div>
+      <div class="col1 offset1 center" style="height: 100%">
+        <img src="http://www.maptiler.com/images/gallery/topographic2.png" 
+             class="circle" width="100" height="100">
+        <p>.circle</p>
+      </div>
+      <div class="col1 offset1 center">
+        <p>Other:<br> .clearfix<br> .hidden</p>
+      </div>
+      <div class="col1 offset1 center">
+        <p>.center<br> .clip<br> .contain</p>
       </div>
     </div>
   </div>
-  <div class="row">
-    <div class="col12">
-      <h2>Boxes</h2>
-      <div class="row">
-        <div class="col3 border-primary">border-primary</div>
-        <div class="col3 bg-primary border-light">bg-primary border-light</div>
-        <div class="col3 bg-dark border-light">bg-dark border-light</div>
-        <div class="col3 bg-light border-dark">bg-light border-dark</div>
+</div>
+<div class="row" id="grid">
+  <div class="col12">
+    <h2>Grid system</h2>
+    <p>12 columns</p>
+    <div class="row">
+      <div class="col12 bg-dark">col12</div>
+    </div>
+    <div class="row">
+      <div class="col6 bg-light">col6</div>
+      <div class="col6 bg-light">col6</div>
+    </div>
+    <div class="row">
+      <div class="col3 bg-dark">col3</div>
+      <div class="col3 bg-dark">col3</div>
+      <div class="col3 bg-dark">col3</div>
+      <div class="col3 bg-dark">col3</div>
+    </div>
+    <div class="row">
+      <div class="col2 bg-light">col2</div>
+      <div class="col2 bg-light">col2</div>
+      <div class="col2 bg-light">col2</div>
+      <div class="col2 bg-light">col2</div>
+      <div class="col2 bg-light">col2</div>
+      <div class="col2 bg-light">col2</div>
+    </div>
+    <div class="row">
+      <div class="col1 bg-dark">col1</div>
+      <div class="col1 bg-dark">col1</div>
+      <div class="col1 bg-dark">col1</div>
+      <div class="col1 bg-dark">col1</div>
+      <div class="col1 bg-dark">col1</div>
+      <div class="col1 bg-dark">col1</div>
+      <div class="col1 bg-dark">col1</div>
+      <div class="col1 bg-dark">col1</div>
+      <div class="col1 bg-dark">col1</div>
+      <div class="col1 bg-dark">col1</div>
+      <div class="col1 bg-dark">col1</div>
+      <div class="col1 bg-dark">col1</div>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="col12">
+    <h3>Grid offset</h3>
+    <div class="row">
+      <div class="col10 offset2 bg-dark">offset2</div>
+      <div class="col8 offset4 bg-light">offset4</div>
+      <div class="col6 offset6 bg-dark">offset6</div>
+      <div class="col4 offset8 bg-light">offset8</div>
+      <div class="col2 offset10 bg-dark">offset10</div>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <h3>Vertical grid</h3>
+  <div class="row1 bg-light">row1</div>
+  <br>
+  <div class="row2 bg-light">row2</div>
+  <br>
+  <div class="row3 bg-light">row3</div>
+  <br>
+  <div class="row4 bg-light">row4</div>
+</div>
+<div class="row">
+  <div class="col12">
+    <h3>Image grid</h3>
+    <div class="row">
+      <div class="col-img">
+        <img src="http://www.maptiler.com/images/gallery/topographic2.png">
+      </div>
+      <div class="col-img">
+        <img src="http://www.maptiler.com/images/gallery/weather.png">
+      </div>
+      <div class="col-img">
+        <img src="http://www.maptiler.com/images/gallery/campus.png">
+      </div>
+      <div class="col-img">
+        <img src="http://www.maptiler.com/images/gallery/aeronautical.png">
       </div>
     </div>
   </div>
-  <div class="row">
-    <div class="col12">
-      <div class="row2">
-        <h2>Helpers</h2>
-        <div class="col1 round bg-primary center">
-          <p>.round</p>
-        </div>
-        <div class="col1 offset1 round-top-left bg-primary center">
-          <p>.round-left-top</p>
-        </div>
-        <div class="col1 offset1 round-bottom-right bg-primary center">
-          <p>.round-right-bottom</p>
-        </div>
-        <div class="col1 offset1 center" style="height: 100%">
-          <img src="http://www.maptiler.com/images/gallery/topographic2.png" 
-               class="circle" width="100" height="100">
-          <p>.circle</p>
-        </div>
-        <div class="col1 offset1 center">
-          <p>Other:<br> .clearfix<br> .hidden</p>
-        </div>
-        <div class="col1 offset1 center">
-          <p>.center<br> .clip<br> .contain</p>
-        </div>
-      </div>
-    </div>
+</div>
+<div class="row" id="tables">
+  <div class="col12">
+    <h2>Tables</h2>
   </div>
-  <div class="row" id="grid">
-    <div class="col12">
-      <h2>Grid system</h2>
-      <p>12 columns</p>
-      <div class="row">
-        <div class="col12 bg-dark">col12</div>
-      </div>
-      <div class="row">
-        <div class="col6 bg-light">col6</div>
-        <div class="col6 bg-light">col6</div>
-      </div>
-      <div class="row">
-        <div class="col3 bg-dark">col3</div>
-        <div class="col3 bg-dark">col3</div>
-        <div class="col3 bg-dark">col3</div>
-        <div class="col3 bg-dark">col3</div>
-      </div>
-      <div class="row">
-        <div class="col2 bg-light">col2</div>
-        <div class="col2 bg-light">col2</div>
-        <div class="col2 bg-light">col2</div>
-        <div class="col2 bg-light">col2</div>
-        <div class="col2 bg-light">col2</div>
-        <div class="col2 bg-light">col2</div>
-      </div>
-      <div class="row">
-        <div class="col1 bg-dark">col1</div>
-        <div class="col1 bg-dark">col1</div>
-        <div class="col1 bg-dark">col1</div>
-        <div class="col1 bg-dark">col1</div>
-        <div class="col1 bg-dark">col1</div>
-        <div class="col1 bg-dark">col1</div>
-        <div class="col1 bg-dark">col1</div>
-        <div class="col1 bg-dark">col1</div>
-        <div class="col1 bg-dark">col1</div>
-        <div class="col1 bg-dark">col1</div>
-        <div class="col1 bg-dark">col1</div>
-        <div class="col1 bg-dark">col1</div>
-      </div>
-    </div>
-  </div>
-  <div class="row">
-    <div class="col12">
-      <h3>Grid offset</h3>
-      <div class="row">
-        <div class="col10 offset2 bg-dark">offset2</div>
-        <div class="col8 offset4 bg-light">offset4</div>
-        <div class="col6 offset6 bg-dark">offset6</div>
-        <div class="col4 offset8 bg-light">offset8</div>
-        <div class="col2 offset10 bg-dark">offset10</div>
-      </div>
-    </div>
-  </div>
-  <div class="row">
-    <h3>Vertical grid</h3>
-    <div class="row1 bg-light">row1</div>
-    <br>
-    <div class="row2 bg-light">row2</div>
-    <br>
-    <div class="row3 bg-light">row3</div>
-    <br>
-    <div class="row4 bg-light">row4</div>
-  </div>
-  <div class="row">
-    <div class="col12">
-      <h3>Image grid</h3>
-      <div class="row">
-        <div class="col-img">
-          <img src="http://www.maptiler.com/images/gallery/topographic2.png">
-        </div>
-        <div class="col-img">
-          <img src="http://www.maptiler.com/images/gallery/weather.png">
-        </div>
-        <div class="col-img">
-          <img src="http://www.maptiler.com/images/gallery/campus.png">
-        </div>
-        <div class="col-img">
-          <img src="http://www.maptiler.com/images/gallery/aeronautical.png">
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="row">
-    <div class="col12">
-      <h2>Spacing</h2>
-    </div>
-  </div>
-  <div class="row">
-    <div class="col12">
-      <h2>Tables</h2>
-    </div>
+</div>
+<div class="row" id="forms">
+  <div class="col12">
+    <h2>Forms</h2>
   </div>
 </div>

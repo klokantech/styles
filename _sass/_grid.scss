@@ -13,6 +13,10 @@ $grid-screens: (
   margin-left: auto;
   margin-right: auto;
   padding: $container-padding-vertical $container-padding-horizontal;
+  
+  &.main{
+    margin-top: $navbar-top-height;
+  }
 }
 
 %grid-base {
