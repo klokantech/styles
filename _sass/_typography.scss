@@ -85,7 +85,7 @@ code, .code, pre{
   background-color: $code-color-bg;
   color: $code-color;
   padding: $code-padding;
-  font-family: "Courier New", Courier, monospace;
+  font-family: $font-monospace;
   overflow: auto;
 }
 

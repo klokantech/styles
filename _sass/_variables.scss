@@ -1,5 +1,3 @@
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700&subset=latin,latin-ext);
-
 /* Colors */
 $color-primary: #00549a;
 $color-secondary: #00549a;
@@ -24,12 +22,12 @@ $link-hover-color: lighten($color-primary, 8%);
 
 /* Fonts */
 $font-primary: 'Open Sans', sans-serif, Arial;
-$font-secondary: Georgia, Times, serif;
+$font-secondary: MuseoSans700, 'Open Sans', sans-serif;
 $font-monospace: Menlo, Monaco, 'Courier New', monospace;
+$font-icon: Menlo, Monaco, 'Courier New', monospace;
 $font-size: 12px !default;
 $font-size-large: ceil(($font-size * 1.25)) !default; // ~18px
 $font-size-small: ceil(($font-size * 0.85)) !default; // ~12px
-
 
 /* Line height*/
 $line-height: 1.428571429 !default; // 20/14
@@ -38,7 +36,7 @@ $line-height-computed: floor(($font-size * $line-height)) !default; // ~20px
 
 
 /* Headings */
-$headings-font-family: $font-primary;
+$headings-font-family: $font-secondary;
 $headings-font-weight: normal;
 $headings-line-height: 100%;
 $headings-color: #393939;
