@@ -50,7 +50,7 @@ $font-size-h6: ceil(($font-size * 0.85)) !default;
 
 $code-color-bg: $color-gray-light;
 $code-color: $color-gray-dark;
-$code-padding: 4px 6px;
+$code-padding: 2px 6px;
 
 /* Padding, margin */
 $padding-vertical: 20px;
@@ -148,6 +148,15 @@ $border-radius-large: 10px !default;
 $border-radius-small: 3px !default;
 
 $hr-color: $text-color;
+
+/* Table */
+
+$table-color: #393939;
+$table-head-bg: $color-gray-light;
+$table-color-border: $text-color;
+$table-fontsize: $font-size;
+$table-hover-color: $color-gray-light;
+$table-padding: 10px;
 
 /* Navbar top */
 $navbar-top-height: 50px;
