@@ -11,9 +11,23 @@ table{
     font-size: 100%;
     color: $table-color;
     padding: $table-padding;
+    display: table-cell; 
   }
-  tr{
+  tr, th{
+    border-top: 1px solid $table-color-border;
+
     &:hover{background: $table-hover-color;}
+    a{
+      padding: $table-padding;
+      margin: -$table-padding;
+      position: absolute;
+      display: table-cell;
+      &:hover{
+        cursor: pointer;
+        text-decoration: none;
+        color: lighten($color-primary, 10%);
+      }
+    }
   }
   th, thead, tfoot{
     color: $table-color;
@@ -22,13 +36,15 @@ table{
     background: $table-head-bg;
     cursor: default;
   }
+  .clear{
+    font-weight: normal;
+    background: transparent;
+    tr, th{
+      border-top: none;
+      border-bottom: none;
+    }
+  }
   tfoot{
     border-bottom: 1px solid $table-color-border;
-  }
-  tr td, th{
-    display: table-cell; 
-    border-top: 1px solid $table-color-border;
-
-    a &:hover{cursor: pointer;}
   }
 }
