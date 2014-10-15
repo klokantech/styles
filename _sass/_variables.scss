@@ -124,15 +124,15 @@ $btn-small-scale: 0.8;
 
 /* butons colection */
 $btns: (
-//name, color, background-color
-(null, #ffffff, $color-primary),
-("dark", #ffffff, darken($color-primary, 10%)),
-("light", #ffffff, lighten($color-primary, 10%)),
-("gray-dark", #ffffff, $color-gray-dark),
-("gray-light", #ffffff, $color-gray-light),
-("success", #ffffff, #00AA4A),
-("warning", #ffffff, #EF8A00),
-("danger", #ffffff, #EF3200)
+//name, color, background-color, hover color, hover background
+("", #ffffff, $color-primary, #ffffff, lighten($color-primary, 10%)),
+("-dark", #ffffff, darken($color-primary, 10%), #ffffff, $color-primary),
+("-light", #ffffff, lighten($color-primary, 10%), #ffffff, lighten($color-primary, 15%)),
+("-gray-dark", #ffffff, $color-gray-dark, #ffffff, lighten($color-gray-dark, 10%)),
+("-gray-light", #ffffff, $color-gray-light, #ffffff, darken($color-gray-light, 10%)),
+("-success", #ffffff, #00AA4A, #ffffff, lighten(#00AA4A, 10%)),
+("-warning", #ffffff, #EF8A00, #ffffff, lighten(#EF8A00, 10%)),
+("-danger", #ffffff, #EF3200, #ffffff, lighten(#EF3200, 10%))
 );
 
 

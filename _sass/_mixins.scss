@@ -14,7 +14,7 @@
   background-image: none;
 }
 
-@mixin btn-color($color, $background, $border) {
+@mixin btn-color($color, $background, $border, $hover, $hover-background) {
   color: $color;
   background-color: $background;
   border: $border;
@@ -24,16 +24,16 @@
     &:focus,
     &:active,
     &.active{
-    color: $color;
-/*  background-color: lighten($background, 10%);
-    border-color: lighten($border, 10%); */
-    background-color: $background;
-    border-color: $border;
+    color: $hover;
+    background-color: $hover-background;
+    border-color: $hover-background;
   }
 }
 
 @mixin btn-size($height, $padding, $font-size, $border, $radius, $scale) {
-  height: $height * $scale;
+  @if $height != null {
+    height: $height * $scale;
+  }
   font-size: $font-size * $scale;
   padding: $padding * $scale;
   border-width: $border * $scale;
