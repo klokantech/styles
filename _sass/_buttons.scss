@@ -16,7 +16,7 @@
     @include btn-color(#{$bg-color}, #{$color}, #{$bg-color},  #{$hover},  #{$bg-hover});
     @include btn-size($btn-height, $btn-padding, $btn-font-size, $btn-border, $btn-radius, 1);
   }
-  .btn-strokesmall-#{$name}{
+  .btn-stroke-small#{$name}{
     @include btn();
     @include btn-color(#{$bg-color}, #{$color}, #{$bg-color},  #{$hover},  #{$bg-hover});
     @include btn-size($btn-height, $btn-padding, $btn-font-size, $btn-border, $btn-radius, $btn-small-scale);
