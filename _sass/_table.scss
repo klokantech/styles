@@ -18,10 +18,10 @@ table{
 
     &:hover{background: $table-hover-color;}
     a{
-      padding: $table-padding;
+/*    padding: $table-padding;
       margin: -$table-padding;
       position: absolute;
-      display: table-cell;
+      display: table-cell;*/
       &:hover{
         cursor: pointer;
         text-decoration: none;
@@ -39,6 +39,9 @@ table{
   .clear{
     font-weight: normal;
     background: transparent;
+    &:hover{
+      background-color: transparent;
+    }
     tr, th{
       border-top: none;
       border-bottom: none;
