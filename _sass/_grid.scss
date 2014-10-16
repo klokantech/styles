@@ -63,6 +63,12 @@ $grid-screens: (
   @extend .clearfix;
 }
 
+.row{
+  &active{
+    display: block;
+  }
+}
+
 /* Vertical grid */
 .row1{height: 40px;}
 .row2{height: 80px;}
