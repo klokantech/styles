@@ -1,0 +1,118 @@
+/* Forms */
+
+fieldset {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  min-width: 0;
+}
+
+legend {
+  display: block;
+  width: 100%;
+  padding: 0;
+  margin-bottom: $line-height-computed;
+  font-size: ($font-size * 1.5);
+  line-height: inherit;
+  color: $legend-color;
+  border: 0;
+}
+
+label {
+  display: block;
+  max-width: 100%;
+  margin: 6px 0 4px 1px;
+  font-weight: bold;
+  color: $headings-color;
+
+  &.inline{
+    display: inline-block;
+    font-weight: normal;
+  }
+
+}
+
+input, select, button {
+  vertical-align: top;
+}
+
+input, textarea{
+  display: block;
+  padding: $input-padding-vertical $input-padding-horizontal;
+  line-height: $input-line-height;
+  color: $input-color;
+  background-color: $input-bg;
+  background-image: none;
+  border: 1px solid $input-border-color;
+  border-radius: $input-border-radius;
+  font-family: $font-primary;
+
+  &.stretch{
+    width: 100%;
+  }
+
+  &:active, &:focus{
+    color: darken($input-color, 20%);
+    border-color: darken($input-color, 20%);
+  }
+
+}
+
+input[type='text']{
+  height: $input-height;
+}
+input[type='submit']{
+  margin-top: 5px;
+
+}
+
+input[type="radio"], 
+input[type="checkbox"] {
+  margin: 9px 0 0 1px;
+  line-height: normal;
+  display: inline-block;
+}
+
+input[type="file"] {
+  display: block;
+}
+
+input[type="range"] {
+  display: block;
+  width: 100%;
+}
+
+select[multiple], select[size] {
+  height: auto;
+}
+
+input[type="file"]:focus,
+input[type="radio"]:focus,
+input[type="checkbox"]:focus {
+  outline: none;
+}
+
+output {
+  display: block;
+  padding-top: ($padding-vertical + 1);
+  font-size: $font-size;
+  line-height: $line-height;
+  color: $input-color;
+}
+
+
+input[type="search"] {
+  -webkit-appearance: none;
+}
+
+input[type="date"],
+input[type="time"],
+input[type="datetime-local"],
+input[type="month"] {
+  line-height: $input-height;
+  line-height: $line-height #{\0};
+
+  &.input-sm {
+    line-height: $input-height-small;
+  }
+}

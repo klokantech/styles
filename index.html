@@ -284,6 +284,45 @@ title: Styles
 <div class="row" id="forms">
   <div class="col12">
     <h2>Forms</h2>
+    <form action="">
+      <label for="name">Name</label>
+      <input type="text" name="name" id="name">
+      <label for="email">Email</label>
+      <input type="text" name="email" id="email">
+      <label for="message">Message</label>
+      <textarea name="message" id="message"></textarea>
+      <input type="submit" value="Send" class="btn">
+    </form>
+  </div>
+</div>
+<div class="row">
+  <div class="col12">
+    <p>Stretched:</p>
+    <form action="">
+      <label for="name">Name</label>
+      <input type="text" name="name" id="name" class="stretch">
+      <label for="email">Email</label>
+      <input type="text" name="email" id="email" class="stretch">
+      <label for="message">Message</label>
+      <textarea name="message" id="message" class="stretch"></textarea>
+      <input type="submit" value="Send" class="btn stretch">
+    </form>
+  </div>
+</div>
+<div class="row">
+  <div class="col12">
+    <h3>Radio, checkbox</h3>
+    <form>
+      <input type="checkbox" name="use" value="yes" id="use">
+      <label for="use" class="inline">use me</label>
+      <br>
+      <br>
+      <input type="radio" name="srs" value="4326" id="srs-4326">
+      <label for="srs-4326" class="inline">WGS84</label><br>
+      <input type="radio" name="srs" value="3857" id="srs-3857">
+      <label for="srs-3857" class="inline">Mercator</label>
+
+    </form>
   </div>
 </div>
 <div class="row" id="code">
