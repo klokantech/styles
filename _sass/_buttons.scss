@@ -21,11 +21,12 @@
     @include btn-color(#{$bg-color}, #{$color}, #{$bg-color},  #{$hover},  #{$bg-hover});
     @include btn-size($btn-height, $btn-padding, $btn-font-size, $btn-border, $btn-radius, $btn-small-scale);
   }
+  .btn-large#{$name}{
+    @include btn();
+    font-weight: normal;
+    @include btn-color(#{$color}, #{$bg-color}, #{$bg-color},#{$color},  #{$bg-hover});
+    @include btn-size(null, $btn-padding * 1.8, $btn-font-size * 1.2, $btn-border, $btn-radius * 2, 1);
+  }
+
 }
 
-.btn-large{
-  @include btn();
-  font-weight: normal;
-  @include btn-color(#ffffff, $color-primary, $color-primary, #ffffff, lighten($color-primary, 10%));
-  @include btn-size(null, $btn-padding * 1.8, $btn-font-size * 1.2, $btn-border, $btn-radius * 2, 1);
-}
