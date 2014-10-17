@@ -26,7 +26,7 @@ $font-primary: 'Open Sans', sans-serif, Arial;
 $font-secondary: MuseoSans700, 'Open Sans', sans-serif;
 $font-monospace: Menlo, Monaco, 'Courier New', monospace;
 $font-icon: Menlo, Monaco, 'Courier New', monospace;
-$font-size: 12px !default;
+$font-size: 14px !default;
 $font-size-large: ceil(($font-size * 1.25)) !default; // ~18px
 $font-size-small: ceil(($font-size * 0.85)) !default; // ~12px
 
@@ -176,15 +176,15 @@ $input-padding-horizontal: 10px;
 $legend-color: $color-gray-dark;
 
 /* Navbar top */
-$navbar-top-height: 65px;
+$navbar-top-height: 72px;
 $navbar-top-margin-bottom: 20px;
 
 $navbar-top-zindex: 100;
 $navbar-top-bgcolor: $color-primary;
 $navbar-top-title-padding-bottom: 16px;
-$navbar-top-menu-padding-bottom: 25px;
+$navbar-top-menu-padding-bottom: 28px;
 
-$navbar-top-title-size: 32px;
+$navbar-top-title-size: 36px;
 $navbar-top-title-color: #ffffff;
 
 $navbar-top-link-color: $color-gray-light;
