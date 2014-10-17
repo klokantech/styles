@@ -1,5 +1,5 @@
 /* Colors */
-$color-primary: #00549a;
+$color-primary: #115e94;
 $color-secondary: #00549a;
 
 $color-success: #377f31;
@@ -8,7 +8,8 @@ $color-warning: #dba909;
 $color-code: #dd1144;
 
 $color-gray-dark: #989898;
-$color-gray-light: #f6f6f6;
+$color-gray: #d9d9d9;
+$color-gray-light: #f3f3f3;
 
 /* Background color */
 $body-bg:  #fff !default;
@@ -175,14 +176,15 @@ $input-padding-horizontal: 10px;
 $legend-color: $color-gray-dark;
 
 /* Navbar top */
-$navbar-top-height: 50px;
+$navbar-top-height: 65px;
 $navbar-top-margin-bottom: 20px;
 
 $navbar-top-zindex: 100;
-$navbar-top-bgcolor: #000000;
-$navbar-top-padding-bottom: 16px;
+$navbar-top-bgcolor: $color-primary;
+$navbar-top-title-padding-bottom: 16px;
+$navbar-top-menu-padding-bottom: 25px;
 
-$navbar-top-title-size: 18px;
+$navbar-top-title-size: 32px;
 $navbar-top-title-color: #ffffff;
 
 $navbar-top-link-color: $color-gray-light;

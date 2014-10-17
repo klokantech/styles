@@ -23,9 +23,9 @@
     h1{
       font-size: $navbar-top-title-size;
       height: $navbar-top-height;
-      padding-top: $navbar-top-height - $navbar-top-title-size - $navbar-top-padding-bottom;
+      padding-top: $navbar-top-height - $navbar-top-title-size - $navbar-top-title-padding-bottom;
       padding-right: $padding-horizontal / 2;
-      padding-bottom:  $navbar-top-padding-bottom;
+      padding-bottom:  $navbar-top-title-padding-bottom;
       padding-left: $padding-horizontal / 2;
       margin: 0;
       white-space: nowrap;
@@ -48,14 +48,15 @@
       font-size: $navbar-top-link-size;
       height: $navbar-top-height;
       display: inline-block;
-      padding-top: $navbar-top-height - $navbar-top-link-size - $navbar-top-padding-bottom;
+      padding-top: $navbar-top-height - $navbar-top-link-size - $navbar-top-menu-padding-bottom;
       padding-right: $padding-horizontal / 2;
-      padding-bottom:  $navbar-top-padding-bottom;
+      padding-bottom:  $navbar-top-menu-padding-bottom;
       padding-left: $padding-horizontal / 2;
       line-height: 1;
+      font-weight: bold;
       &:hover, &:focus, &.active{
         color: $navbar-top-link-hover-color;
-        border-bottom: 5px solid $color-primary;
+        background-color: lighten($navbar-top-bgcolor, 1%);
       }
     }
     @media (max-width: $sc-medium) {
