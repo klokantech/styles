@@ -19,7 +19,6 @@ html, body {
   padding: $container-padding-vertical $container-padding-horizontal;
   min-height: 100%;
   &.main{
-    margin: 0;
     margin-bottom: -$footer-height;
     padding-top: $navbar-top-height;
     min-height: 100%;
