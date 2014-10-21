@@ -11,9 +11,39 @@ html, body {
   -webkit-tap-highlight-color: rgba(0,0,0,0);
 }
 
+.container {
+  max-width: $container-max;
+  width: $container-width;
+  margin-left: auto;
+  margin-right: auto;
+  padding: $container-padding-vertical $container-padding-horizontal;
+  min-height: 100%;
+  &.main{
+    margin: 0;
+    margin-bottom: -$footer-height;
+    min-height: 100%;
+    &:after{
+      content: "";
+      display: block;
+      height: $footer-height;
+    }
+  }
+}
+
 .footer{
+  color: $footer-color;
+  background-color: $footer-color-bg;
+  font-weight: $footer-fontweight;
   height: $footer-height;
   position: relative;
+
+  a{
+    color: $footer-color;
+    &:hover{
+      color: $footer-link-hover-color;
+      text-decoration: $footer-link-hover-decoration;
+    }
+  }
 }
 
 *:focus {

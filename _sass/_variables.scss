@@ -194,4 +194,10 @@ $navbar-top-link-hover-color: #ffffff;
 $navbar-top-link-hover-color: #ffffff;
 
 /* Sticky footer */
-$footer-height: 60px;
+$footer-color: #ffffff;
+$footer-color-bg: $color-gray-dark;
+$footer-link-color: #ffffff;
+$footer-link-hover-color: lighten($color-primary, 10%);
+$footer-link-hover-decoration: none;
+$footer-height: 58px;
+$footer-fontweight: bold;
