@@ -92,7 +92,6 @@
       display: none;
       background-color: #ffffff;
       position: absolute;
-      top: $navbar-top-height;
       left: 0;
       right: 0;
       list-style-type: none;
@@ -114,5 +113,29 @@
         display: block !important;
       }
     }
+  }
+}
+
+#navbar-top-small{
+  @extend #navbar-top;
+  height: $navbar-top-height * 0.6;
+  .logo{
+    h1{
+      font-size: $navbar-top-title-size * 0.6;
+      height: $navbar-top-height * 0.6;
+      padding: 0;
+      padding-top:  ($navbar-top-height - $navbar-top-title-size - $navbar-top-title-padding-bottom) * 0.6;
+      padding-bottom:  $navbar-top-title-padding-bottom * 0.6;
+    }  
+  }
+  .nav{
+    a{
+      height: $navbar-top-height * 0.6;
+      padding-top:  ($navbar-top-height - $navbar-top-link-size - $navbar-top-menu-padding-bottom) * 0.6;
+      padding-bottom:  $navbar-top-title-padding-bottom * 0.6; 
+    }
+  }
+  #nav-mobile-nav{
+    top: $navbar-top-height * 0.6;
   }
 }
