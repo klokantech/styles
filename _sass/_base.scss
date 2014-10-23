@@ -173,3 +173,13 @@ hr, .hr{
 .success{color: $color-success;}
 .warning{color: $color-warning;}
 .danger{color: $color-danger;}
+
+/* article */
+article, .article{
+  img{
+    margin: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
