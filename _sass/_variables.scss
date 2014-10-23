@@ -11,6 +11,10 @@ $color-gray-dark: #989898;
 $color-gray: #d9d9d9;
 $color-gray-light: #f3f3f3;
 
+$color-success: #00AA4A;
+$color-warning: #EF8A00;
+$color-danger: #EF3200;
+
 /* Background color */
 $body-bg:  #fff !default;
 
@@ -129,9 +133,9 @@ $btns: (
 ("-light", #ffffff, lighten($color-primary, 10%), #ffffff, lighten($color-primary, 15%)),
 ("-gray-dark", #ffffff, $color-gray-dark, #ffffff, lighten($color-gray-dark, 10%)),
 ("-gray-light", #ffffff, $color-gray-light, #ffffff, darken($color-gray-light, 10%)),
-("-success", #ffffff, #00AA4A, #ffffff, lighten(#00AA4A, 10%)),
-("-warning", #ffffff, #EF8A00, #ffffff, lighten(#EF8A00, 10%)),
-("-danger", #ffffff, #EF3200, #ffffff, lighten(#EF3200, 10%))
+("-success", #ffffff, $color-success, #ffffff, lighten($color-success, 10%)),
+("-warning", #ffffff, $color-warning, #ffffff, lighten($color-warning, 10%)),
+("-danger", #ffffff, $color-danger, #ffffff, lighten($color-danger, 10%))
 );
 
 
