@@ -23,6 +23,7 @@ label {
   max-width: 100%;
   margin: 6px 0 4px 1px;
   font-weight: bold;
+  font-size: $font-size * 0.9;
   color: $headings-color;
 
   &.inline{
@@ -52,18 +53,37 @@ input, textarea{
   }
 
   &:active, &:focus{
-    color: darken($input-color, 20%);
-    border-color: darken($input-color, 20%);
+    color: darken($input-color, 30%);
+    border-color: darken($input-color, 30%);
   }
 
 }
 
 input[type='text']{
   height: $input-height;
+
+  &.search{
+    display: inline-block;
+  }
+
 }
 input[type='submit']{
   margin-top: 5px;
+  &.search{
+    position: relative;
+    display: inline-block;
+    height: $input-height;
+    margin-top: 0;
+    padding: 0 5px;
+    left: -8px;
+    cursor: pointer;
 
+    &:hover{
+      color: darken($input-color, 30%);
+      border-color: darken($input-color, 30%);
+    }
+    
+  }
 }
 
 input[type="radio"], 
