@@ -176,7 +176,7 @@ hr, .hr{
 
 /* article */
 article, .article{
-  img{
+  & img, & iframe{
     margin: 20px;
     display: block;
     margin-left: auto;
