@@ -39,7 +39,7 @@ input, select, button {
 
 input, textarea{
   display: block;
-  padding: $input-padding-vertical $input-padding-horizontal;
+  padding: $input-padding-y $input-padding-x;
   line-height: $input-line-height;
   color: $input-color;
   background-color: $input-bg;
@@ -114,7 +114,7 @@ input[type="checkbox"]:focus {
 
 output {
   display: block;
-  padding-top: ($padding-vertical + 1);
+  padding-top: ($padding-y + 1);
   font-size: $font-size;
   line-height: $line-height;
   color: $input-color;

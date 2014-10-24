@@ -2,11 +2,6 @@
 $color-primary: #115e94;
 $color-secondary: #00549a;
 
-$color-success: #377f31;
-$color-danger: #880e14;
-$color-warning: #dba909;
-$color-code: #dd1144;
-
 $color-gray-dark: #989898;
 $color-gray: #d9d9d9;
 $color-gray-light: #f3f3f3;
@@ -14,6 +9,7 @@ $color-gray-light: #f3f3f3;
 $color-success: #00AA4A;
 $color-warning: #EF8A00;
 $color-danger: #EF3200;
+$color-code: #dd1144;
 
 /* Background color */
 $body-bg:  #fff !default;
@@ -58,26 +54,14 @@ $code-color: $color-gray-dark;
 $code-padding: 2px 6px;
 
 /* Padding, margin */
-$padding-vertical: 20px;
-$padding-horizontal: 20px;
-
-/*$padding-large-vertical: 10px !default;
-$padding-large-horizontal: 16px !default;
-
-$padding-small-vertical: 5px !default;
-$padding-small-horizontal: 10px !default;
-
-$padding-xs-vertical: 1px !default;
-$padding-xs-horizontal: 5px !default;
-
-$line-height-large: 1.33 !default;
-$line-height-small: 1.5 !default;*/
+$padding-y: 15px;
+$padding-x: 15px;
 
 /* Container */
 $container-max: 1124px;
 $container-width: 95%;
-$container-padding-horizontal: 0;
-$container-padding-vertical: 0;
+$container-padding-x: 0;
+$container-padding-y: 0;
 
 /* Grid */
 //screen sizes
@@ -101,10 +85,10 @@ col11: 91.6666,
 col12: 100, 
 );
 
-$grid-paddnig-horizontal: $padding-horizontal;
-$grid-padding-vertical: $padding-vertical;
-$grid-margin-horizontal: 0;
-$grid-margin-vertical: 0;
+$grid-paddnig-x: $padding-x;
+$grid-padding-y: $padding-y;
+$grid-margin-x: 0;
+$grid-margin-y: 0;
 
 /* Helpers */
 /* Corners for rounding */
@@ -174,8 +158,8 @@ $input-bg: #ffffff;
 $input-bg-disabled: $color-gray-light;
 $input-border-color: $input-color;
 $input-border-radius: 0;
-$input-padding-vertical: 10px;
-$input-padding-horizontal: 10px;
+$input-padding-y: 10px;
+$input-padding-x: 10px;
 
 $legend-color: $color-gray-dark;
 

@@ -16,7 +16,7 @@
   .logo{
     float: left;
     height: $navbar-top-height;
-    margin: 0 $padding-horizontal;
+    margin: 0 $padding-x;
     img{
       height: $navbar-top-height - ($navbar-top-height / 4);
     }
@@ -24,9 +24,9 @@
       font-size: $navbar-top-title-size;
       height: $navbar-top-height;
       padding-top: $navbar-top-height - $navbar-top-title-size - $navbar-top-title-padding-bottom;
-      padding-right: $padding-horizontal / 2;
+      padding-right: $padding-x / 2;
       padding-bottom:  $navbar-top-title-padding-bottom;
-      padding-left: $padding-horizontal / 2;
+      padding-left: $padding-x / 2;
       margin: 0;
       white-space: nowrap;
       a{
@@ -40,7 +40,7 @@
 
   .nav{
     float: right;  
-    padding: 0 $padding-horizontal;
+    padding: 0 $padding-x;
     li{display: inline-block;} 
     a{
       color: $navbar-top-link-color;
@@ -49,9 +49,9 @@
       height: $navbar-top-height;
       display: inline-block;
       padding-top: $navbar-top-height - $navbar-top-link-size - $navbar-top-menu-padding-bottom;
-      padding-right: $padding-horizontal / 2;
+      padding-right: $padding-x / 2;
       padding-bottom:  $navbar-top-menu-padding-bottom;
-      padding-left: $padding-horizontal / 2;
+      padding-left: $padding-x / 2;
       line-height: 1;
       font-weight: bold;
       &:hover, &:focus, &.active{
@@ -97,11 +97,11 @@
       right: 0;
       list-style-type: none;
       font-size: $navbar-top-link-size;
-      padding:  $padding-horizontal / 2 $padding-horizontal 0 $padding-horizontal 0;
+      padding:  $padding-x / 2 $padding-x 0 $padding-x 0;
       border-bottom: 1px solid $color-gray-dark;
       margin: 0;
       li a{
-        padding: $padding-horizontal * 0.8;
+        padding: $padding-x * 0.8;
         display: block;
         border-bottom: 1px solid $color-gray-light;
         &:hover, &:active{

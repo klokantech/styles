@@ -10,8 +10,8 @@ $grid-screens: (
 %grid-base {
   float: left;
   width: 100%;
-  padding: $grid-padding-vertical $grid-paddnig-horizontal;
-  margin: $grid-margin-vertical $grid-margin-horizontal;
+  padding: $grid-padding-y $grid-paddnig-x;
+  margin: $grid-margin-y $grid-margin-x;
 }
 
 @each $grid, $width in ($grid-sizes) {
