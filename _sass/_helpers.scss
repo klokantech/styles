@@ -45,7 +45,7 @@
 .float-right{float: right;}
 .text-left{text-align: left;}
 .text-right{text-align: right;}
-center .center, .text-center{text-align: center;}
+center, .center, .text-center{text-align: center;}
 
 /* Borders */
 @each $name, $size, $type, $color in ($borders){
