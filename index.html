@@ -270,7 +270,53 @@ title: Styles
 <div class="row" id="tables">
   <div class="col12">
     <h2>Tables</h2>
+    <p>Usage:</p> <pre>
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;&lt;td&gt;Header&lt;/td&gt;&lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt; 
+    &lt;tr&gt;&lt;td&gt;Content&lt;/td&gt;&lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;</pre>
+    <br>
     <table>
+      <thead>
+        <tr>
+          <td>Ticket</td>
+          <td>State</td>
+          <td>Name</td>
+          <td>Milestone</td>
+          <td>Created</td>
+        </tr>  
+      </thead>
+      <tbody>
+        <tr>
+          <td>#5</td><td class="open">Open</td><td>Report 1</td><td>milestone 2</td><td>2014.02.13</td>
+        </tr>
+        <tr>
+          <td>#1</td><td class="open">Open</td><td>Report 2</td><td>milestone 3</td><td>2014.02.13</td>
+        </tr>
+        <tr>
+          <td>#2</td><td class="close">Close</td><td><a>Report 3</a></td><td>milestone 3</td><td>2014.02.13</td>
+        </tr>
+        <tr>
+          <td>#3</td><td class="open">Open</td><td>Report 4</td><td>milestone 1</td><td>2014.02.13</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td>Summary</td>
+          <td></td>
+          <td>4 reports</td>
+          <td>3 milestones</td>
+          <td></td>
+        </tr>
+      </tfoot>    
+    </table>
+    <h3>Full bordered</h3>
+    <p>Usage: <code>  &lt;table class="grid"&gt; ... &lt;/table&gt; </code></p>
+    <table class="grid">
       <thead>
         <tr>
           <td>Ticket</td>
