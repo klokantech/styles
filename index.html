@@ -406,8 +406,9 @@ title: Styles
 <div class="row" id="msgs">
   <div class="col12">
     <h2>Messages</h2>
-    <p>if you will add id="message" then the messages will be hidden by javascript in 2 seconds.</p>
-    <div id="message" class="message">id="message" class="message"</div>
+    <button class="btn" onclick="hideMessages();">Hide message in 2 seconds</button>
+    <p>You cen use <code>hideMessages(seconds);</code> (def. 2 sec.) for hidden all messages via javascript.</p>
+    <div class="message">class="message"</div>
     <div class="message success">class="message success"</div>    
     <div class="message warning">class="message warning"</div>
     <div class="message error">class="message error"</div>

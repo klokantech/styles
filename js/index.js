@@ -36,15 +36,17 @@ function init() {
       tabsTab[i].className = 'tabs-tab';
     }
   }
-
-  //hide messages
-  setTimeout(function() {
-    var el = document.getElementById('message');
-    if (el) {
-      el.style.display = 'none';
-    }
-  }, 2000);
-
 }
 
 window.onload = init;
+
+//hide messages
+function hideMessages(sec) {
+  if(sec === undefined){var sec = 2;}
+  setTimeout(function() {
+    var els = document.getElementsByClassName('message');
+    for (var i = 0; i < els.length; i++) {
+      els[i].style.display = 'none';
+    }
+  }, sec * 1000);
+}
