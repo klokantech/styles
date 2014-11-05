@@ -118,3 +118,22 @@ center, .center, .text-center{text-align: center;}
 .bg-danger{background-color: $color-danger;}
 .bg-white{background-color: #ffffff;}
 .bg-black{background-color: #000000;}
+
+/* Messages */
+
+.message{
+  color: #ffffff;
+  background-color: $color-primary;
+  padding: $padding-x $padding-y;
+  font-weight: bold;
+  &.success{
+    background-color: $color-success;
+  }
+  &.warning{
+    background-color: $color-warning;
+  }
+  &.error{
+    background-color: $color-danger;
+  }
+
+}

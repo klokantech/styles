@@ -1,7 +1,7 @@
 /* Navbar-top */
 
 function init() {
-  
+
   /* Navbar-top */
   document.getElementById('nav-mobile-btn').onclick = function() {
     var navMobileNav = document.getElementById('nav-mobile-nav');
@@ -36,6 +36,15 @@ function init() {
       tabsTab[i].className = 'tabs-tab';
     }
   }
+
+  //hide messages
+  setTimeout(function() {
+    var el = document.getElementById('message');
+    if (el) {
+      el.style.display = 'none';
+    }
+  }, 2000);
+
 }
 
 window.onload = init;
