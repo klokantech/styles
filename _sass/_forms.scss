@@ -59,7 +59,7 @@ input, textarea{
 
 }
 
-input[type='text']{
+input[type='text'], input[type='button']{
   height: $input-height;
 
   &.search{
@@ -67,7 +67,7 @@ input[type='text']{
   }
 
 }
-input[type='submit']{
+input[type='submit'], input[type='button']{
   margin-top: 5px;
   &.search{
     position: relative;
