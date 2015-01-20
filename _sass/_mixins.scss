@@ -8,13 +8,13 @@
   cursor: pointer;
   white-space: nowrap;
   text-overflow: ellipsis;
-  font-weight: bold;
+  font-weight: 600;
   text-decoration: none;
   vertical-align: middle;
   background-image: none;
 }
 
-@mixin btn-color($color, $background, $border, $hover, $hover-background) {
+@mixin btn-color($color, $background, $border, $hover, $hover-background, $hover-border) {
   color: $color;
   background-color: $background;
   border: $border;
@@ -26,7 +26,7 @@
     &.active{
     color: $hover;
     background-color: $hover-background;
-    border-color: $hover-background;
+    border-color: $hover-border;
   }
 }
 
@@ -35,7 +35,7 @@
     height: $height * $scale;
   }
   font-size: $font-size * $scale;
-  padding: $padding * $scale;
+  padding: $padding * $scale $padding * $scale + 6;
   border-width: $border * $scale;
   border-style: solid;
   -webkit-border-radius: $radius;

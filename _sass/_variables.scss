@@ -2,8 +2,8 @@
 $color-primary: #115e94;
 $color-secondary: #00549a;
 
-$color-gray-dark: #989898;
-$color-gray: #d9d9d9;
+$color-gray-dark: #393939;
+$color-gray: #898989;
 $color-gray-light: #f3f3f3;
 
 $color-success: #00AA4A;
@@ -15,7 +15,7 @@ $color-code: #dd1144;
 $body-bg:  #fff !default;
 
 /* Global text color */
-$text-color: $color-gray-dark !default;
+$text-color: $color-gray !default;
 
 /* Links color */
 $link-color: $color-primary;
@@ -39,7 +39,7 @@ $headings-font-weight-h1: normal;
 $headings-font-family: $font-primary;
 $headings-font-weight: 600;
 $headings-line-height: 100%;
-$headings-color: #383838;
+$headings-color: $color-gray-dark;
 
 $font-size-h1: 40px !default;
 $font-size-h2: 30px !default;
@@ -100,10 +100,10 @@ $radius-bottom-left: $radius-all;
 /* Buttons */
 $btn-color-bg: $color-primary;
 $btn-color: #fff;
-$btn-height: 34px;
-$btn-padding: 6px;
-$btn-radius: 3px;
-$btn-font-size: 12px;
+$btn-height: 40px;
+$btn-padding: 8px;
+$btn-radius: 4px;
+$btn-font-size: 14px;
 
 $btn-border: 2px;
 $btn-small-scale: 0.8;
@@ -112,6 +112,7 @@ $btn-small-scale: 0.8;
 $btns: (
 //name, color, background-color, hover color, hover background
 ("", #ffffff, $color-primary, #ffffff, lighten($color-primary, 10%)),
+("-white", transparent, #ffffff, #ffffff, $color-gray-light),
 ("-dark", #ffffff, darken($color-primary, 10%), #ffffff, $color-primary),
 ("-light", #ffffff, lighten($color-primary, 10%), #ffffff, lighten($color-primary, 15%)),
 ("-gray-dark", #ffffff, $color-gray-dark, #ffffff, lighten($color-gray-dark, 10%)),
