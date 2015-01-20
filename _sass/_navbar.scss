@@ -142,3 +142,26 @@
     }
   }
 }
+
+/* MapTiler navbar */
+#mt-nav{
+  display: inline-block;
+  margin: 25px 0 25px 0;
+  float: right;
+  ul{
+    margin: 0; 
+    padding: 0;
+    li{
+      list-style-type: none;
+      display: inline-block;
+      padding: 15px 20px;
+      text-transform: uppercase;
+      font-weight: 600;
+
+      a{color: #fff;
+        
+        &:hover{text-decoration: none; color: #fff;}
+      }
+    }
+  }
+}

@@ -2,7 +2,7 @@
 
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
-  font-family: $headings-font-family;
+  font-family: $font-primary;
   font-weight: $headings-font-weight;
   line-height: $headings-line-height;
   color: $headings-color;
@@ -11,6 +11,11 @@ h1, h2, h3, h4, h5, h6,
   .small {
     font-weight: normal;
     line-height: 1;
+  }
+
+  &.mt{
+    font-family: $font-secondary;
+    font-weight: normal;
   }
 }
 
@@ -89,4 +94,4 @@ small, .small {font-size: 85%;}
 .smaller {font-size: 65%;}
 .normal{font-size: $font-size;}
 big, .big {font-size: 115%;}
-.biger {font-size: 135%;}
+.bigger {font-size: 135%;}
