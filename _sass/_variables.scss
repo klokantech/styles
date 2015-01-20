@@ -37,7 +37,7 @@ $line-height-computed: floor(($font-size * $line-height)) !default; // ~20px
 /* Headings */
 $headings-font-weight-h1: normal;
 $headings-font-family: $font-primary;
-$headings-font-weight: 600;
+$headings-font-weight: normal;
 $headings-line-height: 100%;
 $headings-color: $color-gray-dark;
 
@@ -57,7 +57,7 @@ $padding-y: 15px;
 $padding-x: 15px;
 
 /* Container */
-$container-max: 1124px;
+$container-max: 1200px;
 $container-width: 95%;
 $container-padding-x: 0;
 $container-padding-y: 0;
