@@ -9,6 +9,7 @@
 .hidden{display: none;}
 .clip{overflow: hidden;}
 .contain{position: relative;}
+.absolute{position: absolute;}
 .circle{border-radius: 50%;}
 
 .round{
@@ -153,6 +154,7 @@ center, .center, .text-center{text-align: center;}
 .primary{color: $color-primary;}
 .secondary{color: $color-secondary;}
 .gray-light{color: $color-gray-light;}
+.gray{color: $color-gray;}
 .gray-dark{color: $color-gray-dark;}
 .success{color: $color-success;}
 .warning{color: $color-warning;}
@@ -163,6 +165,7 @@ center, .center, .text-center{text-align: center;}
 .bg-primary{background-color: $color-primary;}
 .bg-secondary{background-color: $color-secondary;}
 .bg-gray-light{background-color: $color-gray-light;}
+.bg-gray{background-color: $color-gray;}
 .bg-gray-dark{background-color: $color-gray-dark;}
 .bg-success{background-color: $color-success;}
 .bg-warning{background-color: $color-warning;}
