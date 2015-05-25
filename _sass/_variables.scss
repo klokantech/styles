@@ -22,8 +22,8 @@ $link-color: $color-primary;
 $link-hover-color: lighten($color-primary, 8%);
 
 /* Fonts */
-$font-primary: 'Open Sans', sans-serif, Arial;
-$font-secondary: MuseoSans700, 'Open Sans', sans-serif;
+$font-primary: 'OpenSans', sans-serif, Arial;
+$font-secondary: 'MuseoSans', 'OpenSans', sans-serif;
 $font-monospace: Menlo, Monaco, 'Courier New', monospace;
 $font-icon: Menlo, Monaco, 'Courier New', monospace;
 $font-size: 14px !default;
@@ -116,10 +116,7 @@ $btns: (
 ("-dark", #ffffff, darken($color-primary, 10%), #ffffff, $color-primary),
 ("-light", #ffffff, lighten($color-primary, 10%), #ffffff, lighten($color-primary, 15%)),
 ("-gray-dark", $color-gray-light, $color-gray-dark, $color-gray-light, lighten($color-gray-dark, 10%)),
-("-gray-light", $color-gray-dark, $color-gray-light, $color-gray-dark, darken($color-gray-light, 10%)),
-("-success", #ffffff, $color-success, #ffffff, lighten($color-success, 10%)),
-("-warning", #ffffff, $color-warning, #ffffff, lighten($color-warning, 10%)),
-("-danger", #ffffff, $color-danger, #ffffff, lighten($color-danger, 10%))
+("-gray-light", $color-gray-dark, $color-gray-light, $color-gray-dark, darken($color-gray-light, 10%))
 );
 
 
