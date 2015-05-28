@@ -119,6 +119,13 @@ $btns: (
 ("-gray-light", $color-gray-dark, $color-gray-light, $color-gray-dark, darken($color-gray-light, 10%))
 );
 
+$btns-bg-color: #fff;
+$btns-pads: 3px 20px 5px 20px;
+$btns-border: 1px solid #000;
+$btns-bg-color: #fff;
+$btns-radius: 4px;
+$btns-hover-bg: $color-primary;
+$btns-hover-color: #fff;
 
 /* Border */
 $borders: (
