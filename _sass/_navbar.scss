@@ -17,9 +17,6 @@
     float: left;
     height: $navbar-top-height;
     margin: 0 $padding-x;
-    img{
-      height: $navbar-top-height - ($navbar-top-height / 4);
-    }
     h1{
       font-size: $navbar-top-title-size;
       height: $navbar-top-height;

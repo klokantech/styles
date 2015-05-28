@@ -20,30 +20,28 @@
   font-style: normal;
 }
 
-/* IE 4–8 */
 @font-face {
   font-family: 'MuseoSans';
   src: url('fonts/MuseoSans_700Web.eot');
 }
 
-/* WOFF-capable browsers */
 @font-face {
   font-family: 'MuseoSans';
   src: url('fonts/MuseoSans_700Web.woff') format('woff');
 }
 
 @font-face {
-  font-family: 'Klokantech';
-  src: url('fonts/klokantech.eot');
+  font-family: 'icons';
+  src: url('fonts/icons.eot');
 }
 
 @font-face {
-  font-family: 'Klokantech';
-  src: url('fonts/klokantech.woff') format('woff');
+  font-family: 'icons';
+  src: url('fonts/icons.woff') format('woff');
 }
 
-[class^='icon-'], [class*=' icon-'] {
-  font-family: 'klokantech';
+.icon, [class^='icon-'], [class*=' icon-']{
+  font-family: 'icons';
   speak: none;
   font-style: normal;
   font-weight: normal;
@@ -51,34 +49,5 @@
   text-transform: none;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-size: 30px;
+  font-size: 20px;
 }
-
-.icon-crop:before {content: '\e619';}
-.icon-zoomout:before {content: '\e61a';}
-.icon-zoomin:before {content: '\e61b';}
-.icon-pinterest:before {content: '\e615';}
-.icon-twitter:before {content: '\e616';}
-.icon-facebook:before {content: '\e617';}
-.icon-google:before {content: '\e618';}
-.icon-menu:before {content: '\e600';}
-.icon-check:before {content: '\e601';}
-.icon-detail:before {content: '\e602';}
-.icon-credits:before {content: '\e603';}
-.icon-help:before {content: '\e604';}
-.icon-settings:before {content: '\e605';}
-.icon-home:before {content: '\e606';}
-.icon-website:before {content: '\e607';}
-.icon-logo-omo:before {content: '\e608';}
-.icon-arrow-down:before {content: '\e609';}
-.icon-arrow-up:before {content: '\e60a';}
-.icon-issue:before {content: '\e60b';}
-.icon-delete:before {content: '\e60c';}
-.icon-nextmaps:before {content: '\e60d';}
-.icon-arrow-right:before {content: '\e60e';}
-.icon-arrow-left:before {content: '\e60f';}
-.icon-search:before {content: '\e610';}
-.icon-timeline-dragger:before {content: '\e611';}
-.icon-timeline:before {content: '\e612';}
-.icon-attributes:before {content: '\e613';}
-.icon-catalog:before {content: '\e614';}
