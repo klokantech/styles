@@ -8,10 +8,11 @@ table{
     border-collapse: collapse;
     border-spacing: 0;
     font-family: inherit;
-    font-size: 100%;
+    font-size: $table-fontsize;
     color: $table-color;
     padding: $table-padding;
     display: table-cell; 
+    border: 1px solid $table-color-border;
   }
   tr, th{
     border-top: 1px solid $table-color-border;
@@ -47,9 +48,20 @@ table{
     border-bottom: 1px solid $table-color-border;
   }
 
-  &.grid{
+  &.striped{
     td{
-      border: 1px solid $table-color-border;
+      border: none;
     }
   }
+  
+  .icon{
+    font-size: $table-fontsize;
+  }
+}
+
+.even{
+  background-color: $even-bg-color;
+}
+.odd{
+  background-color: $odd-bg-color;
 }
