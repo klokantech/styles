@@ -13,32 +13,22 @@
 .circle{border-radius: 50%;}
 
 .round{
-  -webkit-border-radius: $radius-all;
-  -moz-border-radius: $radius-all;
   border-radius: $radius-all;
 }
 
 .round-top-left{
-  -webkit-border-top-left-radius: $radius-top-left;
-  -moz-border-radius-topleft: $radius-top-left;
   border-top-left-radius: $radius-top-left;
 }
 
 .round-top-right{
-  -webkit-border-top-right-radius: $radius-top-right;
-  -moz-border-radius-topright: $radius-top-right;
   border-top-right-radius: $radius-top-right;
 }
 
 .round-bottom-right{
-  -webkit-border-bottom-right-radius: $radius-bottom-right;
-  -moz-border-radius-bottomright: $radius-bottom-right;
   border-bottom-right-radius: $radius-bottom-right;
 }
 
 .round-bottom-left{
-  -webkit-border-bottom-left-radius: $radius-bottom-left;
-  -moz-border-radius-bottomleft: $radius-bottom-left;
   border-top-bottom-radius: $radius-bottom-left;
 }
 
