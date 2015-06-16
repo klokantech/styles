@@ -59,7 +59,7 @@
       border-bottom-right-radius: $btns-radius;
     }
 
-    &:hover, &.open{
+    &:hover, &.open, &:focus{
       background-color: $btns-hover-bg;
       color: $btns-hover-color;
       text-decoration: none;

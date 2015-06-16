@@ -76,8 +76,7 @@
         cursor: pointer;
       }
       &.active{
-        color: #ffffff;
-        border-bottom: 5px solid $color-primary;
+        color: $color-secondary;
         margin: 0;
       }
     }
