@@ -6,6 +6,9 @@ description: The company web style guide
 
 permalink: pretty
 
+sass:
+  style: :compressed
+
 defaults:
   -
     scope:
