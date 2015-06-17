@@ -67,11 +67,14 @@
     @media (max-width: $sc-medium) {
       display: block;
     }
-    padding: ($navbar-top-height / 2) - 30;
+    margin: 0; padding: 0;
     font-size: 30px;
     float: right;
     #nav-mobile-btn{
+      color: $navbar-top-mobile-btn-color;
       height: $navbar-top-height;
+      padding: ($navbar-top-height / 2) - 20px;
+      font-family: 'icons';
       &:hover, &:active{
         cursor: pointer;
       }
