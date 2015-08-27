@@ -181,3 +181,21 @@
     }
   }
 }
+
+.notice{
+  text-align: center;
+  position: fixed;
+  left: 0; right: 0;
+  bottom:0;
+  height: 50px;
+  background-color: $color-gray-light;
+  p{
+    display: inline-block;
+    margin: 15px 30px
+  }
+  button{
+    display: inline-block;
+    height: 30px;
+    padding: 4px 10px;;
+  }
+}
