@@ -10,8 +10,8 @@
     <meta name="author" content="{{ site.name }}" />
     <meta name="description" content="{{ site.description }}" />
 
-    <link href="{{ site.baseurl }}/base.css" rel="stylesheet" />
-    <script type="text/javascript" src="{{ site.baseurl }}/js/index.js"></script>
+    <link href="{{ site.baseurl }}base.css" rel="stylesheet" />
+    <script type="text/javascript" src="{{ site.baseurl }}js/index.js"></script>
   </head>
   <body>
     <div id="navbar-top">
@@ -20,31 +20,38 @@
           <h1><a href="http://klokantech.com">KlokanTech</a></h1>
         </div>
         <ul class="nav">
-          <li><a href="/styles/">CSS and styling</a></li>
-          <li><a href="/styles/html5">HTML and markup</a></li>
-          <li><a href="/styles/fonts">Fonts and symbols</a></li>
-          <li><a href="/styles/components">Components</a></li>
+          <li><a href="{{ site.baseurl }}">CSS and styling</a></li>
+          <li><a href="{{ site.baseurl }}html5">HTML and markup</a></li>
+          <li><a href="{{ site.baseurl }}fonts">Fonts and symbols</a></li>
+          <li><a href="{{ site.baseurl }}components">Components</a></li>
+          <li><a href="https://github.com/klokantech/styles">
+              <img class="octocat" src="{{ site.baseurl }}img/GitHub-Mark-Light-32px.png" alt="Github">
+            </a></li>
         </ul>
         <div class="nav-mobile">
           <div id="nav-mobile-btn">H</div>
           <ul id="nav-mobile-nav">
-            <li class="b"><a href="/styles/">CSS and styling</a></li>
-            <li><a href="/styles/#typography">Typography</a></li>
-            <li><a href="/styles/#buttons">Buttons</a></li>
-            <li><a href="/styles/#borders">Borders</a></li>
-            <li><a href="/styles/#boxes">Boxes</a></li>
-            <li><a href="/styles/#helpers">Helpers</a></li>
-            <li><a href="/styles/#grid">Grid system</a></li>
-            <li><a href="/styles/#tables">Tables</a></li>
-            <li><a href="/styles/#forms">Forms</a></li>
-            <li><a href="/styles/#msgs">Messages</a><li>
-            <li class="b"><a href="/styles/html5">HTML and markup</a></li>
-            <li><a href="/styles/fonts">Fonts and symbols</a></li>
-            <li class="b"><a href="/styles/components">Components</a></li>
+            <li class="b"><a href="{{ site.baseurl }}">CSS and styling</a></li>
+            <li><a href="{{ site.baseurl }}#typography">Typography</a></li>
+            <li><a href="{{ site.baseurl }}#buttons">Buttons</a></li>
+            <li><a href="{{ site.baseurl }}#borders">Borders</a></li>
+            <li><a href="{{ site.baseurl }}#boxes">Boxes</a></li>
+            <li><a href="{{ site.baseurl }}#helpers">Helpers</a></li>
+            <li><a href="{{ site.baseurl }}#grid">Grid system</a></li>
+            <li><a href="{{ site.baseurl }}#tables">Tables</a></li>
+            <li><a href="{{ site.baseurl }}#forms">Forms</a></li>
+            <li><a href="{{ site.baseurl }}#msgs">Messages</a><li>
+            <li class="b"><a href="{{ site.baseurl }}html5">HTML and markup</a></li>
+            <li><a href="{{ site.baseurl }}fonts">Fonts and symbols</a></li>
+            <li class="b"><a href="{{ site.baseurl }}components">Components</a></li>
+            <li><a href="https://github.com/klokantech/styles">
+                <img class="octocat" src="{{ site.baseurl }}img/GitHub-Mark-32px.png" alt="Github">
+                GitHub
+              </a></li>
           </ul>
         </div>
       </div>
-    </div> 
+    </div>
     <div class="container main">
       <div class="row">
         <!-- content -->
@@ -55,19 +62,19 @@
         <!-- nav-left -->
         <div class="col2 flip text-right no-paddings" style="margin-top: 48px;">
           <h4>Styleguide</h4>
-          <h5 class="b"><a href="/styles/">CSS and styling</a></h5>
-          <a href="/styles/#typography">Typography</a><br>
-          <a href="/styles/#buttons">Buttons</a><br>
-          <a href="/styles/#borders">Borders</a><br>
-          <a href="/styles/#boxes">Boxes</a><br>
-          <a href="/styles/#helpers">Helpers</a><br>
-          <a href="/styles/#grid">Grid system</a><br>
-          <a href="/styles/#tables">Tables</a><br>
-          <a href="/styles/#forms">Forms</a><br>
-          <a href="/styles/#msgs">Messages</a><br>
-          <h5 class="b"><a href="/styles/html5">HTML and markup</a></h5>
-          <h5 class="b"><a href="/styles/fonts">Fonts and symbols</a></h5>
-          <h5 class="b"><a href="/styles/components">Components</a></h5>
+          <h5 class="b"><a href="{{ site.baseurl }}">CSS and styling</a></h5>
+          <a href="{{ site.baseurl }}#typography">Typography</a><br>
+          <a href="{{ site.baseurl }}#buttons">Buttons</a><br>
+          <a href="{{ site.baseurl }}#borders">Borders</a><br>
+          <a href="{{ site.baseurl }}#boxes">Boxes</a><br>
+          <a href="{{ site.baseurl }}#helpers">Helpers</a><br>
+          <a href="{{ site.baseurl }}#grid">Grid system</a><br>
+          <a href="{{ site.baseurl }}#tables">Tables</a><br>
+          <a href="{{ site.baseurl }}#forms">Forms</a><br>
+          <a href="{{ site.baseurl }}#msgs">Messages</a><br>
+          <h5 class="b"><a href="{{ site.baseurl }}html5">HTML and markup</a></h5>
+          <h5 class="b"><a href="{{ site.baseurl }}fonts">Fonts and symbols</a></h5>
+          <h5 class="b"><a href="{{ site.baseurl }}components">Components</a></h5>
         </div>
         <!-- end nav-left  -->
       </div>
@@ -76,7 +83,7 @@
       <div class="container">
         <div class="row">
           <div class="col12">
-            Copyright &copy; 2014 <a href="http://klokantech.com">Klokan Technologies GmbH</a> 
+            Copyright &copy; 2014 <a href="http://klokantech.com">Klokan Technologies GmbH</a>
           </div>
         </div>
       </div>

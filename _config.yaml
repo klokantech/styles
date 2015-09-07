@@ -16,4 +16,4 @@ defaults:
     values:
       layout: "default"
 
-baseurl: "/styles"
+baseurl: "/styles/"
