@@ -1,6 +1,28 @@
 /* Navbar-top */
 
 function init() {
+  /* Navbar Hamburger */
+  var navsideBtn = document.querySelector('.navside-btn');
+  if (navsideBtn) {
+    navsideBtn.addEventListener(
+            'click', openMenu
+            );
+    var bg = document.createElement('div');
+    bg.setAttribute('class', 'navside-bg');
+    bg.addEventListener('click', openMenu);
+    document.body.appendChild(bg);
+  }
+  
+  function openMenu() {
+    var menu = document.querySelector('.navside').classList;
+    if (menu.contains('open')) {
+      menu.remove('open');
+      bg.classList.remove('open');
+    } else {
+      menu.add('open');
+      bg.classList.add('open');
+    }
+  }
 
   /* Navbar-top */
   document.getElementById('nav-mobile-btn').onclick = function() {
@@ -42,7 +64,9 @@ window.onload = init;
 
 //hide messages
 function hideMessages(sec) {
-  if(sec === undefined){var sec = 2;}
+  if (sec === undefined) {
+    var sec = 2;
+  }
   setTimeout(function() {
     var els = document.getElementsByClassName('message');
     for (var i = 0; i < els.length; i++) {

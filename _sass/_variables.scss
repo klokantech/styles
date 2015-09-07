@@ -177,11 +177,11 @@ $popup-bg-color: #fff;
 
 $multicomplete-tag-bg-color: $color-gray;
 
-/* Navbar top */
+/* Top navbar */
 $navbar-top-height: 72px;
 $navbar-top-margin-bottom: 20px;
 
-$navbar-top-zindex: 100;
+$navbar-top-zindex: 90;
 $navbar-top-bgcolor: $color-primary;
 $navbar-top-title-padding-bottom: 16px;
 $navbar-top-menu-padding-bottom: 28px;
@@ -195,6 +195,11 @@ $navbar-top-link-hover-color: #ffffff;
 
 $navbar-top-link-hover-color: #ffffff;
 $navbar-top-mobile-btn-color: #ffffff;
+
+/* Side navbar */
+$navside-width: 280px;
+$navside-item-padding: 20px;
+
 
 /* Sticky footer */
 $footer-color: #ffffff;
