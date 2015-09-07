@@ -184,3 +184,20 @@ center, .center, .text-center{text-align: center;}
   }
 
 }
+
+/* Syntax */
+.language-html{
+  .nt{
+    color: $color-warning;
+  }
+  .na{
+    color: $color-success;
+  }
+  .s{
+    color: $color-danger;
+  }
+  .c{
+    color: $color-gray-dark;
+    font-style: italic;
+  }
+}
