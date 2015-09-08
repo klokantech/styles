@@ -4,40 +4,47 @@ title: Fonts and symbols
 
 <div class="row">
   <div class="col12">
-    <h1>Fonts</h1>
-    <p>Open Sans</p>
-    <h5>MuseoSans700</h5>
+    <h1>Fonts and symbols</h1>
+    <h2>Fonts</h1>
+      <p>In this lib are included:</p>
+      <p>OpenSans</p>
+      <h5>MuseoSans</h5>
 
-    <h1>Symbols</h1>
-    <h4>Code</h4>
-    <p>
-      <code>&lt;span class="icon" &gt; H &lt;/span&gt;</code>
-    </p>
-    <br>
-    <h4>Become</h4>
-    <p><span class="icon"> H </span></p>
-    <h4>Other icons</h4>
-    <div class="row">
-      <div class="col3">
-        <p><span class="icon"> < </span></p>
-        <p><span class="icon"> > </span></p>
-        <p><span class="icon"> &or; </span></p>
-        <p><span class="icon"> &and; </span></p>
-        <p><span class="icon"> X </span></p>
+      <h2>Symbols</h2>
+      {% highlight html %}
+      <span class="icon"> H </span>
+      {% endhighlight %}
+      <br>
+      <p>This code will become as symbol:</p>
+      <p><span class="icon"> H </span></p>
+      <h4>Other icons</h4>
+      <p>Each icon has own letter</p>
+      <div class="row">
+        <div class="col3">
+          <p><span class="icon"> < </span></p>
+          <p><span class="icon"> > </span></p>
+          <p><span class="icon"> &or; </span></p>
+          <p><span class="icon"> &and; </span></p>
+          <p><span class="icon"> X </span></p>
+        </div>
+        <div class="col3">
+          <p><span class="icon"> 8 </span></p>
+          <p><span class="icon"> F </span></p>
+          <p><span class="icon"> T </span></p>
+          <p><span class="icon"> P </span></p>
+          <p><span class="icon"> G </span></p>
+        </div>
+        <div class="col3">
+          <p><span class="icon"> * </span></p>
+          <p><span class="icon bigger"> K </span></p>
+          <p><span class="icon"> M </span></p>
+          <p>And more...</p>
+        </div>
       </div>
-      <div class="col3">
-        <p><span class="icon"> 8 </span></p>
-        <p><span class="icon"> F </span></p>
-        <p><span class="icon"> T </span></p>
-        <p><span class="icon"> P </span></p>
-        <p><span class="icon"> G </span></p>
-      </div>
-      <div class="col3">
-        <p><span class="icon"> * </span></p>
-        <p><span class="icon bigger"> K </span></p>
-        <p><span class="icon"> M </span></p>
-        <p>And more...</p>
-      </div>
-    </div>
+      <h2>Syntax highlighter</h2>
+      <p>You can use syntax highlighter which is included in jekyll template 
+        language (liquid). Styling is also included in this library. For usage 
+        you can use use liquid's macro 
+        <code>&#123;% highlight html %&#125;&#123;% endhighlight %&#125;</code></p>
   </div>
 </div>
