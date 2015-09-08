@@ -142,34 +142,6 @@
   }
 }
 
-/* Klokantech navbar */
-#navbar-kl {
-  text-align: center; 
-  background-color: #f6f6f6; 
-  padding: 0; margin: 0;
-  ul{
-    font-size: 0; 
-    line-height: 14px; 
-    min-height: 34px;
-    li{
-      font-size: 14px; 
-      display: inline; 
-      list-style-type: none; 
-      margin: 0;
-      a{
-        display: inline-block; 
-        color: #a8a8a8; 
-        min-height: 34px; 
-        padding: 10px 15px;
-        -webkit-transition: all 0.3s ease-in; -moz-transition: all 0.3s ease-in; -ms-transition: all 0.3s ease-in; -o-transition: all 0.3s ease-in; transition: all 0.3s ease-in;
-        &:hover{
-          background: #ededed; 
-          text-decoration: none;}
-      }
-      &.active a{background-color: #ededed; color: #00549a;}
-    }
-  }
-}
 /* simple mobile nav */
 #nav-mobile-nav{
   display: none; 
