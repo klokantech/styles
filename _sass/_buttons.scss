@@ -39,7 +39,7 @@
 .btns{
   display: inline-block;
 
-  a{
+  a, li{
     background-color: $btns-bg-color;
     padding: $btns-pads;
     display: table-cell;
@@ -59,7 +59,7 @@
       border-bottom-right-radius: $btns-radius;
     }
 
-    &:hover, &.open, &:focus{
+    &:hover, &.open, &:focus, &.active{
       background-color: $btns-hover-bg;
       color: $btns-hover-color;
       text-decoration: none;

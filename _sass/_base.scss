@@ -37,7 +37,7 @@ html, body {
   position: relative;
 
   a{
-    color: $footer-color;
+    color: $footer-link-color;
     &:hover{
       color: $footer-link-hover-color;
       text-decoration: $footer-link-hover-decoration;

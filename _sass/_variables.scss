@@ -204,8 +204,8 @@ $navside-item-padding: 20px;
 /* Sticky footer */
 $footer-color: #ffffff;
 $footer-color-bg: $color-gray-dark;
-$footer-link-color: #ffffff;
+$footer-link-color: $color-primary;
 $footer-link-hover-color: lighten($color-primary, 10%);
 $footer-link-hover-decoration: none;
-$footer-height: 58px;
+$footer-height: 50px;
 $footer-fontweight: bold;
