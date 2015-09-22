@@ -186,6 +186,10 @@ center, .center, .text-center{text-align: center;}
 }
 
 /* Syntax */
+.highlight{
+ margin: 20px 0; 
+}
+
 .language-html{
   .nt{
     color: $color-warning;
