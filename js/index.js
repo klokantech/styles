@@ -12,7 +12,7 @@ function init() {
     bg.addEventListener('click', openMenu);
     document.body.appendChild(bg);
   }
-  
+
   function openMenu() {
     var menu = document.querySelector('.navside').classList;
     if (menu.contains('open')) {
@@ -25,17 +25,20 @@ function init() {
   }
 
   /* Navbar-top */
-  document.getElementById('nav-mobile-btn').onclick = function() {
-    var navMobileNav = document.getElementById('nav-mobile-nav');
-    var navMobileBtn = document.getElementById('nav-mobile-btn');
-    if (navMobileNav.className === 'active') {
-      navMobileNav.className = '';
-      navMobileBtn.className = '';
-    } else {
-      navMobileNav.className = 'active';
-      navMobileBtn.className = 'active';
-    }
-  };
+  var navMobileBtn = document.querySelector('.nav-mobile-btn');
+  if (navMobileBtn) {
+    navMobileBtn.onclick = function() {
+      var navMobileNav = document.getElementById('nav-mobile-nav');
+      var navMobileBtn = document.getElementById('nav-mobile-btn');
+      if (navMobileNav.className === 'active') {
+        navMobileNav.className = '';
+        navMobileBtn.className = '';
+      } else {
+        navMobileNav.className = 'active';
+        navMobileBtn.className = 'active';
+      }
+    };
+  }
 
   /* Tabs */
   var tabsBtn = document.getElementsByClassName('tabs-btn');
