@@ -25,7 +25,7 @@ function init() {
   }
 
   /* Navbar-top */
-  var navMobileBtn = document.querySelector('.nav-mobile-btn');
+  var navMobileBtn = document.querySelector('#nav-mobile-btn');
   if (navMobileBtn) {
     navMobileBtn.onclick = function() {
       var navMobileNav = document.getElementById('nav-mobile-nav');
