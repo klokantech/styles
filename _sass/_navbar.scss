@@ -181,8 +181,10 @@
   top: 0;
   transition: all 300ms;
   z-index: 100;
+  overflow-y: auto;
+  overflow-x: none;
 
-  a {
+  a, p {
     color: $color-gray-dark;
     margin: 0;
     display: block;
@@ -194,13 +196,19 @@
       border-bottom: 1px solid $color-gray-light;
     }
 
-    &:hover {
-      text-decoration: none;
-      background-color: $color-gray-light;
-    }
     &.open{
       color: $color-primary;
     }
+  }
+
+  a:hover {
+    text-decoration: none;
+    background-color: $color-gray-light;
+  }
+
+  .sub a{
+    padding-left: $navside-item-padding * 2;
+    font-weight: normal;
   }
 
   &.open {
