@@ -17,7 +17,7 @@ html, body {
   margin-left: auto;
   margin-right: auto;
   padding: $container-padding-y $container-padding-x;
-  &.main{
+  &.main, &.main-small{
     margin-bottom: -$footer-height;
     padding-top: $navbar-top-height;
     min-height: 100%;
@@ -26,6 +26,9 @@ html, body {
       display: block;
       height: $footer-height;
     }
+  }
+  &.main-small{
+    padding-top: $navbar-top-small-height;
   }
 }
 

@@ -13,26 +13,29 @@
   border-width: 0 0 1px;
   background-color: $navbar-top-bgcolor;
 
-  .logo{
+  .logo h1, .title{
     float: left;
+    font-size: $navbar-top-title-size;
     height: $navbar-top-height;
-    margin: 0 $padding-x;
-    h1{
-      font-size: $navbar-top-title-size;
-      height: $navbar-top-height;
-      padding-top: $navbar-top-height - $navbar-top-title-size - $navbar-top-title-padding-bottom;
-      padding-right: $padding-x / 2;
-      padding-bottom:  $navbar-top-title-padding-bottom;
-      padding-left: $padding-x / 2;
-      margin: 0;
-      white-space: nowrap;
-      a{
-        color: $navbar-top-title-color;
-        &:hover{
-          text-decoration: none;
-        }
+    padding-top: $navbar-top-height - $navbar-top-title-size - $navbar-top-title-padding-bottom;
+    padding-right: $padding-x;
+    padding-bottom:  $navbar-top-title-padding-bottom;
+    padding-left: $padding-x;
+    margin: 0;
+    white-space: nowrap;
+    color: $navbar-top-title-color;
+    font-family: $font-secondary;
+    line-height: $navbar-top-title-size;
+    &:hover{
+      text-decoration: none;
+    }
+    a{
+      color: $navbar-top-title-color;
+      &:hover{
+        text-decoration: none;
       }
     }
+
   }
 
   .nav{
@@ -116,28 +119,27 @@
   }
 }
 
+$scale: $navbar-top-small-height / $navbar-top-height;
 #navbar-top-small{
   @extend #navbar-top;
-  height: $navbar-top-height * 0.6;
-  .logo{
-    h1{
-      font-size: $navbar-top-title-size * 0.6;
-      height: $navbar-top-height * 0.6;
-      padding: 0;
-      padding-top:  ($navbar-top-height - $navbar-top-title-size - $navbar-top-title-padding-bottom) * 0.6;
-      padding-bottom:  $navbar-top-title-padding-bottom * 0.6;
-    }  
-  }
+  height: $navbar-top-small-height;
+  .logo h1, .title{
+    font-size: $navbar-top-title-size * $scale;
+    height: $navbar-top-small-height;
+    line-height: $navbar-top-small-height;
+    padding: 0;
+  }  
+
   .nav{
     a{
-      height: $navbar-top-height * 0.6;
-      padding-top:  ($navbar-top-height * 0.6 - $navbar-top-link-size) / 2;
-      padding-bottom:  $navbar-top-title-padding-bottom * 0.6; 
+      height: $navbar-top-height * $scale;
+      padding-top:  ($navbar-top-height * $scale - $navbar-top-link-size) / 2;
+      padding-bottom:  $navbar-top-title-padding-bottom * $scale; 
     }
   }
   .nav-mobile{
     #nav-mobile-nav{
-      top: $navbar-top-height * 0.6;
+      top: $navbar-top-small-height;
     }
   }
 }
@@ -169,6 +171,10 @@
 }
 .navside-btn{
   cursor: pointer;
+  width: 50px;
+  position: absolute;
+  padding: 10px;
+  text-align: center;
 }
 .navside {
   position: fixed;
