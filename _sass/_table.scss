@@ -17,7 +17,6 @@ table{
   tr, th{
     border-top: 1px solid $table-color-border;
 
-    &:hover{background: $table-hover-color;}
     a{
       &:hover{
         cursor: pointer;
@@ -53,7 +52,13 @@ table{
       border: none;
     }
   }
-  
+
+  &.hover{
+    tr, th{
+      &:hover{background: $table-hover-color;}
+    }
+  }
+
   .icon{
     font-size: $table-fontsize;
   }
