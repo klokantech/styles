@@ -172,7 +172,6 @@ $scale: $navbar-top-small-height / $navbar-top-height;
 .navside-btn{
   cursor: pointer;
   width: 50px;
-  position: absolute;
   padding: 10px;
   text-align: center;
 }
@@ -190,7 +189,7 @@ $scale: $navbar-top-small-height / $navbar-top-height;
   overflow-y: auto;
   overflow-x: none;
 
-  a, p {
+  a:not([class*=user-]), p:not([class*=user-]) {
     color: $color-gray-dark;
     margin: 0;
     display: block;
@@ -207,7 +206,7 @@ $scale: $navbar-top-small-height / $navbar-top-height;
     }
   }
 
-  a:hover {
+  a:not([class*=user-]):hover {
     text-decoration: none;
     background-color: $color-gray-light;
   }
@@ -221,6 +220,26 @@ $scale: $navbar-top-small-height / $navbar-top-height;
     left: 0;
     box-shadow: 8px 8px 20px 0 rgba(0, 0, 0, 0.2);
     transition: all 300ms;
+  }
+
+  .user-login{
+    display: block;
+    width: 100%;
+    height: $navbar-top-height;
+    background-color: $color-gray-light;
+    font-family: $font-secondary;
+    padding: 32px 0 10px 20px;
+    font-size: 20px;
+    
+    &:hover{
+      text-decoration: none;
+    }
+  }
+
+  .user-action{
+    position: absolute;
+    right: 20px;
+    top: 10px;
   }
 
 }
