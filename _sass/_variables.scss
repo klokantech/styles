@@ -170,6 +170,12 @@ $input-padding-x: 10px;
 
 $legend-color: $color-gray-dark;
 
+/* Progressbar */
+$progress-width: 400px;
+$progress-bg: #fff;
+/* defines colors of segments from leftside */
+$progress-segments-colors: #da4d00, #41768a, #d4c5a9;
+
 /* KlokanTech components */
 
 $popupbg-bg-color: rgba(55, 55, 55, 0.8);
