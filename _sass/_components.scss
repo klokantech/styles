@@ -61,20 +61,22 @@
 
 /* KlokanTech JavaScript components */
 .popup-bg{ 
-  position: absolute;
+  position: fixed;
   top: 0; bottom: 0;
   left: 0; right: 0;
   background-color: $popupbg-bg-color;
+  z-index: 101;
 }
 
 .popup{
+  z-index: 111;
   position: absolute;
-  width: 400px;
+  width: $popup-width;
   min-height: 100px;
   top: 30%;
   left: 50%;
-  margin-left: -200px;
-  padding: 25px;
+  margin-left: ($popup-width / 2) * -1;
+  padding: $popup-padding;
   background: $popup-bg-color;
 
   .popup-title{

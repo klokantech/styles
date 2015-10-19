@@ -59,6 +59,12 @@ table{
     }
   }
 
+  &.clickable{
+    tr, th{
+      cursor: pointer;
+    }
+  }
+
   .icon{
     font-size: $table-fontsize;
   }
