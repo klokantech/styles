@@ -148,4 +148,9 @@ form{
     margin: 0;
     list-style-type: none;
   }
+
+  ul li label{
+    display: inline-block;
+    font-weight: normal;
+  }
 }
