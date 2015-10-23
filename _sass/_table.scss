@@ -3,6 +3,7 @@
 table{
   width: 100%; 
   border-spacing: inherit;
+  margin: 10px 0;
   td{
     text-decoration: none;
     border-collapse: collapse;
@@ -24,6 +25,12 @@ table{
         color: lighten($color-primary, 10%);
       }
     }
+    &.clickable{
+      cursor: pointer;
+    }
+    &.hover:hover{
+      background: $table-hover-color;
+    }  
   }
   th, thead, tfoot{
     color: $table-color;

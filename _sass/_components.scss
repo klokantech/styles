@@ -73,7 +73,7 @@
   position: absolute;
   width: $popup-width;
   min-height: 100px;
-  top: 30%;
+  top: $popup-top;
   left: 50%;
   margin-left: ($popup-width / 2) * -1;
   padding: $popup-padding;
