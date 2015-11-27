@@ -13,7 +13,7 @@
   }
   .btn-stroke#{$name} {
     @include btn();
-    @include btn-color($bg-color, transparent, $bg-color,  lighten($bg-color, 10%));
+    @include btn-color-stroke($bg-color, transparent, $bg-color, lighten($bg-color, 10%),  transparent, lighten($bg-color, 10%));
     @include btn-size($btn-height, $btn-padding - $btn-border, $btn-font-size, $btn-border, $btn-radius, 1);
   }
   .btn-large#{$name}{
