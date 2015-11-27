@@ -14,9 +14,25 @@
   background-image: none;
 }
 
-@mixin btn-color($color, $background, $border, $hover, $hover-background, $hover-border) {
+@mixin btn-color($color, $background, $hover, $hover-background) {
   color: $color;
-  background-color: $background;
+  $gradient: darken($background, 5%);
+  background: linear-gradient($background, $gradient);
+  border: none;
+
+  &:hover,
+    &:focus,
+    &:active,
+    &.active{
+    color: $hover;
+    $hover-gradient: darken($hover-background, 5%);
+    background: linear-gradient($hover-background, $hover-gradient);
+  }
+}
+
+@mixin btn-color-stroke($color, $background, $border, $hover, $hover-background, $hover-border) {
+  color: $color;
+  background: $background;
   border: $border;
   border-color: $border;
 
@@ -25,7 +41,7 @@
     &:active,
     &.active{
     color: $hover;
-    background-color: $hover-background;
+    background-color: transparent;
     border-color: $hover-border;
   }
 }

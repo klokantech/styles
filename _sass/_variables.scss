@@ -101,8 +101,8 @@ $radius-bottom-left: $radius-all;
 $btn-color-bg: $color-primary;
 $btn-color: #fff;
 $btn-height: 40px;
-$btn-padding: 8px;
-$btn-radius: 4px;
+$btn-padding: 10px;
+$btn-radius: 5px;
 $btn-font-size: 14px;
 
 $btn-border: 2px;
@@ -111,12 +111,11 @@ $btn-small-scale: 0.8;
 /* butons colection */
 $btns: (
 //name, color, background-color, hover color, hover background
-("", #ffffff, $color-primary, #ffffff, lighten($color-primary, 10%)),
-("-white", transparent, #ffffff, #ffffff, $color-gray-light),
+("", #ffffff, $color-primary, #ffffff, darken($color-primary, 5%)),
 ("-dark", #ffffff, darken($color-primary, 10%), #ffffff, $color-primary),
-("-light", #ffffff, lighten($color-primary, 10%), #ffffff, lighten($color-primary, 15%)),
-("-gray-dark", $color-gray-light, $color-gray-dark, $color-gray-light, lighten($color-gray-dark, 10%)),
-("-gray-light", $color-gray-dark, $color-gray-light, $color-gray-dark, darken($color-gray-light, 10%))
+("-light", #ffffff, lighten($color-primary, 10%), #ffffff, darken($color-primary, 5%)),
+("-gray-dark", $color-gray-light, $color-gray-dark, $color-gray-light, darken($color-gray-dark, 5%)),
+("-gray-light", $color-gray-dark, $color-gray-light, $color-gray-dark, darken($color-gray-light, 5%))
 );
 
 $btns-bg-color: #fff;
