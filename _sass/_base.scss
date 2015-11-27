@@ -38,13 +38,37 @@ html, body {
   font-weight: $footer-fontweight;
   height: $footer-height;
   position: relative;
+  font-size: $footer-fontsize;
+  line-height: $footer-fontsize;
 
   a{
     color: $footer-link-color;
+    font-size: $footer-fontsize;
+    line-height: $footer-fontsize;
+    vertical-align: baseline;
     &:hover{
       color: $footer-link-hover-color;
       text-decoration: $footer-link-hover-decoration;
     }
+  }
+
+  .container{
+    padding: $footer-padding;
+  }
+
+  .klokan{
+    font-size: 46px;
+    &::after{
+      content: "";
+      display: inline-block;
+      background-color: $footer-color;
+      width: 1px;
+      height: $footer-fontsize;
+      margin: 0 4px 0 14px;
+    }
+  }
+  .social{
+    
   }
 }
 
