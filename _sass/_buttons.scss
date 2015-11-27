@@ -35,13 +35,14 @@
   display: inline-block;
 
   a, li{
-    background-color: $btns-bg-color;
+    $gradient: darken($btns-bg-color, 5%);
+    background: linear-gradient($btns-bg-color, $gradient);
     padding: $btns-pads;
     display: table-cell;
     border-top: $btns-border;
     border-bottom: $btns-border;
     border-left: $btns-border;
-    color: $color-primary;
+    color: $btns-color;
 
     &:first-child{
       border-bottom-left-radius: $btns-radius;
@@ -55,7 +56,8 @@
     }
 
     &:hover, &.open, &:focus, &.active{
-      background-color: $btns-hover-bg;
+      $hgradient: darken($btns-hover-bg, 5%);
+      background: linear-gradient($btns-hover-bg, $hgradient);
       color: $btns-hover-color;
       text-decoration: none;
     }
