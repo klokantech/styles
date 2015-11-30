@@ -36,10 +36,11 @@ html, body {
   color: $footer-color;
   background-color: $footer-color-bg;
   font-weight: $footer-fontweight;
-  height: $footer-height;
+  height: $footer-height + $footer-bordertop-size;
   position: relative;
   font-size: $footer-fontsize;
   line-height: $footer-fontsize;
+  border-top: $footer-bordertop-size solid $footer-border-color;
 
   a{
     color: $footer-link-color;
@@ -68,7 +69,7 @@ html, body {
     }
   }
   .social{
-    
+
   }
 }
 
