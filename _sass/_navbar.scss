@@ -230,6 +230,7 @@ $scale: $navbar-top-small-height / $navbar-top-height;
     font-family: $font-secondary;
     padding: 32px 0 10px 20px;
     font-size: 20px;
+    white-space: nowrap;
     
     &:hover{
       text-decoration: none;
@@ -240,6 +241,7 @@ $scale: $navbar-top-small-height / $navbar-top-height;
     position: absolute;
     right: 20px;
     top: 10px;
+    white-space: nowrap;
   }
 
 }

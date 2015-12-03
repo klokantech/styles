@@ -73,6 +73,20 @@ html, body {
   }
 }
 
+@media(max-width: $sc-medium){
+  .footer{
+    a{
+      font-size: $footer-fontsize / 3 * 2;
+    }
+    .klokan{
+      font-size: 32px;
+      &::after{
+        height: $footer-fontsize / 3 * 2;
+      }
+    }
+  }
+}
+
 *:focus {
   outline: none;
 }
