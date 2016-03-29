@@ -1,12 +1,14 @@
-# Name of your site (displayed in the header)
-name: KlokanTech Styles
-
-# Short description (displayed in the header)
-description: The company web style guide
-
 permalink: pretty
 
 sass:
   style: :compressed
 
-baseurl: /styles
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      layout: "default"
+      name: "KlokanTech Styles"
+      description: The company web style guide
+      baseurl: http://klokantech.github.io/styles
