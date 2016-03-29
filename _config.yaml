@@ -9,4 +9,4 @@ permalink: pretty
 sass:
   style: :compressed
 
-url: "http://klokantech.github.io/styles"
+baseurl: "http://klokantech.github.io/styles"
