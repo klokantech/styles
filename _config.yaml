@@ -9,11 +9,4 @@ permalink: pretty
 sass:
   style: :compressed
 
-defaults:
-  -
-    scope:
-      path: "" # empty string for all files
-    values:
-      layout: "default"
-
-baseurl: "/styles/"
+baseurl: "/styles"
