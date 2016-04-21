@@ -68,7 +68,7 @@ $sc-small: 480px;
 $sc-medium: 768px;
 $sc-large: 992px;
 
-$grid-sizes: ( 
+$grid-sizes: (
 // name: width
 col1: 8.3333,
 col2: 16.6666,
@@ -78,10 +78,10 @@ col5: 41.6666,
 col6: 50.0000,
 col7: 58.3333,
 col8: 66.6666,
-col9: 75.0000, 
-col10: 83.3333, 
-col11: 91.6666, 
-col12: 100, 
+col9: 75.0000,
+col10: 83.3333,
+col11: 91.6666,
+col12: 100,
 );
 
 $grid-paddnig-x: $padding-x;
@@ -156,6 +156,7 @@ $odd-bg-color: #f6f2ef;
 
 /* Forms */
 $input-color: $text-color;
+$input-color-active: #000;
 $input-line-height: 20px;
 $input-font-size: 15px;
 $input-height: 30px;
@@ -163,6 +164,8 @@ $input-height-small: 20px;
 $input-bg: #ffffff;
 $input-bg-disabled: $color-gray-light;
 $input-border-color: $input-color;
+$input-border-color-active: $color-primary;
+$input-box-shadow-active: none;
 $input-border-radius: 0;
 $input-padding-y: 10px;
 $input-padding-x: 10px;

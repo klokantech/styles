@@ -59,8 +59,9 @@ input, textarea{
   }
 
   &:active, &:focus{
-    color: darken($input-color, 30%);
-    border-color: darken($input-color, 30%);
+    color: $input-color-active;
+    border-color: $input-border-color-active;
+    box-shadow: $input-box-shadow-active;
   }
 
 }
@@ -93,7 +94,7 @@ input[type='submit'], input[type='button']{
   }
 }
 
-input[type="radio"], 
+input[type="radio"],
 input[type="checkbox"] {
   margin: 9px 0 0 1px;
   line-height: normal;
