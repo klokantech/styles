@@ -178,8 +178,7 @@ $progress-bg: #fff;
 /* defines colors of segments from leftside */
 $progress-segments-colors: #da4d00, #41768a, #d4c5a9;
 
-/* KlokanTech components */
-
+/* Components */
 $popupbg-bg-color: rgba(55, 55, 55, 0.8);
 $popup-bg-color: #fff;
 $popup-top: 30%;
@@ -187,6 +186,17 @@ $popup-width: 400px;
 $popup-padding: 25px;
 
 $multicomplete-tag-bg-color: $color-gray;
+
+$tabs-btn-fontsize: $font-size;
+$tabs-btn-margin: 10px 0 0 0;
+$tabs-btn-padding: 10px 10px 5px 10px;
+$tabs-btn-color: $text-color;
+$tabs-btn-color-active: $color-primary;
+$tabs-btn-border-bottom: 2px solid #fff;
+$tabs-btn-border-bottom-active: 2px solid $color-primary;
+$tabs-btn-fontweight: bold;
+$tabs-tab-padding: 10px;
+$tabs-tab-border: none;
 
 /* Top navbar */
 $navbar-top-height: 72px;

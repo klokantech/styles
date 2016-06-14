@@ -4,47 +4,34 @@
   ul{
     list-style-type: none;
     margin: 0;
+    padding: 0;
 
     li{
-      font-size: $font-size-h5;
+      @include noselect();
+      font-size: $tabs-btn-fontsize;
       display: inline-block;
       cursor: pointer;
-      padding: 10px 20px 6px 20px;
-      margin: 10px 5px 0 5px;
-      font-weight: bold;
-      border-top: 1px solid $color-gray-dark;
-      border-right: 1px solid $color-gray-dark;
-      border-bottom: 1px solid $color-primary;
-      border-left: 1px solid $color-gray-dark;
-      -webkit-border-top-left-radius: $radius-all;
-      -webkit-border-top-right-radius: $radius-all;
-      -moz-border-radius-topleft: $radius-all;
-      -moz-border-radius-topright: $radius-all;
-      border-top-left-radius: $radius-all;
-      border-top-right-radius: $radius-all;
+      padding: $tabs-btn-padding;
+      margin: $tabs-btn-margin;
+      font-weight: $tabs-btn-fontweight;
+      border-bottom: $tabs-btn-border-bottom;
+      color: $tabs-btn-color;
+
       &:first-child{
         margin-left: 0;
       }
       &:hover, &.active{
-        color: $color-primary;
-        border-top: 1px solid $color-primary;
-        border-right: 1px solid $color-primary;
-        border-left: 1px solid $color-primary;
+        color: $tabs-btn-color-active;
       }
       &.active{
-        border-bottom: 1px solid #fff;
+        border-bottom: $tabs-btn-border-bottom-active;
       }
     }
   }
 
   .tabs-content{
-    padding: $padding-y $padding-x;
-    border: 1px solid $color-primary; 
-    margin-top: -1px;
-    -webkit-border-top-right-radius: $radius-all;
-    -moz-border-radius-topright: $radius-all;
-    border-top-right-radius: $radius-all;
-
+    padding: $tabs-tab-padding;
+    border: $tabs-tab-border;
     .tabs-tab{
       display: none;
       p{
@@ -54,13 +41,11 @@
         display: block;
       }
     }
-
   }
-
 }
 
 /* KlokanTech JavaScript components */
-.popup-bg{ 
+.popup-bg{
   position: fixed;
   top: 0; bottom: 0;
   left: 0; right: 0;
@@ -110,14 +95,14 @@
 }
 
 .ac-renderer{
-  position: absolute; 
-  border: 1px solid $color-gray; 
+  position: absolute;
+  border: 1px solid $color-gray;
   margin-top: -1px;
   max-width: 400px;
 }
 .ac-row {
   white-space: nowrap;
-  position: relative; 
+  position: relative;
   cursor: pointer;
   padding: 5px;
   background-color: #fff;
