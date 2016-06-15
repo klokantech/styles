@@ -9,6 +9,10 @@
 }
 
 .map-controls {
+  -webkit-box-shadow: $map-control-boxshadow;
+  -moz-box-shadow: $map-control-boxshadow;
+  box-shadow: $map-control-boxshadow;
+
   &.horizontal{
     a{
       display: inline-block;
@@ -17,23 +21,33 @@
 
   &.top-left{
     position: absolute;
-    top: 0;
+    top: $map-control-offset-topbottom;
     left: 0;
   }
   &.top-right{
     position: absolute;
-    top: 0;
+    top: $map-control-offset-topbottom;
     right: 0;
   }
   &.left{
     position: absolute;
     top: 50%;
-    left: 0;
+    left: $map-control-offset-leftright;
   }
   &.right{
     position: absolute;
     top: 50%;
-    right: 0;
+    right: $map-control-offset-leftright;
+  }
+  &.bottom-left{
+    position: absolute;
+    bottom: $map-control-offset-topbottom;
+    left: $map-control-offset-leftright;
+  }
+  &.bottom-right{
+    position: absolute;
+    bottom: $map-control-offset-topbottom;
+    right: $map-control-offset-leftright;
   }
 
   a{
@@ -54,20 +68,49 @@
     font-weight: bold;
     cursor:pointer;
     z-index:10;
+    border: $map-control-border;
 
-    .isEnabled{display: none;}
-    .isDisabled{display: none;}
+    &.primary{
+      color: $map-control-primary-color;
+      background: $map-control-primary-bg;
+      border: $map-control-primary-border;
+
+      &:hover, &:active{
+        color: $map-control-primary-hover-color;
+        background: $map-control-primary-hover-bg;
+        border: $map-control-primary-hover-border;
+      }
+    }
+
+    &:hover, &:active{
+      color: $map-control-hover-color;
+      background: $map-control-hover-bg;
+      border: $map-control-hover-border;
+    }
 
     .disabled, &.disabled{
       background-color: darken($map-control-bg, 10%);
+    }
 
-      .isDisabled{display: block;}
+    span:first-child{
+      display: none;
+    }
+    span:last-child{
+      display: block;
     }
 
     .enabled, &.enabled{
-      background-color: lighten($map-control-bg, 10%);
+      color: $map-control-enabled-color;
+      background: $map-control-enabled-bg;
+      border: $map-control-enabled-border;
+      z-index: 12;
 
-      .isEnabled{display: block;}
+      span:first-child{
+        display: block;
+      }
+      span:last-child{
+        display: none;
+      }
     }
   }
   .hidden, &.hidden{

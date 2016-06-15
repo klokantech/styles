@@ -237,7 +237,24 @@ $footer-border-color: transparent;
 $footer-bordertop-size: 0;
 
 /* mapcontrols */
+$map-control-offset-topbottom: 20px;
+$map-control-offset-leftright: 0;
+
+$map-control-margin: -1px 0;
 $map-control-size: 36px;
-$map-control-color: #fff;
-$map-control-bg: $color-primary;
-$map-control-margin: 1px 0;
+$map-control-boxshadow: 0px 0px 3px 0px rgba(132,135,136,0.3);
+$map-control-color: #848788;
+$map-control-bg: #fff;
+$map-control-border: 1px solid #aab1b8;
+$map-control-hover-color: $color-primary;
+$map-control-hover-bg: #fff;
+$map-control-hover-border: 1px solid #aab1b8;
+$map-control-enabled-color: $color-primary;
+$map-control-enabled-bg: #fff;
+$map-control-enabled-border:  1px solid $color-primary;
+$map-control-primary-color: #fff;
+$map-control-primary-bg: $color-primary;
+$map-control-primary-border:  1px solid $color-primary;
+$map-control-primary-hover-color: #fff;
+$map-control-primary-hover-bg: $color-primary;
+$map-control-primary-hover-border:  1px solid $color-primary;
