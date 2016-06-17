@@ -134,3 +134,98 @@
     z-index: 10;
   }
 }
+
+.map-layerswitcher {
+  position: absolute;
+  background: rgba(255,255,255,0.7);
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 20px 55px;
+  z-index: 100001;
+  display:none;
+  overflow-y: auto;
+
+  &.visible {
+    display:block;
+  }
+
+  .thumb {
+    display:inline-block;
+    position:relative;
+    overflow:hidden;
+    text-align:center;
+    width: 170px;
+    height: 170px;
+    margin: 10px 12px;
+    border-radius: 5px;
+    -webkit-box-shadow: 0px 0px 3px 0px rgba(132, 135, 136, 0.3);
+    -moz-box-shadow: 0px 0px 3px 0px rgba(132, 135, 136, 0.3);
+    box-shadow: 0px 0px 3px 0px rgba(132, 135, 136, 0.3);
+    cursor:pointer;
+
+    .preview {
+      background: $color-gray-light;
+      width: 170px;
+      height: 170px;
+    }
+
+    .remover {
+      position:absolute;
+      top: 8px;
+      right: 8px;
+      background: $color-gray;
+      width: 16px;
+      height:16px;
+      text-align: center;
+      line-height: 16px;
+      border-radius: 8px;
+      color: #fff;
+      font-family: 'icons';
+      font-size: 12px;
+      text-decoration: none;
+
+      &:hover {
+        background: $color-primary;
+      }
+    }
+
+    .name {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: rgba(255,255,255,0.85);
+      font-size: 12px;
+      padding: 6px 6px;
+      overflow: hidden !important;
+      text-overflow: ellipsis;
+    }
+
+    &:not(.default) {
+      &:before {
+        content: 'custom';
+        position: absolute;
+        top: 20px;
+        left: -30px;
+        -webkit-transform:rotate(-45deg);
+        transform:rotate(-45deg);
+        background: $color-primary;
+        color: #fff;
+        width: 120px;
+        font-size: 0.9em;
+        opacity: 0.9;
+      }
+    }
+
+    &.active, &:hover {
+      -webkit-box-shadow: 0px 0px 0px 1px $color-primary;
+      -moz-box-shadow: 0px 0px 0px 1px $color-primary;
+      box-shadow: 0px 0px 0px 1px $color-primary;
+      .name {
+        color: $color-primary;
+      }
+    }
+  }
+}
