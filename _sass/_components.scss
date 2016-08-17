@@ -44,6 +44,33 @@
   }
 }
 
+/* Sync indicator */
+#sync-indicator {
+  position: absolute;
+  top: 60px;
+  left: 50%;
+  width: 50px;
+  height: 40px;
+  margin-left: -25px;
+  font-size: 38px;
+  line-height: 100%;
+  font-family:'icons';
+  text-align: center;
+  text-shadow: 0 0 2px #ccc;
+  z-index:10;
+  -webkit-animation: rotanim 1s infinite ease;
+  animation: rotanim 1s infinite ease;
+
+  span {
+    transform: scaleX(-1);
+    display: block;
+    font-family: 'icons';
+  }
+  #sync-syncing {display: none;}
+  &.loaded #sync-loading {display: none;}
+  &.loaded #sync-syncing {display: block;}
+}
+
 /* KlokanTech JavaScript components */
 .popup-bg{
   position: fixed;

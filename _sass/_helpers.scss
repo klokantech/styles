@@ -1,4 +1,4 @@
-/* Helpers */	
+/* Helpers */
 .clearfix:before,
 .clearfix:after {
   display: table;
@@ -52,6 +52,12 @@ center, .center, .text-center{text-align: center;}
 
 .width-100{width: 100%;}
 .width-50{width: 50%;}
+
+.overflow-no{
+  overflow: hidden !important;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
 
 /* Borders */
 @each $name, $size, $type, $color in ($borders){
@@ -199,7 +205,7 @@ center, .center, .text-center{text-align: center;}
 
 /* Syntax */
 .highlight{
-  margin: 20px 0; 
+  margin: 20px 0;
 }
 
 .language-html{

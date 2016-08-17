@@ -104,6 +104,7 @@ $btn-height: 40px;
 $btn-padding: 10px;
 $btn-radius: 5px;
 $btn-font-size: 14px;
+$btn-letterspacing: initial;
 
 $btn-border: 2px;
 $btn-small-scale: 0.8;
@@ -227,9 +228,11 @@ $navbar-top-mobile-btn-color: #ffffff;
 /* Side navbar */
 $navside-width: 280px;
 $navside-top: 0;
+$navside-padding: 0 0 20px 0;
 $navside-color: $color-gray-dark;
 $navside-bgcolor: #fff;
 $navside-open-color: $color-primary;
+$navside-open-bgcolor: $color-gray;
 $navside-item-border: none;
 $navside-item-borderbottom: none;
 $navside-item-padding: 20px;

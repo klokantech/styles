@@ -12,6 +12,7 @@
   text-decoration: none;
   vertical-align: middle;
   background-image: none;
+  letter-spacing: $btn-letterspacing;
 }
 
 @mixin btn-color($color, $background, $hover, $hover-background) {
