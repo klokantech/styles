@@ -83,7 +83,7 @@
       &:hover, &:active{
         cursor: pointer;
       }
-      &.active{
+      &.active, &.open{
         color: $color-secondary;
         margin: 0;
       }
@@ -114,7 +114,7 @@
           background-color: $color-gray-light;
         }
       }
-      &.active{
+      &.active, &.open{
         display: block !important;
       }
     }
