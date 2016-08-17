@@ -221,9 +221,21 @@ $navbar-top-link-fontweight: bold;
 $navbar-top-link-padding: 28px 14px;
 $navbar-top-link-hover-color: #fff;
 $navbar-top-link-hover-bgcolor: transparent;
-
 $navbar-top-link-active-borderbottom: 4px solid #fff;
+
 $navbar-top-mobile-btn-color: #ffffff;
+$navbar-top-mobile-bg: #ffffff;
+$navbar-top-mobile-border: none;
+$navbar-top-mobile-shadow: 2px 2px 20px -1px rgba(0,0,0,0.75);
+$navbar-top-mobile-width: auto;
+$navbar-top-mobile-top: $navbar-top-height;
+$navbar-top-mobile-left: 40px;
+$navbar-top-mobile-right: 40px;
+
+$navbar-top-mobile-link-color: $color-gray-dark;
+$navbar-top-mobile-borderbottom: 1px solid $color-gray-light;
+$navbar-top-mobile-link-hover-bg: $color-gray-light;
+
 
 /* Side navbar */
 $navside-width: 280px;

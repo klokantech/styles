@@ -94,24 +94,29 @@
 
     #nav-mobile-nav{
       display: none;
-      background-color: #ffffff;
+      background: $navbar-top-mobile-bg;
       position: absolute;
-      top: $navbar-top-height;
-      left: 0;
-      right: 0;
+      top: $navbar-top-mobile-top;
+      left: $navbar-top-mobile-left;
+      right: $navbar-top-mobile-right;
+      width: $navbar-top-mobile-width;
       list-style-type: none;
       font-size: $navbar-top-link-size;
       padding:  $padding-x / 2 $padding-x 0 $padding-x 0;
-      border-bottom: 1px solid $color-gray-dark;
+      border: $navbar-top-mobile-border;
+      box-shadow: $navbar-top-mobile-shadow;
       margin: 0;
       li a, a{
+        color: $navbar-top-mobile-link-color;
+        text-decoration: none;
         padding: $padding-x * 0.8;
         display: block;
-        border-bottom: 1px solid $color-gray-light;
+        border-bottom: $navbar-top-mobile-borderbottom;
         &:hover, &:active{
           list-style-type: none;
           text-decoration: none;
-          background-color: $color-gray-light;
+          color: primary;
+          background: $navbar-top-mobile-link-hover-bg;
         }
       }
       &.active, &.open{
