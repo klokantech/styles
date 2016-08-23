@@ -121,6 +121,17 @@
   }
 }
 
+input.working{
+  background:#fff linear-gradient(90deg, #ddf, #2066a0, #ddf);
+  background-size: 180px 2px;
+  background-repeat: repeat-x;
+  animation: bkganim .9s infinite linear;
+}
+@keyframes bkganim {
+  0% {background-position:0px 100%;}
+  100% {background-position:180px 100%;}
+}
+
 .ac-renderer{
   position: absolute;
   border: 1px solid $color-gray;
