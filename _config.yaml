@@ -1,5 +1,7 @@
 permalink: /:year-:month-:day-:title/
 
+baseurl: "/styles/"
+
 sass:
   style: :compressed
 
