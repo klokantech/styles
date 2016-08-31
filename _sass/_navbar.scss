@@ -27,6 +27,7 @@
     font-family: $font-secondary;
     line-height: $navbar-top-title-size;
     background: $navbar-top-title-bg;
+    width: $navbar-top-title-width;
     &:hover{
       text-decoration: none;
     }
@@ -181,6 +182,7 @@ $scale: $navbar-top-small-height / $navbar-top-height;
   width: 50px;
   padding: 10px;
   text-align: center;
+  background: $navsidebtn-bg;
 }
 .navside {
   position: fixed;

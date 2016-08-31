@@ -213,6 +213,7 @@ $navbar-top-title-size: 36px;
 $navbar-top-title-color: #ffffff;
 $navbar-top-title-bg: transparent;
 $navbar-top-title-padding-bottom: 16px;
+$navbar-top-title-width: auto;
 
 $navbar-top-link-color: $color-gray-light;
 $navbar-top-link-size: 13px;
@@ -249,6 +250,7 @@ $navside-item-border: none;
 $navside-item-borderbottom: none;
 $navside-item-padding: 20px;
 $navsidebg-bg: rgba(0, 0,0, 0.6);
+$navsidebtn-bg: transparent;
 
 /* Sticky footer */
 $footer-color: #868d97;
