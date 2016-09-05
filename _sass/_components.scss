@@ -119,6 +119,25 @@
       margin-right: 10px;
     }
   }
+
+  ul.options {
+    max-height:400px;
+    overflow:auto;
+
+    li {
+      cursor:pointer;
+      display:block;
+      padding:2px;
+
+      &:nth-child(even) {
+        background:#f9f9f9;
+      }
+
+      &:hover {
+        font-weight:bold;
+      }
+    }
+  }
 }
 
 input.working{
