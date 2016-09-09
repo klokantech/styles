@@ -45,7 +45,7 @@ input, select, button {
 
 input, textarea{
   display: block;
-  padding: $input-padding-y $input-padding-x;
+  padding: $input-padding;
   line-height: $input-line-height;
   color: $input-color;
   background-color: $input-bg;
@@ -53,6 +53,7 @@ input, textarea{
   border: 1px solid $input-border-color;
   border-radius: $input-border-radius;
   font-family: $font-primary;
+  font-size: $input-font-size;
 
   &.stretch{
     width: 100%;
@@ -68,7 +69,6 @@ input, textarea{
 
 input[type='text'], input[type='password'], input[type='date'],
 input[type='email'], input[type='button']{
-  height: $input-height;
 
   &.search{
     display: inline-block;
@@ -80,7 +80,6 @@ input[type='submit'], input[type='button']{
   &.search{
     position: relative;
     display: inline-block;
-    height: $input-height;
     margin-top: 0;
     padding: 0 5px;
     left: -9px;
