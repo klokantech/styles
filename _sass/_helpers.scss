@@ -185,6 +185,14 @@ center, .center, .text-center{text-align: center;}
 .bg-black{background-color: #000000;}
 
 /* Messages */
+.flashes{
+  position: absolute;
+  width: 440px;
+  left: 50%;
+  top: 68px;
+  margin-left: -220px;
+  z-index: 1000;
+}
 
 .message{
   color: #ffffff;
