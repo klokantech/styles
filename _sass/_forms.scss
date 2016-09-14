@@ -19,7 +19,6 @@ legend {
 }
 
 label {
-  display: block;
   max-width: 100%;
   margin: 6px 0 4px 1px;
   font-weight: bold;
@@ -31,20 +30,9 @@ label {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-
-  &.inline{
-    display: inline-block;
-    font-weight: normal;
-  }
-
-}
-
-input, select, button {
-  vertical-align: top;
 }
 
 input, textarea{
-  display: block;
   padding: $input-padding;
   line-height: $input-line-height;
   color: $input-color;
@@ -54,6 +42,7 @@ input, textarea{
   border-radius: $input-border-radius;
   font-family: $font-primary;
   font-size: $input-font-size;
+  vertical-align: middle;
 
   &.stretch{
     width: 100%;
