@@ -173,10 +173,10 @@ input.working{
   }
 
   .type {
-    float:right;
     font-size:.7em;
-    color:#ccc;
-    padding:.15em;
+    color:#aaa;
+    display:block;
+    width:100%;
   }
 }
 .ac-highlighted {font-weight: bold;}
