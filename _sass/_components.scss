@@ -165,6 +165,19 @@ input.working{
   background-color: #fff;
   overflow: hidden !important;
   text-overflow: ellipsis;
+  
+  .suffix {
+    font-size:.8em;
+    color:#ccc;
+    padding:.1em 0 .1em 5px;
+  }
+
+  .type {
+    float:right;
+    font-size:.7em;
+    color:#ccc;
+    padding:.15em;
+  }
 }
 .ac-highlighted {font-weight: bold;}
 .ac-active {color: $color-gray-dark; background-color: $color-gray-light;}
