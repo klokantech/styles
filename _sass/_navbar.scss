@@ -11,7 +11,7 @@
   z-index: $navbar-top-zindex;
   top: 0;
   border-bottom: $navbar-top-border-bottom;
-  background-color: $navbar-top-bgcolor;
+  background: $navbar-top-bg;
 
   .logo h1, .title{
     float: left;
