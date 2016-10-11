@@ -44,8 +44,7 @@
     float: right;
     padding: 0 $padding-x;
     li{display: inline-block;}
-    a{
-      color: $navbar-top-link-color;
+    a, div, span{
       text-decoration: none;
       font-size: $navbar-top-link-size;
       font-family: $navbar-top-link-font;
@@ -53,6 +52,9 @@
       padding: $navbar-top-link-padding;
       line-height: $navbar-top-link-size;
       font-weight: $navbar-top-link-fontweight;
+    }
+    a{
+      color: $navbar-top-link-color;
 
       &:hover, &:focus, &.active{
         color: $navbar-top-link-hover-color;
