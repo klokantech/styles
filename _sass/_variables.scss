@@ -29,8 +29,7 @@ $font-icon: Menlo, Monaco, 'Courier New', monospace;
 $font-size: 14px !default;
 
 /* Line height*/
-$line-height: 1.428571429 !default; // 20/14
-/* Computed line-height (`font-size` * `line-height`) */
+$line-height: 1.4 !default; 
 $line-height-computed: floor(($font-size * $line-height)) !default; // ~20px
 
 
@@ -105,6 +104,8 @@ $btn-padding: 10px;
 $btn-radius: 5px;
 $btn-font-size: 14px;
 $btn-letterspacing: initial;
+$btn-lineheight: $line-height;
+$btn-fontweight: 600;
 
 $btn-border: 2px;
 $btn-small-scale: 0.8;

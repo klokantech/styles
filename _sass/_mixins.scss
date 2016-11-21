@@ -1,6 +1,6 @@
 /* Mixins */
 @mixin btn(){
-  display:inline-block;
+  display: inline-block;
   text-align: center;
   margin: 0;
   position: relative;
@@ -8,7 +8,8 @@
   cursor: pointer;
   white-space: nowrap;
   text-overflow: ellipsis;
-  font-weight: 600;
+  font-weight: $btn-fontweight;
+  line-height: $btn-lineheight;
   text-decoration: none;
   vertical-align: middle;
   background-image: none;
@@ -18,6 +19,7 @@
 @mixin btn-color($color, $background, $hover, $hover-background) {
   color: $color;
   $gradient: darken($background, 5%);
+  background-color: $background;
   background: linear-gradient($background, $gradient);
   border: none;
 
