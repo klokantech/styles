@@ -15,13 +15,13 @@
 
     .segment{
       float: left;
-      height: 15px;
+      height: $progress-height;
       display: block;
 
       &:first-child{background-color: $progress-segments-colors(0);}
       @each $color in $progress-segments-colors {
         $i: index($progress-segments-colors, $color);
-        &:nth-child(#{$i}){ 
+        &:nth-child(#{$i}){
           background-color: $color;
         }
       }
@@ -29,7 +29,7 @@
 
       &:first-child:before, &:nth-child(2):before{
         position: absolute;
-        margin-top: -15px;
+        margin-top: -$progress-height;
         padding-right: 10px;
         background: $progress-bg;
         min-width: 55px;
@@ -42,18 +42,18 @@
       position: absolute;
       background: $progress-bg;
       font-size: 14px;
-      margin-top: 15px;
+      margin-top: $progress-height;
       padding-top: 4px;
     }
 
-    .maps:after, .sheets:after, .bar:before, .bar-count, 
+    .maps:after, .sheets:after, .bar:before, .bar-count,
       .bar-segment:first-child:before, .bar-segment:nth-child(2):before{
       background-color: $progress-bg;
     }
 
     .segment-label:after{
       position: absolute;
-      margin-top: 12px; 
+      margin-top: 12px;
       font-size: 10px;
       left: 0;
     }
@@ -82,7 +82,7 @@
 
 
     &:after{
-      padding-left: 10px; 
+      padding-left: 10px;
       padding-bottom: 16px;
       font-size: 16px;
       position: absolute;
@@ -93,4 +93,32 @@
 
   }
 
+}
+
+.legend{
+  width: 100%;
+  display: block;
+  position: absolute;
+
+  .legend-label{
+    display: inline-block;
+    margin-right: 20px;
+  }
+
+  .legend-label:first-child:before{background-color: nth($progress-segments-colors, 1);}
+
+  @each $color in $progress-segments-colors {
+    $i: index($progress-segments-colors, $color);
+    .legend-label:nth-child(#{$i}):before{
+      background-color: $color;
+    }
+  }
+
+  .legend-label:before{
+    content: '';
+    display: inline-block;
+    width: $progress-height;
+    height: $progress-height;
+    margin: 0px 10px -3px 0;
+  }
 }
