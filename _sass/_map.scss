@@ -12,6 +12,10 @@
   -webkit-box-shadow: $map-control-boxshadow;
   -moz-box-shadow: $map-control-boxshadow;
   box-shadow: $map-control-boxshadow;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 
   &.horizontal{
     a{
