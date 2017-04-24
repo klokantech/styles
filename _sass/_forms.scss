@@ -81,18 +81,42 @@ input[type='submit'], input[type='button']{
   }
 }
 
-input[type="radio"],
-input[type="checkbox"] {
-  margin: 9px 0 0 1px;
-  line-height: normal;
-  display: inline-block;
+input[type='checkbox'].fancy {
+  display:none;
 }
 
-input[type="file"] {
+input[type='checkbox'].fancy + label span:before, input[type='radio'].fancy + label span:before  {
+  font-family: 'icons';
+  content: 'M';
+  display: inline-block;
+  font-size: $checkbox-size;
+  margin: -2px 8px 0 0;
+  vertical-align: middle;
+  cursor: pointer;
+  font-weight: normal;
+}
+
+input[type='checkbox'].fancy:checked + label span:before {
+  content: 'm';
+}
+
+input[type='radio'].fancy + label span:before{
+  content: 'o';
+}
+
+input[type='radio'].fancy {
+  display: none;
+}
+
+input[type='radio'].fancy:checked + label span:before {
+  content: 'O';
+}
+
+input[type='file'] {
   display: block;
 }
 
-input[type="range"] {
+input[type='range'] {
   display: block;
   width: 100%;
 }
