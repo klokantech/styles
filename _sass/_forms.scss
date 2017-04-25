@@ -85,23 +85,39 @@ input[type='checkbox'].fancy {
   display:none;
 }
 
-input[type='checkbox'].fancy + label span:before, input[type='radio'].fancy + label span:before  {
-  font-family: 'icons';
-  content: 'M';
+input[type='checkbox'].fancy + label span, input[type='radio'].fancy + label span:before  {
+  position: relative;
+  content: '';
+  width: $checkbox-size;
+  height: $checkbox-size;
   display: inline-block;
-  font-size: $checkbox-size;
-  margin: -2px 8px 0 0;
-  vertical-align: middle;
+  margin: -2px 8px -5px 0;
   cursor: pointer;
+  border: 2px solid $checkbox-color;
+  border-radius: $input-border-radius;
   font-weight: normal;
 }
 
+input[type='checkbox'].fancy + label span{
+  width: $checkbox-size - 2;
+  height: $checkbox-size - 2;
+}
+
 input[type='checkbox'].fancy:checked + label span:before {
-  content: 'm';
+  content: '';
+  width: $checkbox-size / 4;
+  height: $checkbox-size / 5 * 3;
+  border-bottom: 2px solid $checkbox-check-color;
+  border-right: 2px solid $checkbox-check-color;
+  position: absolute;
+  left: $checkbox-size / 4;
+  -ms-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  transform: rotate(40deg);
 }
 
 input[type='radio'].fancy + label span:before{
-  content: 'o';
+  border-radius: 50%;
 }
 
 input[type='radio'].fancy {
@@ -109,7 +125,10 @@ input[type='radio'].fancy {
 }
 
 input[type='radio'].fancy:checked + label span:before {
-  content: 'O';
+  background: $checkbox-color;
+  -webkit-box-shadow:inset 0px 0px 0px 3px $body-bg;
+  -moz-box-shadow:inset 0px 0px 0px 3px $body-bg;
+  box-shadow:inset 0px 0px 0px 3px $body-bg;
 }
 
 input[type='file'] {

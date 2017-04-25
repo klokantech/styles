@@ -168,8 +168,10 @@ $input-bg-disabled: $color-gray-light;
 $input-border-color: $input-color;
 $input-border-color-active: $color-primary;
 $input-box-shadow-active: none;
-$input-border-radius: 0;
+$input-border-radius: 2px;
 $input-padding: 8px 12px;
+$checkbox-color: $color-gray-dark;
+$checkbox-check-color: $color-gray-dark;
 $checkbox-size: 22px;
 
 $legend-color: $color-gray-dark;
