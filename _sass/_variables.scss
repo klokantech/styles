@@ -113,19 +113,19 @@ $btn-small-scale: 0.8;
 /* butons colection */
 $btns: (
 //name, color, background-color, hover color, hover background
-("", #ffffff, $color-primary, #ffffff, darken($color-primary, 5%)),
-("-dark", #ffffff, darken($color-primary, 10%), #ffffff, $color-primary),
-("-light", #ffffff, lighten($color-primary, 10%), #ffffff, darken($color-primary, 5%)),
-("-gray-dark", $color-gray-light, $color-gray-dark, $color-gray-light, darken($color-gray-dark, 5%)),
-("-gray-light", $color-gray-dark, $color-gray-light, $color-gray-dark, darken($color-gray-light, 5%))
+("", #ffffff, linear-gradient($color-primary, darken($color-primary, 5%)), #ffffff, linear-gradient(darken($color-primary, 3%), darken($color-primary, 7%))),
+("-secondary", #ffffff, linear-gradient($color-secondary, darken($color-secondary, 5%)), #ffffff, linear-gradient(darken($color-secondary, 3%), darken($color-secondary, 7%))),
+("-gray", #fff, $color-gray, #fff, darken($color-gray, 5%)),
+("-gray-dark", $color-gray-light, linear-gradient($color-gray-dark, darken($color-gray-dark, 5%)), $color-gray-light, linear-gradient(darken($color-gray-dark, 5%), darken($color-gray-dark, 10%))),
+("-gray-light", $color-gray-dark, linear-gradient($color-gray-light, darken($color-gray-light, 5%)), $color-gray-dark, linear-gradient(darken($color-gray-light, 5%), darken($color-gray-light, 10%)))
 );
 
 $btns-color: #fff;
-$btns-bg-color: $color-primary;
+$btns-bg-color: linear-gradient($color-primary, darken($color-primary, 5%));
 $btns-pads: 3px 20px 5px 20px;
 $btns-border: none;
 $btns-radius: 4px;
-$btns-hover-bg: darken($color-primary, 5%);
+$btns-hover-bg: linear-gradient(darken($color-primary, 5%), darken($color-primary, 10%));
 $btns-hover-color: #fff;
 
 /* Border */

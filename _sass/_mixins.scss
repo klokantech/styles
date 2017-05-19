@@ -18,9 +18,8 @@
 
 @mixin btn-color($color, $background, $hover, $hover-background) {
   color: $color;
-  $gradient: darken($background, 5%);
   background-color: $background;
-  background: linear-gradient($background, $gradient);
+  background: $background;
   border: none;
 
   &:hover,
@@ -28,8 +27,7 @@
     &:active,
     &.active{
     color: $hover;
-    $hover-gradient: darken($hover-background, 5%);
-    background: linear-gradient($hover-background, $hover-gradient);
+    background: $hover-background;
   }
 }
 

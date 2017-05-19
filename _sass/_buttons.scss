@@ -13,7 +13,7 @@
   }
   .btn-stroke#{$name} {
     @include btn();
-    @include btn-color-stroke($bg-color, transparent, $bg-color, lighten($bg-color, 10%),  transparent, lighten($bg-color, 10%));
+    @include btn-color-stroke($bg-color, transparent, $bg-color, $bg-hover,  transparent, $bg-hover);
     @include btn-size($btn-height, $btn-padding - $btn-border, $btn-font-size, $btn-border, $btn-radius, 1);
   }
   .btn-large#{$name}{
@@ -25,7 +25,7 @@
   .btn-large-stroke#{$name}{
     @include btn();
     font-weight: normal;
-    @include btn-color-stroke($bg-color, transparent, $bg-color, lighten($bg-color, 10%),  transparent, lighten($bg-color, 10%));
+    @include btn-color-stroke($bg-color, transparent, $bg-color, $bg-hover,  transparent, $bg-hover);
     @include btn-size(null, $btn-padding * 2, $btn-font-size * 1.4, $btn-border, $btn-radius, 1);
   }
 
@@ -35,8 +35,7 @@
   display: inline-block;
 
   a, li{
-    $gradient: darken($btns-bg-color, 5%);
-    background: linear-gradient($btns-bg-color, $gradient);
+    background: $btns-bg-color;
     padding: $btns-pads;
     display: table-cell;
     border-top: $btns-border;
@@ -56,8 +55,7 @@
     }
 
     &:hover, &.open, &:focus, &.active{
-      $hgradient: darken($btns-hover-bg, 5%);
-      background: linear-gradient($btns-hover-bg, $hgradient);
+      background: $btns-hover-bg;
       color: $btns-hover-color;
       text-decoration: none;
     }
