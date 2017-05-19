@@ -47,12 +47,12 @@
   }
 }
 
-@mixin btn-size($height, $padding, $font-size, $border, $radius, $scale) {
-  @if $height != null {
-    height: $height * $scale;
-  }
+@mixin btn-size($padding-x, $padding-y, $font-size, $border, $radius, $scale) {
   font-size: $font-size * $scale;
-  padding: $padding * $scale $padding * $scale + 6;
+  padding-top: $padding-x * $scale;
+  padding-bottom: $padding-x * $scale;
+  padding-left: $padding-y * $scale;
+  padding-right: $padding-y * $scale;
   border-width: $border * $scale;
   border-style: solid;
   -webkit-border-radius: $radius;
