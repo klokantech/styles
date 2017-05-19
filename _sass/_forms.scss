@@ -19,9 +19,10 @@ legend {
 }
 
 label {
+  display: inline-block;
   max-width: 100%;
-  margin: 6px 0 4px 1px;
-  font-weight: bold;
+  margin: $label-margin;
+  font-weight: $label-fontweight;
   font-size: $label-font-size;
   color: $label-color;
   -webkit-touch-callout: none;
