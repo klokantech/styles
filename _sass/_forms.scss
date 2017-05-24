@@ -35,6 +35,7 @@ label {
 
 input, textarea{
   padding: $input-padding;
+  margin: $input-margin;
   line-height: $input-line-height;
   color: $input-color;
   background-color: $input-bg;
@@ -57,28 +58,13 @@ input, textarea{
 
 }
 
-input[type='text'], input[type='password'], input[type='date'],
-input[type='email'], input[type='button']{
-
-  &.search{
-    display: inline-block;
-  }
-
-}
 input[type='submit'], input[type='button']{
-  margin-top: 5px;
-  &.search{
-    position: relative;
-    display: inline-block;
-    margin-top: 0;
-    padding: 7px 10px;
-    cursor: pointer;
+  cursor: pointer;
+  margin-left: -1px;
 
-    &:hover{
-      color: darken($input-color, 30%);
-      border-color: darken($input-color, 30%);
-    }
-
+  &:not(.btn):hover{
+      color: $input-border-color-active;
+      border-color: $input-border-color-active;
   }
 }
 
