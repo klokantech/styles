@@ -58,14 +58,21 @@ input, textarea{
 
 }
 
+input[type='text'], textarea{
+  min-width: 260px;
+}
+
 input[type='submit'], input[type='button']{
   cursor: pointer;
-  margin-left: -1px;
 
   &:not(.btn):hover{
       color: $input-border-color-active;
       border-color: $input-border-color-active;
   }
+}
+
+input[type='submit'].btn, input[type='button'].btn{
+  margin-top: ($line-height-computed / 2);
 }
 
 input[type='checkbox'].fancy {
@@ -92,12 +99,13 @@ input[type='checkbox'].fancy + label span{
 
 input[type='checkbox'].fancy:checked + label span:before {
   content: '';
-  width: $checkbox-size / 4;
+  width: $checkbox-size / 3.5;
   height: $checkbox-size / 5 * 3;
-  border-bottom: 2px solid $checkbox-check-color;
-  border-right: 2px solid $checkbox-check-color;
+  border-bottom: 3px solid $checkbox-check-color;
+  border-right: 3px solid $checkbox-check-color;
   position: absolute;
-  left: $checkbox-size / 4;
+  left: $checkbox-size / 4.5;
+  top: $checkbox-size / 50;
   -ms-transform: rotate(45deg);
   -webkit-transform: rotate(45deg);
   transform: rotate(40deg);
@@ -112,7 +120,7 @@ input[type='radio'].fancy {
 }
 
 input[type='radio'].fancy:checked + label span:before {
-  background: $checkbox-color;
+  background: $checkbox-check-color;
   -webkit-box-shadow:inset 0px 0px 0px 3px $body-bg;
   -moz-box-shadow:inset 0px 0px 0px 3px $body-bg;
   box-shadow:inset 0px 0px 0px 3px $body-bg;
@@ -150,16 +158,32 @@ input[type="search"] {
   -webkit-appearance: none;
 }
 
+input.search{
+  min-width: $line-height-computed * 2;
+  font-family: 'icons';
+  font-size: 22px;
+  margin-left: -1px;
+}
+
+input:focus + input.search{
+  background: $color-primary;
+  color: #fff;
+  border: 1px solid $color-primary;
+
+  &:hover{
+    color: #fff;
+    background: darken($color-primary, 10%);
+  }
+}
+
 input[type="date"],
 input[type="time"],
 input[type="datetime-local"],
 input[type="month"] {
-  line-height: $input-height;
-  line-height: $line-height #{\0};
-
-  &.input-sm {
-    line-height: $input-height-small;
-  }
+  padding: $input-padding;
+  margin: $input-margin;
+  line-height: $input-line-height;
+  font-size: $input-font-size;
 }
 
 form{

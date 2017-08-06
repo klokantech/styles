@@ -1,9 +1,9 @@
 /* Colors */
-$color-primary: #115e94;
-$color-secondary: #fff;
+$color-primary: #2196f3;
+$color-secondary: #004e8f;
 
 $color-gray-dark: #393939;
-$color-gray: #898989;
+$color-gray: #777;
 $color-gray-light: #f3f3f3;
 
 $color-success: #00AA4A;
@@ -26,24 +26,23 @@ $font-primary: 'Open Sans', sans-serif;
 $font-secondary: 'Cabin', 'Open Sans', sans-serif;
 $font-monospace: Menlo, Monaco, 'Courier New', monospace;
 $font-icon: Menlo, Monaco, 'Courier New', monospace;
-$font-size: 14px !default;
+$font-size: 16px !default;
 
 /* Line height*/
-$line-height: 1.4 !default;
-$line-height-computed: floor(($font-size * $line-height)) !default; // ~20px
-
+$line-height: 1.5 !default;
+$line-height-computed: floor(($font-size * $line-height)) !default;
 
 /* Headings */
 $headings-font-weight-h1: 500;
 $headings-font-family: $font-secondary;
 $headings-font-weight: 500;
-$headings-line-height: 100%;
+$headings-line-height: 1.1;
 $headings-color: $color-gray-dark;
 
 $font-size-h1: 40px !default;
-$font-size-h2: 30px !default;
-$font-size-h3: 20px !default;
-$font-size-h4: 16px !default;
+$font-size-h2: 34px !default;
+$font-size-h3: 24px !default;
+$font-size-h4: 18px !default;
 $font-size-h5: $font-size !default;
 $font-size-h6: 12px !default;
 
@@ -90,7 +89,7 @@ $grid-margin-y: 0;
 
 /* Helpers */
 /* Corners for rounding */
-$radius-all: 5px;
+$radius-all: 2px;
 $radius-top-left: $radius-all;
 $radius-top-right: $radius-all;
 $radius-bottom-right: $radius-all;
@@ -99,16 +98,16 @@ $radius-bottom-left: $radius-all;
 /* Buttons */
 $btn-color-bg: $color-primary;
 $btn-color: #fff;
-$btn-padding-x: 10px;
-$btn-padding-y: 16px;
-$btn-radius: 5px;
+$btn-padding-x: 9px;
+$btn-padding-y: 18px;
+$btn-radius: $radius-all;
 $btn-font-size: 14px;
 $btn-letterspacing: initial;
 $btn-lineheight: $line-height;
 $btn-fontweight: 600;
 
 $btn-border: 2px;
-$btn-small-scale: 0.8;
+$btn-small-scale: 0.6;
 
 /* butons colection */
 $btns: (
@@ -124,7 +123,7 @@ $btns-color: #fff;
 $btns-bg-color: linear-gradient($color-primary, darken($color-primary, 5%));
 $btns-pads: 3px 20px 5px 20px;
 $btns-border: none;
-$btns-radius: 4px;
+$btns-radius: $radius-all;
 $btns-hover-bg: linear-gradient(darken($color-primary, 5%), darken($color-primary, 10%));
 $btns-hover-color: #fff;
 
@@ -138,49 +137,49 @@ $borders: (
 ('black', 1px, solid, #ffffff)
 );
 
-$border-radius: 5px !default;
-$border-radius-large: 10px !default;
-$border-radius-small: 3px !default;
+$border-radius: 2px !default;
+$border-radius-large: 5px !default;
+$border-radius-small: 1px !default;
 
 $hr-color: $text-color;
 
 /* Table */
 
 $table-color: #393939;
-$table-head-bg: $color-gray-light;
-$table-color-border: mix($color-gray-dark, $color-gray-light);
+$table-head-bg: #f8f9fa;
+$table-head-fontweight: 600;
+$table-color-border: #d8e0e7;
 $table-fontsize: $font-size;
-$table-hover-color: $color-gray-light;
-$table-padding: 10px;
+$table-hover-color: $table-head-bg;
+$table-padding: $font-size;
+$table-lineheight: 1;
 
 $even-bg-color: #eee5de;
 $odd-bg-color: #f6f2ef;
 
 /* Forms */
 $input-color: $text-color;
-$input-color-active: #000;
+$input-color-active: $headings-color;
 $input-line-height: 20px;
-$input-font-size: 12px;
-$input-height: 30px;
-$input-height-small: 20px;
+$input-font-size: 14px;
 $input-bg: #ffffff;
 $input-bg-disabled: $color-gray-light;
-$input-border-color: $input-color;
+$input-border-color: #d8e0e7;
 $input-border-color-active: $color-primary;
 $input-box-shadow-active: none;
 $input-border-radius: 2px;
-$input-padding: 8px 12px;
-$input-margin: 0 0 6px 0;
-$checkbox-color: $color-gray-dark;
-$checkbox-check-color: $color-gray-dark;
+$input-padding: ($line-height-computed / 2.5);
+$input-margin: 0;
+$checkbox-color: $input-border-color;
+$checkbox-check-color: $color-primary;
 $checkbox-size: 22px;
 
 $legend-color: $color-gray-dark;
 
-$label-color: $text-color;
-$label-font-size: $font-size * 0.9;
-$label-fontweight: bold;
-$label-margin: 12px 0 6px 0;
+$label-color: $headings-color;
+$label-font-size: $font-size;
+$label-fontweight: normal;
+$label-margin: ($line-height-computed / 2) 0 ($line-height-computed / 4) 0;
 
 /* Progressbar */
 $progress-width: 500px;
@@ -216,7 +215,7 @@ $navbar-top-border-bottom: 0;
 $navbar-top-margin-bottom: 20px;
 
 $navbar-top-zindex: 90;
-$navbar-top-bg: $color-primary;
+$navbar-top-bg: $color-secondary;
 $navbar-top-menu-padding-bottom: 28px;
 
 $navbar-top-title-size: 36px;

@@ -1,9 +1,10 @@
 /* Table */
 
 table{
-  width: 100%; 
+  width: 100%;
   border-spacing: inherit;
-  margin: 10px 0;
+  margin: $line-height-computed 0;
+
   td, th{
     text-decoration: none;
     border-collapse: collapse;
@@ -12,8 +13,9 @@ table{
     font-size: $table-fontsize;
     color: $table-color;
     padding: $table-padding;
-    display: table-cell; 
+    display: table-cell;
     border: 1px solid $table-color-border;
+    line-height: $table-lineheight;
   }
   tr{
     border-top: 1px solid $table-color-border;
@@ -30,12 +32,12 @@ table{
     }
     &.hover:hover{
       background: $table-hover-color;
-    }  
+    }
   }
   th, thead, tfoot{
     color: $table-color;
     font-size: $table-fontsize;
-    font-weight: bold;
+    font-weight: $table-head-fontweight;
     background: $table-head-bg;
     cursor: default;
   }
