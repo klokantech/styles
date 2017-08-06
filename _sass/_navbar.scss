@@ -16,6 +16,7 @@
   .logo h1, .title{
     float: left;
     font-size: $navbar-top-title-size;
+    font-weight: $navbar-top-title-fontweight;
     height: $navbar-top-height;
     padding-top: $navbar-top-height - $navbar-top-title-size - $navbar-top-title-padding-bottom;
     padding-right: $padding-x;
