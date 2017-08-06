@@ -11,40 +11,40 @@
     <meta name="description" content="{{ description }}" />
     <meta name="theme-color" content="#115e94">
 
-    <link href="{{ site.baseurl }}/base.css" rel="stylesheet" />
-    <script type="text/javascript" src="{{ site.baseurl }}/js/index.js"></script>
+    <link href="{{ '/base.css' | absolute_url }}" rel="stylesheet" />
+    <script type="text/javascript" src="{{ '/js/index.js' | absolute_url }}"></script>
   </head>
   <body>
     <div id="navbar-top">
       <div class="container">
         <a class="title" href="http://klokantech.com">KlokanTech</a>
         <ul class="nav">
-          <li><a href="{{ site.github.url }}">CSS and styling</a></li>
-          <li><a href="{{ site.github.url }}/html5/">HTML and markup</a></li>
-          <li><a href="{{ site.github.url }}/fonts/">Fonts and symbols</a></li>
-          <li><a href="{{ site.github.url }}/components/">Components</a></li>
+          <li><a href="{{ '/' | absolute_url }}">CSS and styling</a></li>
+          <li><a href="{{ '/html5/' | absolute_url }}">HTML and markup</a></li>
+          <li><a href="{{ '/fonts/' | absolute_url }}">Fonts and symbols</a></li>
+          <li><a href="{{ '/components/' | absolute_url }}">Components</a></li>
           <li><a href="https://github.com/klokantech/styles">
-              <img class="octocat" src="{{ site.baseurl }}img/GitHub-Mark-Light-32px.png" alt="Github">
+              <img class="octocat" src="{{ '/img/GitHub-Mark-Light-32px.png' | absolute_url }}" alt="Github">
             </a></li>
         </ul>
         <div class="nav-mobile">
           <div id="nav-mobile-btn">H</div>
           <div id="nav-mobile-nav">
             <a class="b" href="{{ site.baseurl }}/">CSS and styling</a>
-            <a href="{{ site.baseurl }}#typography">Typography</a>
-            <a href="{{ site.baseurl }}#buttons">Buttons</a>
-            <a href="{{ site.baseurl }}#borders">Borders</a>
-            <a href="{{ site.baseurl }}#boxes">Boxes</a>
-            <a href="{{ site.baseurl }}#helpers">Helpers</a>
-            <a href="{{ site.baseurl }}#grid">Grid system</a>
-            <a href="{{ site.baseurl }}#tables">Tables</a>
-            <a href="{{ site.baseurl }}#forms">Forms</a>
-            <a href="{{ site.baseurl }}#msgs">Messages</a>
-            <a class="b" href="{{ site.baseurl }}/html5/">HTML and markup</a>
-            <a href="{{ site.baseurl }}fonts">Fonts and symbols</a>
-            <a class="b" href="{{ site.baseurl }}/components/">Components</a>
+            <a href="{{ '/' | absolute_url }}#typography">Typography</a>
+            <a href="{{ '/' | absolute_url }}#buttons">Buttons</a>
+            <a href="{{ '/' | absolute_url }}#borders">Borders</a>
+            <a href="{{ '/' | absolute_url }}#boxes">Boxes</a>
+            <a href="{{ '/' | absolute_url }}#helpers">Helpers</a>
+            <a href="{{ '/' | absolute_url }}#grid">Grid system</a>
+            <a href="{{ '/' | absolute_url }}#tables">Tables</a>
+            <a href="{{ '/' | absolute_url }}#forms">Forms</a>
+            <a href="{{ '/' | absolute_url }}#msgs">Messages</a>
+            <a class="b" href="{{ '/' | absolute_url }}/html5/">HTML and markup</a>
+            <a href="{{ '/' | absolute_url }}fonts">Fonts and symbols</a>
+            <a class="b" href="{{ '/' | absolute_url }}/components/">Components</a>
             <a href="https://github.com/klokantech/styles">
-              <img class="octocat" src="{{ site.baseurl }}img/GitHub-Mark-32px.png" alt="Github">
+              <img class="octocat" src="{{ '/' | absolute_url }}img/GitHub-Mark-32px.png" alt="Github">
               GitHub
             </a>
           </div>
@@ -61,19 +61,19 @@
         <!-- nav-left -->
         <div class="col2 flip text-right no-paddings" style="margin-top: 48px;">
           <h4>Styleguide</h4>
-          <h5 class="b"><a href="{{ site.baseurl }}">CSS and styling</a></h5>
-          <a href="{{ site.baseurl }}#typography">Typography</a><br>
-          <a href="{{ site.baseurl }}#buttons">Buttons</a><br>
-          <a href="{{ site.baseurl }}#borders">Borders</a><br>
-          <a href="{{ site.baseurl }}#boxes">Boxes</a><br>
-          <a href="{{ site.baseurl }}#helpers">Helpers</a><br>
-          <a href="{{ site.baseurl }}#grid">Grid system</a><br>
-          <a href="{{ site.baseurl }}#tables">Tables</a><br>
-          <a href="{{ site.baseurl }}#forms">Forms</a><br>
-          <a href="{{ site.baseurl }}#msgs">Messages</a><br>
-          <h5 class="b"><a href="{{ site.baseurl }}html5">HTML and markup</a></h5>
-          <h5 class="b"><a href="{{ site.baseurl }}fonts">Fonts and symbols</a></h5>
-          <h5 class="b"><a href="{{ site.baseurl }}components">Components</a></h5>
+          <a class="b" href="{{ site.baseurl }}/">CSS and styling</a><br>
+          <a href="{{ '/' | absolute_url }}#typography">Typography</a><br>
+          <a href="{{ '/' | absolute_url }}#buttons">Buttons</a><br>
+          <a href="{{ '/' | absolute_url }}#borders">Borders</a><br>
+          <a href="{{ '/' | absolute_url }}#boxes">Boxes</a><br>
+          <a href="{{ '/' | absolute_url }}#helpers">Helpers</a><br>
+          <a href="{{ '/' | absolute_url }}#grid">Grid system</a><br>
+          <a href="{{ '/' | absolute_url }}#forms">Forms</a><br>
+          <a href="{{ '/' | absolute_url }}#tables">Tables</a><br>
+          <a href="{{ '/' | absolute_url }}#msgs">Messages</a><br><br>
+          <a class="b" href="{{ '/' | absolute_url }}/html5/">HTML and markup</a><br>
+          <a class="b" href="{{ '/' | absolute_url }}fonts">Fonts and symbols</a><br>
+          <a class="b" href="{{ '/' | absolute_url }}/components/">Components</a><br>
         </div>
         <!-- end nav-left  -->
       </div>

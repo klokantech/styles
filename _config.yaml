@@ -1,7 +1,5 @@
 permalink: /:year-:month-:day-:title/
 
-baseurl: "/styles/"
-
 sass:
   style: :compressed
 
@@ -13,4 +11,3 @@ defaults:
       layout: "default"
       name: "KlokanTech Styles"
       description: The company web style guide
-      baseurl: http://klokantech.github.io/styles
