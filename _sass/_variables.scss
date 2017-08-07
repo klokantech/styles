@@ -6,6 +6,7 @@ $color-gray-dark: #393939;
 $color-gray: #777;
 $color-gray-light: #f3f3f3;
 
+$color-info: #d5dbe1;
 $color-success: #b5dab5;
 $color-warning: #ff905e;
 $color-error: #e25041;
@@ -214,6 +215,7 @@ $labels-border-radius: $radius-all;
 $labels-padding: 2px 4px;
 $labels-colors: (
 //('name', 'color', 'background')
+('info', #424242, $color-info)
 ('success', #424242, $color-success)
 ('warning', #fff, $color-warning)
 ('error', #fff, $color-error)
