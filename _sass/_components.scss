@@ -288,15 +288,12 @@ input.working {
   }
 
   div {
+    // Definition above same as label
     display: inline-block;
     position: relative;
-    font-size: 11px;
-    padding: 3px 18px 3px 5px;
     margin: 0 4px 2px 0;
-    cursor: default;
-    border-radius: $border-radius / 2;
-    background-color: $multicomplete-tag-bg-color;
-    color: #fff;
+    padding-right: 16px !important;
+
 
     a {
       display: block;
@@ -308,6 +305,7 @@ input.working {
       text-decoration: none;
       color: #fff;
       font-size: 10px;
+      font-family: $font-icon;
 
       &:hover {
         color: $color-gray-dark;
@@ -341,7 +339,7 @@ input.working {
   }
 }
 
-.label {
+.label, .multicomplete div{
   font-size: $labels-font-size;
   font-weight: $labels-font-weight;
   border-radius: $labels-border-radius;
