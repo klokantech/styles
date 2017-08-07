@@ -6,9 +6,9 @@ $color-gray-dark: #393939;
 $color-gray: #777;
 $color-gray-light: #f3f3f3;
 
-$color-success: #00AA4A;
-$color-warning: #EF8A00;
-$color-danger: #EF3200;
+$color-success: #b5dab5;
+$color-warning: #ff905e;
+$color-error: #e25041;
 $color-code: #dd1144;
 
 /* Background color */
@@ -207,6 +207,17 @@ $tabs-btn-border-bottom-active: 2px solid $color-primary;
 $tabs-btn-fontweight: bold;
 $tabs-tab-padding: 10px;
 $tabs-tab-border: none;
+
+$labels-font-size: 12px;
+$labels-font-weight: 600;
+$labels-border-radius: $radius-all;
+$labels-padding: 2px 4px;
+$labels-colors: (
+//('name', 'color', 'background')
+('success', #424242, $color-success)
+('warning', #fff, $color-warning)
+('error', #fff, $color-error)
+);
 
 /* Top navbar */
 $navbar-top-height: 72px;

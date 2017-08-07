@@ -1,12 +1,11 @@
 /* components */
-
-.tabs{
-  ul{
+.tabs {
+  ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
 
-    li{
+    li {
       @include noselect();
       font-size: $tabs-btn-fontsize;
       display: inline-block;
@@ -17,73 +16,81 @@
       border-bottom: $tabs-btn-border-bottom;
       color: $tabs-btn-color;
 
-      &:first-child{
+      &:first-child {
         margin-left: 0;
       }
-      &:hover, &.active{
+
+      &.active,
+      &:hover {
         color: $tabs-btn-color-active;
       }
-      &.active{
+
+      &.active {
         border-bottom: $tabs-btn-border-bottom-active;
       }
     }
   }
 
-  .tabs-content{
+  .tabs-content {
     padding: $tabs-tab-padding;
     border: $tabs-tab-border;
-    .tabs-tab{
+
+    .tabs-tab {
       display: none;
-      p{
+
+      p {
         margin: 0;
       }
-      &.active{
+
+      &.active {
         display: block;
       }
     }
   }
 }
-
 /* Social */
-.social{
+.social {
   text-align: center;
   display: inline-block;
 
-  p{
+  p {
     padding: 0;
     margin: 0;
   }
 
-  a{
+  a {
     font-family: 'icons';
     font-size: 24px;
     color: $color-gray;
     cursor: pointer;
     text-decoration: none !important;
 
-    &.G{
+    &.G {
       color: #d34836;
     }
-    &.F{
+
+    &.F {
       color: #3B5998;
     }
-    &.T{
+
+    &.T {
       color: #55ACEE;
     }
-    &.P{
+
+    &.P {
       color: #C92228;
     }
-    &.L{
+
+    &.L {
       color: #0077B5;
     }
 
-    &:hover{
+    &:hover {
       text-decoration: none !important;
       color: $color-gray;
     }
   }
 }
-
 /* Sync indicator */
 #sync-indicator {
   position: absolute;
@@ -94,10 +101,10 @@
   margin-left: -25px;
   font-size: 38px;
   line-height: 100%;
-  font-family:'icons';
+  font-family: 'icons';
   text-align: center;
   text-shadow: 0 0 2px #ccc;
-  z-index:10;
+  z-index: 10;
   -webkit-animation: rotanim 1s infinite ease;
   animation: rotanim 1s infinite ease;
 
@@ -106,21 +113,31 @@
     display: block;
     font-family: 'icons';
   }
-  #sync-syncing {display: none;}
-  &.loaded #sync-loading {display: none;}
-  &.loaded #sync-syncing {display: block;}
-}
 
+  #sync-syncing {
+    display: none;
+  }
+
+  &.loaded #sync-loading {
+    display: none;
+  }
+
+  &.loaded #sync-syncing {
+    display: block;
+  }
+}
 /* KlokanTech JavaScript components */
-.popup-bg{
+.popup-bg {
   position: fixed;
-  top: 0; bottom: 0;
-  left: 0; right: 0;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
   background-color: $popupbg-bg-color;
   z-index: 101;
 }
 
-.popup{
+.popup {
   z-index: 111;
   position: fixed;
   width: $popup-width;
@@ -131,72 +148,83 @@
   padding: $popup-padding;
   background: $popup-bg-color;
 
-  .popup-title{
+  .popup-title {
     display: block;
     font-weight: bold;
-    padding: 0 0 10px 0;
+    padding: 0 0 10px;
     font-size: 120%;
   }
-  .popup-close{
+
+  .popup-close {
     position: absolute;
     top: 10px;
     right: 10px;
     font-family: 'icons';
     cursor: pointer;
     color: $text-color;
-    &:hover{
+
+    &:hover {
       text-decoration: none;
       color: darken($text-color, 20%);
     }
   }
-  .popup-content{
+
+  .popup-content {
     display: block;
   }
-  .popup-actions{
+
+  .popup-actions {
     display: block;
     margin-top: 10px;
-    div{
+
+    div {
       margin-right: 10px;
     }
   }
 
   ul.options {
-    max-height:400px;
-    overflow:auto;
+    max-height: 400px;
+    overflow: auto;
 
     li {
-      cursor:pointer;
-      display:block;
-      padding:2px;
+      cursor: pointer;
+      display: block;
+      padding: 2px;
 
       &:nth-child(even) {
-        background:#f9f9f9;
+        background: #f9f9f9;
       }
 
       &:hover {
-        font-weight:bold;
+        font-weight: bold;
       }
     }
   }
 }
 
-input.working{
-  background:#fff linear-gradient(90deg, #ddf, #2066a0, #ddf);
+input.working {
+  background: #fff linear-gradient(90deg, #ddf, #2066a0, #ddf);
   background-size: 180px 2px;
   background-repeat: repeat-x;
-  animation: bkganim .9s infinite linear;
+  animation: bkganim 0.9s infinite linear;
 }
 @keyframes bkganim {
-  0% {background-position:0px 100%;}
-  100% {background-position:180px 100%;}
+  0% {
+    background-position: 0 100%;
+  }
+
+  100% {
+    background-position: 180px 100%;
+  }
 }
 
-.ac-renderer{
+.ac-renderer {
   position: absolute;
   border: 1px solid $color-gray;
   margin-top: -1px;
   max-width: 400px;
 }
+
 .ac-row {
   white-space: nowrap;
   position: relative;
@@ -207,20 +235,28 @@ input.working{
   text-overflow: ellipsis;
 
   .suffix {
-    font-size:.8em;
-    color:#ccc;
-    padding:.1em 0 .1em 5px;
+    font-size: 0.8em;
+    color: #ccc;
+    padding: 0.1em 0 0.1em 5px;
   }
 
   .type {
-    font-size:.7em;
-    color:#aaa;
-    display:block;
-    width:100%;
+    font-size: 0.7em;
+    color: #aaa;
+    display: block;
+    width: 100%;
   }
 }
-.ac-highlighted {font-weight: bold;}
-.ac-active {color: $color-gray-dark; background-color: $color-gray-light;}
+
+.ac-highlighted {
+  font-weight: bold;
+}
+
+.ac-active {
+  color: $color-gray-dark;
+  background-color: $color-gray-light;
+}
+
 .ac-type {
   background-color: #990033;
   color: #FFFFFF;
@@ -230,12 +266,11 @@ input.working{
   font-style: italic;
   float: right;
 }
-
 /* MULTICOMPLETE */
 .multicomplete {
-  background-color:#fff;
+  background-color: #fff;
   border: 1px solid $color-gray;
-  cursor:text;
+  cursor: text;
   display: block;
   padding: 2px;
   width: 300px;
@@ -243,56 +278,82 @@ input.working{
   overflow-y: auto;
   overflow-x: hidden;
   margin-bottom: 0;
+
   input {
-    border:0 !important;
-    outline:0 !important;
-    margin:0 !important;
-    padding:0 !important;
-    height:23px;
+    border: 0 !important;
+    outline: 0 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    height: 23px;
   }
+
   div {
-    display:inline-block;
-    position:relative;
-    font-size:11px;
+    display: inline-block;
+    position: relative;
+    font-size: 11px;
     padding: 3px 18px 3px 5px;
     margin: 0 4px 2px 0;
-    cursor:default;
+    cursor: default;
     border-radius: $border-radius / 2;
     background-color: $multicomplete-tag-bg-color;
     color: #fff;
+
     a {
-      display:block;
-      width:10px;
-      height:10px;
-      position:absolute;
-      top:3px;right:2px;
-      text-decoration:none;
+      display: block;
+      width: 10px;
+      height: 10px;
+      position: absolute;
+      top: 3px;
+      right: 2px;
+      text-decoration: none;
       color: #fff;
-      font-size:10px;
+      font-size: 10px;
+
       &:hover {
         color: $color-gray-dark;
       }
     }
-    .mc-tag-remove{
+
+    .mc-tag-remove {
       font-family: 'icons';
     }
   }
 }
 
-.notice{
+.notice {
   text-align: center;
   position: fixed;
-  left: 0; right: 0;
-  bottom:0;
+  left: 0;
+  right: 0;
+  bottom: 0;
   height: 50px;
   background-color: $color-gray-light;
-  p{
+
+  p {
     display: inline-block;
-    margin: 15px 30px
+    margin: 15px 30px;
   }
-  button{
+
+  button {
     display: inline-block;
     height: 30px;
-    padding: 4px 10px;;
+    padding: 4px 10px;
   }
+}
+
+.label {
+  font-size: $labels-font-size;
+  font-weight: $labels-font-weight;
+  border-radius: $labels-border-radius;
+  padding: $labels-padding;
+  background-color: $color-primary;
+  color: #fff;
+}
+
+@each $name, $color, $bg-color in ($labels-colors) {
+  .label.#{$name}{
+    color: $color;
+    background: $bg-color;
+  }
+
 }

@@ -203,7 +203,7 @@ center, .center, .text-center{text-align: center;}
 .gray-dark{color: $color-gray-dark;}
 .success{color: $color-success;}
 .warning{color: $color-warning;}
-.danger{color: $color-danger;}
+.danger, .error{color: $color-error;}
 .white{color: #ffffff;}
 .black{color: #000000;}
 
@@ -214,7 +214,7 @@ center, .center, .text-center{text-align: center;}
 .bg-gray-dark{background-color: $color-gray-dark;}
 .bg-success{background-color: $color-success;}
 .bg-warning{background-color: $color-warning;}
-.bg-danger{background-color: $color-danger;}
+.bg-danger, .bg-error{background-color: $color-error;}
 .bg-white{background-color: #ffffff;}
 .bg-black{background-color: #000000;}
 
@@ -240,7 +240,7 @@ center, .center, .text-center{text-align: center;}
     background-color: $color-warning;
   }
   &.error{
-    background-color: $color-danger;
+    background-color: $color-error;
   }
 
 }
@@ -258,7 +258,7 @@ center, .center, .text-center{text-align: center;}
     color: $color-success;
   }
   .s{
-    color: $color-danger;
+    color: $color-error;
   }
   .c{
     color: $color-gray-dark;
