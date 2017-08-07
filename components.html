@@ -7,7 +7,7 @@ title: Components
   <div class="col12 padb-8">
     <h1>Components</h1>
 
-    <h3>Navigation</h3>
+    <h2>Navigation</h2>
     <div class="navside-btn"><span class="icon" > H </span></div>
     <div class="navside">
       <a class="user-action" href="#logout">Log out</a>
@@ -52,7 +52,40 @@ title: Components
     </div>
     {% endhighlight %}
 
-    <h3>Tabs</h3>
+    <h2>Popup</h2>
+    <p><a class="btn popup-btn">Try to open</a></p>
+    <p>Popup has simple syntax listed below but we are recommending to use your
+      <a href="http://klokantech.github.io/javascript/">JavaScript library</a> which is implementing many variations of a popup.</p>
+
+    {% highlight html %}
+   <div class="popup-bg"></div>
+    <div class="popup">
+      <div class="popup-close">X</div>
+      <h3>Title</h3>
+      <p>Content text.</p>
+    </div>
+    {% endhighlight %}
+
+
+
+    <div class="popup-bg hidden popup-btn"></div>
+    <div class="popup hidden">
+      <div class="popup-close popup-btn">X</div>
+      <h3>Title</h3>
+      <p>Fast maps for the web and mobile. Drop images of maps into MapTiler and with a couple of clicks the software prepares HTML files with viewers based on Google Maps API, Leaflet and OpenLayers.</p>
+    </div>
+
+    <script type="application/javascript">
+      var popupBtns = document.querySelectorAll('.popup-btn');
+      popupBtns.forEach(function(el){
+        el.addEventListener('click', function(){
+          document.getElementsByClassName('popup-bg')[0].classList.toggle('hidden');
+          document.getElementsByClassName('popup')[0].classList.toggle('hidden');
+        });
+      })
+    </script>
+
+    <h2>Tabs</h2>
     <div class="tabs">
       <ul>
         <li class="tabs-btn active" id="btn-1">MapTiler</li>
