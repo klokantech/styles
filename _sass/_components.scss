@@ -355,3 +355,66 @@ input.working {
   }
 
 }
+
+/* Messages */
+.flashes{
+  position: absolute;
+  width: 440px;
+  left: 50%;
+  top: 68px;
+  margin-left: -220px;
+  z-index: 1000;
+}
+
+.message-box{
+  position: absolute;
+  top: laft;
+
+}
+
+.message{
+  color: $text-color;
+  background-color: #fff;
+  padding: 30px;
+  font-weight: normal;
+  min-height: 105px;
+  position: relative;
+  padding-left: 135px;
+  margin: 10px;
+  font-size: 14px;
+  color: $text-color !important;
+
+  box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.13);
+
+  &::before{
+    content: 'i';
+    background-color: $color-info;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 105px;
+    line-height: 105px;
+    vertical-align: middle;
+    text-align: center;
+    font-size: 44px;
+    font-family: $font-icon;
+  }
+
+  &.success::before{
+    content: 'V';
+    background-color: $color-success;
+    color: darken($color-success, 20%);
+  }
+  &.warning::before{
+    content: '?';
+    background-color: $color-warning;
+    color: darken($color-warning, 20%);
+  }
+  &.error::before{
+    content: '!';
+    background-color: $color-error;
+    color: darken($color-error, 20%);
+  }
+
+}

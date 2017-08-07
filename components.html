@@ -8,7 +8,7 @@ title: Components
     <h1>Components</h1>
 
     <h2>Navigation</h2>
-    <div class="navside-btn"><span class="icon" > H </span></div>
+    <div class="navside-btn"><span class="icon"> H </span></div>
     <div class="navside">
       <a class="user-action" href="#logout">Log out</a>
       <a class="user-login" href="#profile">Username</a>
@@ -58,7 +58,7 @@ title: Components
       <a href="http://klokantech.github.io/javascript/">JavaScript library</a> which is implementing many variations of a popup.</p>
 
     {% highlight html %}
-   <div class="popup-bg"></div>
+    <div class="popup-bg"></div>
     <div class="popup">
       <div class="popup-close">X</div>
       <h3>Title</h3>
@@ -77,8 +77,8 @@ title: Components
 
     <script type="application/javascript">
       var popupBtns = document.querySelectorAll('.popup-btn');
-      popupBtns.forEach(function(el){
-        el.addEventListener('click', function(){
+      popupBtns.forEach(function(el) {
+        el.addEventListener('click', function() {
           document.getElementsByClassName('popup-bg')[0].classList.toggle('hidden');
           document.getElementsByClassName('popup')[0].classList.toggle('hidden');
         });
@@ -94,7 +94,8 @@ title: Components
       </ul>
       <div class="tabs-content">
         <div class="tabs-tab active" id="tab-1">
-          <p>Fast maps for the web and mobile. Drop images of maps into MapTiler and with a couple of clicks the software prepares HTML files with viewers based on Google Maps API, Leaflet and OpenLayers. Enjoy the maps on your mobile phone or tablet even while offline.</p>
+          <p>Fast maps for the web and mobile. Drop images of maps into MapTiler and with a couple of clicks the software prepares HTML files with viewers based on Google Maps API, Leaflet and OpenLayers. Enjoy the maps on your mobile phone or tablet even
+            while offline.</p>
         </div>
         <div class="tabs-tab" id="tab-2">
           <p>Turn scans into maps. Collaboratively. Georeferencer is an online tool that creates real maps from scanned images.</p>
@@ -105,15 +106,14 @@ title: Components
       </div>
     </div>
 
-    <h2>Social icons</h2>
-    {% highlight html %}
-<div class="social">
-  <a>G</a>
-  <a>T</a>
-  <a>F</a>
-  <a>P</a>
-  <a>L</a>
-</div>{% endhighlight %}
+    <h2>Social icons</h2> {% highlight html %}
+    <div class="social">
+      <a>G</a>
+      <a>T</a>
+      <a>F</a>
+      <a>P</a>
+      <a>L</a>
+    </div>{% endhighlight %}
     <div class="social">
       <a>G</a>
       <a>T</a>
@@ -122,16 +122,15 @@ title: Components
       <a>L</a>
     </div>
 
-    <h3>Colored</h3>
-    {% highlight html %}
-<div class="social">
-  <p>Share on</p>
-  <a class="G">G</a>
-  <a class="T">T</a>
-  <a class="F">F</a>
-  <a class="P">P</a>
-  <a class="L">L</a>
-</div>{% endhighlight %}
+    <h3>Colored</h3> {% highlight html %}
+    <div class="social">
+      <p>Share on</p>
+      <a class="G">G</a>
+      <a class="T">T</a>
+      <a class="F">F</a>
+      <a class="P">P</a>
+      <a class="L">L</a>
+    </div>{% endhighlight %}
 
     <div class="social">
       <p>Share on</p>
@@ -144,15 +143,25 @@ title: Components
 
     <h2>Labels</h2>
 
-<p> This is text
-  <span class="label info">info</span>
-  <span class="label error">URGENT</span>
-  <span class="label warning">bug</span>
-  <span class="label">@siemens</span>
-  <span class="label success">Data processing</span>
-  and text after labels.
-</p>
+    <p> This is text
+      <span class="label info">info</span>
+      <span class="label error">URGENT</span>
+      <span class="label warning">bug</span>
+      <span class="label">@siemens</span>
+      <span class="label success">Data processing</span> and text after labels.
+    </p>
 
+  </div>
+</div>
 
+<div class="row" id="msgs">
+  <div class="col12">
+    <h2>Messages</h2>
+    <button class="btn" onclick="hideMessages();">Hide message in 2 seconds</button>
+    <p>You cen use <code>hideMessages(seconds);</code> (def. 2 sec.) for hidden all messages via javascript.</p>
+    <div class="message">Nam a massa et massa tempus gravida</div>
+    <div class="message success">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+    <div class="message warning">Nam a massa et massa tempus gravida. Suspendisse placerat, enim et hendrerit suscipit, nibh nunc tempor.</div>
+    <div class="message error">class="message error"</div>
   </div>
 </div>

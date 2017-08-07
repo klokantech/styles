@@ -219,32 +219,6 @@ center, .center, .text-center{text-align: center;}
 .bg-white{background-color: #ffffff;}
 .bg-black{background-color: #000000;}
 
-/* Messages */
-.flashes{
-  position: absolute;
-  width: 440px;
-  left: 50%;
-  top: 68px;
-  margin-left: -220px;
-  z-index: 1000;
-}
-
-.message{
-  color: #ffffff;
-  background-color: $color-primary;
-  padding: $padding-x $padding-y;
-  font-weight: bold;
-  &.success{
-    background-color: $color-success;
-  }
-  &.warning{
-    background-color: $color-warning;
-  }
-  &.error{
-    background-color: $color-error;
-  }
-
-}
 
 /* Syntax */
 .highlight{
