@@ -4,3 +4,14 @@
   margin-top: -20px;
   margin-bottom: -10px;
 }
+
+.title .icon{
+  font-size: 37px;
+  position: absolute;
+  margin-left: -76px;
+  margin-top: -9px;
+  width: 64px;
+  overflow: hidden !important;
+  text-overflow: ellipsis;
+  line-height: 37px;
+}
