@@ -157,11 +157,14 @@ title: Components
 <div class="row" id="msgs">
   <div class="col12">
     <h2>Messages</h2>
-    <button class="btn" onclick="hideMessages();">Hide message in 2 seconds</button>
+    <button class="btn" onclick="document.getElementsByClassName('flashes')[0].classList.toggle('closed');">Hide message in 2 seconds</button>
     <p>You cen use <code>hideMessages(seconds);</code> (def. 2 sec.) for hidden all messages via javascript.</p>
     <div class="message">Nam a massa et massa tempus gravida</div>
     <div class="message success">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
     <div class="message warning">Nam a massa et massa tempus gravida. Suspendisse placerat, enim et hendrerit suscipit, nibh nunc tempor.</div>
     <div class="message error">class="message error"</div>
+    <div class="flashes right">
+      <div class="message error">Message error</div>
+    </div>
   </div>
 </div>

@@ -361,9 +361,23 @@ input.working {
   position: absolute;
   width: 440px;
   left: 50%;
-  top: 68px;
+  top: ($navbar-top-height);
   margin-left: -220px;
   z-index: 1000;
+
+  &.right{
+    position: fixed;
+    left: auto;
+    right: 0;
+    margin-left: 0;
+
+    animation: 0.8s ease-out 0s 1 slideFromRight;
+  }
+
+  &.closed{
+    transition: all 0.5s ease-out;
+    right: -440px;
+  }
 }
 
 .message-box{
@@ -380,7 +394,7 @@ input.working {
   min-height: 105px;
   position: relative;
   padding-left: 135px;
-  margin: 10px;
+  margin: 10px 0;
   font-size: 14px;
   color: $text-color !important;
 
@@ -417,4 +431,13 @@ input.working {
     color: darken($color-error, 20%);
   }
 
+}
+
+@keyframes slideFromRight {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
 }
