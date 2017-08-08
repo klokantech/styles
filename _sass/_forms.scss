@@ -56,6 +56,11 @@ input, textarea{
     box-shadow: $input-box-shadow-active;
   }
 
+  &:disabled{
+    color: lighten($input-color, 10%);
+    background: darken($input-bg, 5%);
+  }
+
 }
 
 input[type='text'], textarea{
