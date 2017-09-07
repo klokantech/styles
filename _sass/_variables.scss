@@ -223,6 +223,11 @@ $labels-colors: (
 $message-bg: $body-bg;
 $message-color: $text-color;
 
+$box-bg: #f6f7fa;
+$box-padding: 20px;
+$box-boxshadow: 0px 1px 1px 0px rgba(200,204,210,1);
+$box-radius: $border-radius;
+
 /* Top navbar */
 $navbar-top-height: 72px;
 $navbar-top-small-height: 48px;
