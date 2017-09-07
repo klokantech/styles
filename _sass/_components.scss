@@ -359,7 +359,7 @@ input.working {
 /* Messages */
 .flashes{
   position: absolute;
-  width: 300px;
+  width: $message-width;
   left: 50%;
   top: ($navbar-top-height);
   margin-left: -220px;
@@ -395,8 +395,7 @@ input.working {
   margin: 10px 0;
   font-size: 14px;
   color: $text-color !important;
-
-  box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.13);
+  box-shadow: $message-shadow;
 
   &::before{
     content: 'i';
@@ -444,7 +443,7 @@ input.working {
   padding: $box-padding;
   border-radius: $box-radius;
   background: $box-bg;
-  box-shadow: $box-boxshadow;
+  box-shadow: $box-shadow;
 
   h2:first-child, h3:first-child, h4:first-child, h5:first-child,
   h6:first-child{

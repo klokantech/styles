@@ -222,10 +222,12 @@ $labels-colors: (
 
 $message-bg: $body-bg;
 $message-color: $text-color;
+$message-width: 400px;
+$message-shadow: 0px 0px 10px 1px rgba(0,0,0,0.13);
 
 $box-bg: #f6f7fa;
 $box-padding: 20px;
-$box-boxshadow: 0px 1px 1px 0px rgba(200,204,210,1);
+$box-shadow: 0px 1px 1px 0px rgba(200,204,210,1);
 $box-radius: $border-radius;
 
 /* Top navbar */
