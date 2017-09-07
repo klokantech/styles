@@ -6,7 +6,7 @@ $color-gray-dark: #393939;
 $color-gray: #777;
 $color-gray-light: #f3f3f3;
 
-$color-info: #d5dbe1;
+$color-info: #a1acb7;
 $color-success: #90cb90;
 $color-warning: #ff905e;
 $color-error: #e25041;
@@ -26,7 +26,7 @@ $link-hover-color: lighten($color-primary, 8%);
 $font-primary: 'Open Sans', sans-serif;
 $font-secondary: 'Cabin', 'Open Sans', sans-serif;
 $font-monospace: Menlo, Monaco, 'Courier New', monospace;
-$font-icon: Menlo, Monaco, 'Courier New', monospace;
+$font-icon: 'icons';
 $font-size: 16px !default;
 
 /* Line height*/
@@ -145,7 +145,6 @@ $border-radius-small: 1px !default;
 $hr-color: $text-color;
 
 /* Table */
-
 $table-color: #393939;
 $table-head-bg: #f8f9fa;
 $table-head-fontweight: 600;
@@ -220,6 +219,9 @@ $labels-colors: (
 ('warning', #fff, $color-warning)
 ('error', #fff, $color-error)
 );
+
+$message-bg: $body-bg;
+$message-color: $text-color;
 
 /* Top navbar */
 $navbar-top-height: 72px;
