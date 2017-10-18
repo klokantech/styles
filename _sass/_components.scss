@@ -430,6 +430,15 @@ input.working {
 
 }
 
+.flashes.right .message {
+  right: 0;
+
+  &.closed {
+    transition: right 0.8s ease-out;
+    right: -440px;
+  }
+}
+
 @keyframes slideFromRight {
   0% {
     transform: translateX(100%);
