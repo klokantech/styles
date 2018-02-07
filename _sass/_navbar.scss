@@ -175,14 +175,15 @@ $scale: $navbar-top-small-height / $navbar-top-height;
   position: fixed;
   top: 0; bottom: 0;
   left: 0; right: 0;
-  background: $navsidebg-bg;
+  background: $navside-bg;
   z-index: 80;
 
   &.open{display: block;}
 }
 .navside-btn{
   cursor: pointer;
-  width: 50px;
+  width: $navside-btn-width;
+  height: $navside-btn-height;
   padding: $navside-btn-padding;
   text-align: center;
   color: $navside-btn-color;
