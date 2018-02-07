@@ -183,9 +183,10 @@ $scale: $navbar-top-small-height / $navbar-top-height;
 .navside-btn{
   cursor: pointer;
   width: 50px;
-  padding: 10px;
+  padding: $navside-btn-padding;
   text-align: center;
-  background: $navsidebtn-bg;
+  color: $navside-btn-color;
+  background: $navside-btn-bg;
 }
 .navside {
   position: fixed;

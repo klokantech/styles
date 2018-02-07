@@ -282,7 +282,9 @@ $navside-item-border: none;
 $navside-item-borderbottom: none;
 $navside-item-padding: 20px;
 $navsidebg-bg: rgba(0, 0,0, 0.6);
-$navsidebtn-bg: transparent;
+$navside-btn-padding: 10px;
+$navside-btn-color: #fff;
+$navside-btn-bg: $color-primary;
 
 /* Sticky footer */
 $footer-color: #868d97;
