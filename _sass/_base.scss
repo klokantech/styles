@@ -17,7 +17,7 @@ html, body {
   margin-left: auto;
   margin-right: auto;
   padding: $container-padding-y $container-padding-x;
-  &.main, &.main-small{
+  &.main {
     margin-bottom: -$footer-height;
     padding-top: $navbar-top-height;
     min-height: 100%;
@@ -26,9 +26,6 @@ html, body {
       display: block;
       height: $footer-height;
     }
-  }
-  &.main-small{
-    padding-top: $navbar-top-small-height;
   }
 }
 
@@ -55,21 +52,6 @@ html, body {
 
   .container{
     padding: $footer-padding;
-  }
-
-  .klokan{
-    font-size: 46px;
-    &::after{
-      content: "";
-      display: inline-block;
-      background-color: $footer-color;
-      width: 1px;
-      height: $footer-fontsize;
-      margin: 0 4px 0 14px;
-    }
-  }
-  .social{
-
   }
 }
 
