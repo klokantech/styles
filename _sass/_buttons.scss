@@ -11,15 +11,19 @@
     @include btn-color($color, $bg-color, $hover,  $bg-hover);
     @include btn-size($btn-padding-x, $btn-padding-y, $btn-font-size, 0, $btn-radius, $btn-small-scale);
   }
-  .btn-stroke#{$name} {
-    @include btn();
-    @include btn-color-stroke($bg-color, transparent, $bg-color, $bg-hover,  transparent, $bg-hover);
-    @include btn-size($btn-padding-x - $btn-border, $btn-padding-y - $btn-border, $btn-font-size, $btn-border, $btn-radius, 1);
+  @if $btns-stroke {
+    .btn-stroke#{$name} {
+      @include btn();
+      @include btn-color-stroke($bg-color, transparent, $bg-color, $bg-hover,  transparent, $bg-hover);
+      @include btn-size($btn-padding-x - $btn-border, $btn-padding-y - $btn-border, $btn-font-size, $btn-border, $btn-radius, 1);
+    }
   }
-  .btn-large#{$name}{
-    @include btn();
-    @include btn-color($color, $bg-color, $color,  $bg-hover);
-    @include btn-size($btn-padding-x * 1.4, $btn-padding-y * 1.5, 15px, 0, $btn-radius, 1);
+  @if $btns-large {
+    .btn-large#{$name}{
+      @include btn();
+      @include btn-color($color, $bg-color, $color,  $bg-hover);
+      @include btn-size($btn-padding-x * 1.4, $btn-padding-y * 1.5, 15px, 0, $btn-radius, 1);
+    }
   }
 }
 

@@ -55,8 +55,6 @@
   padding-right: $padding-y * $scale;
   border-width: $border * $scale;
   border-style: solid;
-  -webkit-border-radius: $radius;
-  -moz-border-radius: $radius;
   border-radius: $radius;
   text-decoration: none;
   &:hover,

@@ -128,6 +128,9 @@ $btns-radius: $radius-all;
 $btns-hover-bg: linear-gradient(darken($color-primary, 5%), darken($color-primary, 10%));
 $btns-hover-color: #fff;
 
+$btns-stroke: false;
+$btns-large: false;
+
 /* Border */
 $borders: (
 //('name', 'size', 'type', 'color')
