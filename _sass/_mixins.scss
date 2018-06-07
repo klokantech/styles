@@ -14,13 +14,15 @@
   vertical-align: middle;
   background-image: none;
   letter-spacing: $btn-letterspacing;
+  text-transform: $btn-texttransform;
 }
 
-@mixin btn-color($color, $background, $hover, $hover-background) {
+@mixin btn-color($color, $background, $hover, $hover-background, $shadow) {
   color: $color;
   background-color: $background;
   background: $background;
   border: none;
+  box-shadow: $shadow;
 
   &:hover,
     &:focus,

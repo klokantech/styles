@@ -3,12 +3,12 @@
 @each $name, $color, $bg-color, $hover, $bg-hover in ($btns){
   .btn#{$name}{
     @include btn();
-    @include btn-color($color, $bg-color, $hover, $bg-hover);
+    @include btn-color($color, $bg-color, $hover, $bg-hover, $btn-shadow);
     @include btn-size($btn-padding-x, $btn-padding-y, $btn-font-size, 0, $btn-radius, 1);
   }
   .btn-small#{$name}{
     @include btn();
-    @include btn-color($color, $bg-color, $hover,  $bg-hover);
+    @include btn-color($color, $bg-color, $hover,  $bg-hover, $btn-shadow);
     @include btn-size($btn-padding-x, $btn-padding-y, $btn-font-size, 0, $btn-radius, $btn-small-scale);
   }
   @if $btns-stroke {
@@ -21,7 +21,7 @@
   @if $btns-large {
     .btn-large#{$name}{
       @include btn();
-      @include btn-color($color, $bg-color, $color,  $bg-hover);
+      @include btn-color($color, $bg-color, $color,  $bg-hover, $btn-shadow);
       @include btn-size($btn-padding-x * 1.4, $btn-padding-y * 1.5, 15px, 0, $btn-radius, 1);
     }
   }

@@ -72,7 +72,7 @@ input[type='button'],
 input[type='submit'] {
   cursor: pointer;
 
-  &:not(.btn):hover {
+  &.search:hover {
     color: $input-border-color-active;
     border-color: $input-border-color-active;
   }
