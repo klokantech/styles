@@ -201,6 +201,30 @@ input[type='range'] {
   width: 100%;
 }
 
+select {
+  border: 1px solid $input-border-color;
+  border-radius: $input-border-radius;
+  background: $input-bg;
+  color: $input-color;
+  padding: $input-padding;
+  font-size: $input-font-size;
+
+  &:focus {
+    border: 1px solid $input-border-color-active;
+  }
+
+  &:after {
+    position: absolute;
+    content: "";
+    top: 14px;
+    right: 10px;
+    width: 0;
+    height: 0;
+    border: 6px solid transparent;
+    border-color: $input-color transparent transparent transparent;
+  }
+}
+
 select[multiple],
 select[size] {
   height: auto;
