@@ -208,6 +208,7 @@ select {
   color: $input-color;
   padding: $input-padding;
   font-size: $input-font-size;
+  height: $input-line-height + (2 * $input-padding);
 
   &:focus {
     border: 1px solid $input-border-color-active;
