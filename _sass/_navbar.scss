@@ -2,7 +2,7 @@
 
 #navbar-top{
   @extend .clearfix;
-  position: relative;
+  position: absolute;
   height: $navbar-top-height;
   margin-bottom: $navbar-top-margin-bottom;
   position: fixed;

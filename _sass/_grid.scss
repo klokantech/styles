@@ -1,6 +1,6 @@
 /* Grid */
 
-$grid-screens: ( 
+$grid-screens: (
 // screen, include offsets (boolean)
 ($sc-small, false),
 ($sc-medium, false),
@@ -75,10 +75,7 @@ $grid-screens: (
 .row15{height: 600px;}
 .row16{height: 640px;}
 
-.no-padding{padding: 0;}
-.no-margin{margin: 0;}
-
-/* Image grid */ 
+/* Image grid */
 .col-img {
   border: none;
   float: left;
@@ -87,4 +84,16 @@ $grid-screens: (
 }
 .col-img img{
   width: 90%;
+}
+
+/* Responsive visibility */
+@media (max-width: $sc-medium) {
+  .tablet-no {
+    display: none;
+  }
+}
+@media (max-width: $sc-small) {
+  .mobile-no {
+    display: none;
+  }
 }

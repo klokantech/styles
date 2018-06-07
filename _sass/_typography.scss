@@ -13,6 +13,15 @@ h1, h2, h3, h4, h5, h6,
     line-height: 1;
   }
 
+  a {
+    color: $headings-color;
+
+    &:hover {
+      color: lighten($headings-color, 10%);
+      text-decoration: none;
+    }
+  }
+
   &.prim{
     font-family: $font-primary;
   }
@@ -71,9 +80,11 @@ mark{
 code, .code, pre{
   background-color: $code-color-bg;
   color: $code-color;
-  padding: $code-padding;
   font-family: $font-monospace;
   overflow: auto;
+}
+pre{
+  padding: $code-padding;
 }
 
 small, .small {font-size: 85%;}

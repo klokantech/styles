@@ -16,6 +16,7 @@ table{
     display: table-cell;
     border: 1px solid $table-color-border;
     line-height: $table-lineheight;
+    vertical-align: middle;
   }
   tr{
     border-top: 1px solid $table-color-border;
@@ -72,6 +73,12 @@ table{
     tr, th{
       cursor: pointer;
     }
+  }
+
+  &.scrollable {
+    display: block;
+    overflow-x: auto;
+    width: 100%;
   }
 
   .icon{

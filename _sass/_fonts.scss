@@ -12,7 +12,9 @@
   font-style: normal;
 }
 
-.icon, [class^='icon-'], [class*=' icon-']{
+.icon,
+[class*=' icon-'],
+[class^='icon-'] {
   font-family: 'icons';
   speak: none;
   font-style: normal;
@@ -22,4 +24,13 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-size: 20px;
+
+  &.big {
+    font-size: 40px;
+  }
+
+  &.bigger,
+  &.large {
+    font-size: 60px;
+  }
 }
