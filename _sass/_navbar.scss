@@ -79,6 +79,7 @@
     font-size: 30px;
     float: right;
     #nav-mobile-btn{
+      user-select: none;
       color: $navbar-top-mobile-btn-color;
       height: $navbar-top-height;
       padding: ($navbar-top-height / 2) - 20px;
@@ -87,7 +88,7 @@
         cursor: pointer;
       }
       &.active, &.open{
-        color: $color-secondary;
+        color: lighten($navbar-top-mobile-btn-color,10%);
         margin: 0;
       }
     }
