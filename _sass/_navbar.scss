@@ -144,7 +144,6 @@
 
       .nav{
         a{
-          height: $navbar-top-height * $scale;
           padding-top:  ($navbar-top-height * $scale - $navbar-top-link-size) / 2;
           padding-bottom:  $navbar-top-title-padding-bottom * $scale;
         }
