@@ -50,6 +50,7 @@
 }
 /* Social */
 .social {
+  user-select: none;
   text-align: center;
   display: inline-block;
 
@@ -91,6 +92,119 @@
     }
   }
 }
+.social.circles {
+
+  text-align: center;
+  display: inline-block;
+
+  a {
+    user-select: none;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    vertical-align: middle;
+    border-radius: 50%;
+    font-family: 'icons';
+    font-size: 32px;
+    color: #fff;
+    background-color: #c2c2ce;
+    cursor: pointer;
+    text-decoration: none !important;
+    margin: 10px;
+
+    &.G {
+      color: #fff;
+      background-color: #d34836;
+    }
+
+    &.F {
+      color: #fff;
+      background-color: #3B5998;
+    }
+
+    &.T, &.twitter {
+      color: #fff;
+      background-color: #55ACEE;
+    }
+
+    &.twitter {
+      &:before{
+        content: '';
+        background: url('/img/icon/twitter.svg');
+        background-repeat: no-repeat;
+        background-size: 40px 40px;
+        width: 40px;
+        height: 40px;
+        position: absolute;
+        margin-left: -20px;
+        margin-top: 0px;
+      }
+    }
+
+    &.P {
+      background-color: #C92228;
+    }
+
+    &.Y, &.social-youtube{
+      font-size: 20px;
+    }
+    &.Y {
+      background-color: #FF0000;
+    }
+
+    &.L {
+      background-color: #0077B5;
+    }
+
+    &.RSS {
+      background-color: #f2772e;
+      &:before{
+        content: '';
+        background: url('/img/icon/feed.svg');
+        background-repeat: no-repeat;
+        background-size: 20px 20px;
+        width: 40px;
+        height: 40px;
+        position: absolute;
+        margin-left: -8px;
+        margin-top: 8px;
+      }
+    }
+
+    &.medium {
+      background-color: #333359;
+      &:before{
+        content: '';
+        background: url('/img/icon/medium.svg');
+        background-repeat: no-repeat;
+        background-size: 20px 20px;
+        width: 40px;
+        height: 40px;
+        position: absolute;
+        margin-left: -10px;
+        margin-top: 9px;
+      }
+    }
+
+    &.github {
+      background-color: transparent;
+      color: #000;
+      font-size: 45px;
+    }
+
+    &:hover {
+      text-decoration: none !important;
+      opacity: 0.9;
+    }
+  }
+
+  a:first-child{
+    margin-left: 20px;
+  }
+}
+
 /* Sync indicator */
 #sync-indicator {
   position: absolute;
