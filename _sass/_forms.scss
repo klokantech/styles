@@ -57,7 +57,7 @@ textarea {
     box-shadow: $input-box-shadow-active;
   }
 
-  &:disabled {
+  &:disabled, &:read-only {
     color: lighten($input-color, 10%);
     background: darken($input-bg, 5%);
   }
@@ -76,11 +76,6 @@ input[type='submit'] {
     color: $input-border-color-active;
     border-color: $input-border-color-active;
   }
-}
-
-input[type='button'].btn,
-input[type='submit'].btn {
-  margin-top: ($line-height-computed / 2);
 }
 
 input[type='checkbox'].fancy {

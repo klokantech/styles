@@ -27,6 +27,14 @@
   }
 }
 
+*[class^="btn"] .icon {
+  display: inline-block;
+  vertical-align: bottom;
+  line-height: 1;
+  font-size: $btn-icon-font-size;
+  padding: $btn-icon-padding;
+}
+
 .btns{
   display: inline-block;
 

@@ -50,7 +50,7 @@
 }
 
 @mixin btn-size($padding-x, $padding-y, $font-size, $border, $radius, $scale) {
-  font-size: $font-size;
+  font-size: $font-size * $scale;
   padding-top: $padding-x * $scale;
   padding-bottom: $padding-x * $scale;
   padding-left: $padding-y * $scale;
