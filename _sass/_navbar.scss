@@ -157,6 +157,31 @@
   }
 }
 
+$scale: $navbar-top-small-height / $navbar-top-height;
+#navbar-top-small{
+  @extend #navbar-top;
+  height: $navbar-top-small-height;
+  .logo h1, .title{
+    font-size: $navbar-top-title-size * $scale;
+    height: $navbar-top-small-height;
+    line-height: $navbar-top-small-height;
+    padding: 0;
+  }
+
+  .nav{
+    a{
+      height: $navbar-top-height * $scale;
+      padding-top:  ($navbar-top-height * $scale - $navbar-top-link-size) / 2;
+      padding-bottom:  $navbar-top-title-padding-bottom * $scale;
+    }
+  }
+  .nav-mobile{
+    #nav-mobile-nav{
+      top: $navbar-top-small-height;
+    }
+  }
+}
+
 /* simple mobile nav */
 #nav-mobile-nav{
   display: none;
