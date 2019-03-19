@@ -11,6 +11,11 @@
   top: 0;
   border-bottom: $navbar-top-border-bottom;
   background: $navbar-top-bg;
+  user-select: none;
+
+  .container {
+    border-bottom: $navbar-top-border-container;
+  }
 
   .logo h1, .title{
     float: left;
@@ -50,6 +55,7 @@
       font-family: $navbar-top-link-font;
       display: inline-block;
       padding: $navbar-top-link-padding;
+      margin: $navbar-top-link-margin;
       line-height: $navbar-top-link-size;
       font-weight: $navbar-top-link-fontweight;
     }
@@ -62,6 +68,15 @@
       }
       &.active{
         border-bottom: $navbar-top-link-active-borderbottom;
+      }
+
+      &.nav-btn {
+        border: 2px solid $navbar-top-link-color;
+        padding: $btn-padding-x $btn-padding-y;
+        border-radius: $btn-radius;
+        box-shadow: none;
+        text-transform: none;
+        margin: $navbar-top-link-btn-padding;
       }
     }
     @media (max-width: $sc-medium) {
@@ -78,6 +93,7 @@
     margin: 0; padding: 0;
     font-size: 30px;
     float: right;
+
     #nav-mobile-btn{
       user-select: none;
       color: $navbar-top-mobile-btn-color;
