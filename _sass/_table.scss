@@ -36,11 +36,13 @@ table{
     }
   }
   th, thead, tfoot{
-    color: $table-color;
     font-size: $table-fontsize;
     font-weight: $table-head-fontweight;
     background: $table-head-bg;
     cursor: default;
+    td {
+      color: $table-head-color;
+    }
   }
   .clear{
     font-weight: normal;

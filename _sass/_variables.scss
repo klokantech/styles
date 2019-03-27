@@ -152,8 +152,9 @@ $border-radius-small: 1px !default;
 $hr-color: $text-color;
 
 /* Table */
-$table-color: #393939;
-$table-head-bg: #f8f9fa;
+$table-color: $text-color;
+$table-head-bg: #e7e8f0;
+$table-head-color: $headings-color;
 $table-head-fontweight: 600;
 $table-color-border: #d8e0e7;
 $table-fontsize: $font-size;
