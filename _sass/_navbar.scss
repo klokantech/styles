@@ -79,7 +79,7 @@
         margin: $navbar-top-link-btn-padding;
       }
     }
-    @media (max-width: $sc-medium) {
+    @media (max-width: $sc-medium - 1) {
       display: none;
     }
   }
@@ -87,7 +87,7 @@
     @media (min-width: $sc-medium) {
       display: none;
     }
-    @media (max-width: $sc-medium) {
+    @media (max-width: $sc-medium - 1) {
       display: block;
     }
     margin: 0; padding: 0;
@@ -207,7 +207,7 @@ $scale: $navbar-top-small-height / $navbar-top-height;
 @media (min-width: $sc-medium) {
   #nav-mobile-btn{display: none;}
 }
-@media (max-width: $sc-medium) {
+@media (max-width: $sc-medium - 1) {
   #nav-mobile-nav.active{ display: block; }
   #navbar-kl .nav, #mt-nav ul{display: none;}
 }
