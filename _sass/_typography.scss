@@ -51,7 +51,8 @@ a {
 }
 
 strong, b, .strong, .b{
-  font-weight: bold;
+  font-weight: $bold-font-weight;
+  color: $bold-color;
 }
 
 em, i, cite{
