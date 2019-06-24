@@ -59,6 +59,11 @@ em, i, cite{
   font-style: italic;
 }
 
+sup {
+  vertical-align: super;
+  font-size: 85%;
+}
+
 abbr, dfn{
   cursor: help;
   border-bottom: 1px dotted;
