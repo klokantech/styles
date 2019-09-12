@@ -68,8 +68,8 @@ title: Components
 
 
 
-    <div class="popup-bg hidden popup-btn"></div>
-    <div class="popup hidden">
+    <div class="popup-bg closed popup-btn"></div>
+    <div class="popup closed">
       <div class="popup-close popup-btn">X</div>
       <h3>Title</h3>
       <p>Fast maps for the web and mobile. Drop images of maps into MapTiler and with a couple of clicks the software prepares HTML files with viewers based on Google Maps API, Leaflet and OpenLayers.</p>
@@ -79,8 +79,8 @@ title: Components
       var popupBtns = document.querySelectorAll('.popup-btn');
       popupBtns.forEach(function(el) {
         el.addEventListener('click', function() {
-          document.getElementsByClassName('popup-bg')[0].classList.toggle('hidden');
-          document.getElementsByClassName('popup')[0].classList.toggle('hidden');
+          document.getElementsByClassName('popup-bg')[0].classList.toggle('closed');
+          document.getElementsByClassName('popup')[0].classList.toggle('closed');
         });
       })
     </script>

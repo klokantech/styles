@@ -240,7 +240,7 @@
     display: block;
   }
 }
-/* KlokanTech JavaScript components */
+
 .popup-bg {
   position: fixed;
   top: 0;
@@ -249,6 +249,11 @@
   right: 0;
   background-color: $popupbg-bg-color;
   z-index: 101;
+  transition: 0.3s all ease;
+
+  &.closed {
+    display: none;
+  }
 }
 
 .popup {
@@ -261,7 +266,12 @@
   margin-left: ($popup-width / 2) * -1;
   padding: $popup-padding;
   background: $popup-bg-color;
+  transition: all 0.3s ease;
+  border-radius: $popup-radius;
 
+  &.closed {
+    top: -1000px;
+  }
   .popup-title {
     display: block;
     font-weight: bold;

@@ -203,7 +203,8 @@ $progress-segments-colors: $color-error, $color-warning, $color-success;
 /* Components */
 $popupbg-bg-color: rgba(55, 55, 55, 0.8);
 $popup-bg-color: #fff;
-$popup-top: 30%;
+$popup-radius: 6px;
+$popup-top: 20%;
 $popup-width: 400px;
 $popup-padding: 25px;
 
