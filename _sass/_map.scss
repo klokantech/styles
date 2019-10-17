@@ -156,6 +156,64 @@
     color: #fff;
 }
 
+.ol-popup {
+  pointer-events: none;
+  position: absolute;
+  background-color: white;
+  -webkit-filter: drop-shadow(0 1px 4px rgba(0,0,0,0.2));
+  filter: drop-shadow(0 1px 4px rgba(0,0,0,0.2));
+  padding: 10px;
+  border-radius: $radius-all;
+  border: 1px solid $color-gray-light;
+  bottom: 12px;
+  left: -50px;
+  font-size: 11px;
+  min-width: 150px;
+
+  &:after,
+  &:before {
+    top: 100%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+  }
+
+  &:after {
+    border-top-color: white;
+    border-width: 10px;
+    left: 48px;
+    margin-left: -10px;
+  }
+
+  &:before {
+    border-top-color: $color-gray-light;
+    border-width: 11px;
+    left: 48px;
+    margin-left: -11px;
+  }
+
+  .inspect-layer {
+    font-weight: bold;
+  }
+
+  .inspect-row {
+    display: table-row;
+    line-height: 1.8;
+  }
+
+  .inspect-name,
+  .inspect-value {
+    display: table-cell;
+  }
+
+  .inspect-value {
+    padding-left: 10px;
+  }
+}
+
 .map-layerswitcher {
   position: absolute;
   background: rgba(255,255,255,0.7);
