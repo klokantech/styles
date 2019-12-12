@@ -562,6 +562,35 @@ input.working {
     right: -440px;
   }
 }
+.box{
+  padding: $box-padding;
+  border-radius: $box-radius;
+  background: $box-bg;
+  box-shadow: $box-shadow;
+  display: inline-block;
+
+  h2:first-child, h3:first-child, h4:first-child, h5:first-child,
+  h6:first-child{
+    margin-top: 0;
+  }
+
+  p:last-child{
+    margin-bottom: 0;
+  }
+
+  &.block {
+    display: block;
+  }
+        a {
+        p {
+          color: $text-color;
+        }
+}
+
+:hover {
+  text-decoration: none !important;
+}
+}
 
 @keyframes slideFromRight {
   0% {

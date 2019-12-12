@@ -1,10 +1,13 @@
 /* Colors */
-$color-primary: #448aff;
+$color-primary: #3174FF;
 $color-secondary: #333359;
 
-$color-gray-dark: #363636;
-$color-gray: #d6d6de;
-$color-gray-light: #f7f7f7;
+
+$color-gray-dark: #3E4048;
+$color-gray-darker:#6B7C93;
+$color-gray: #CFD3E2;
+$color-gray-lighter: #E4E7F2;
+$color-gray-light: #F6F7FD;
 
 $color-info: #a1acb7;
 $color-success: #90cb90;
@@ -12,11 +15,29 @@ $color-warning: #ff905e;
 $color-error: #e25041;
 $color-code: #dd1144;
 
+$color-cloud: #0E61C6;
+$color-cloud-s: #2B8BFB;
+$color-desktop: #724FA7;
+$color-desktop-s: #A82AB6;
+$color-mobile: #00D5DF;
+$color-engine: #E58035;
+$color-engine-s: #FF6F4C;
+$color-cluster: #E58035;
+$color-cluster-s: #FFC957;
+$color-server: #E6353D;
+
+/* Gradients */
+$gradient-cloud: linear-gradient(90deg, #140F92 1.04%, #2340B7 49.48%, #38B6FB 100%);
+$gradient-desktop: linear-gradient(90deg, #453279 1.04%, #5D399B 49.48%, #997EC4 100%);
+$gradient-mobile: linear-gradient(90deg, #004C73 1.04%, #00D5DF 100%);
+$gradient-engine: linear-gradient(90deg, #AF3213 1.04%, #E68236 49.48%, #FFC74A 100%);
+$gradient-server: linear-gradient(90deg, #8D0020 1.04%, #E12E39 49.48%, #FF7B68 100%);
+
 /* Background color */
 $body-bg:  #fff !default;
 
 /* Global text color */
-$text-color: #6b7c93 !default;
+$text-color: #6B7C93 !default;
 
 /* Links color */
 $link-color: $color-primary;
@@ -41,7 +62,7 @@ $headings-line-height: 1.1;
 $headings-color: #333359;
 
 $font-size-h1: 40px !default;
-$font-size-h2: 34px !default;
+$font-size-h2: 30px !default;
 $font-size-h3: 24px !default;
 $font-size-h4: 18px !default;
 $font-size-h5: $font-size !default;
@@ -93,6 +114,8 @@ $grid-margin-y: 0;
 
 /* Helpers */
 $list-style: disc;
+$skew: -5deg;
+
 /* Corners for rounding */
 $radius-all: 4px;
 $radius-top-left: $radius-all;
@@ -136,8 +159,8 @@ $btns-radius: $radius-all;
 $btns-hover-bg: linear-gradient(darken($color-primary, 5%), darken($color-primary, 10%));
 $btns-hover-color: #fff;
 
-$btns-stroke: false;
-$btns-large: false;
+$btns-stroke: true;
+$btns-large: true;
 
 /* Border */
 $borders: (
@@ -151,9 +174,16 @@ $borders: (
 
 $border-radius: 2px !default;
 $border-radius-large: 5px !default;
+$border-radius-large: 4px !default;
 $border-radius-small: 1px !default;
 
 $hr-color: $text-color;
+/* Shadows */
+
+$shadow1: 0px 1px 5px rgba(51, 51, 89, 0.1);
+$shadow2: 0px 2px 8px rgba(51, 51, 89, 0.15);
+$shadow3: 0px 10px 35px rgba(51, 51, 89, 0.1);
+$shadow4: 0px 15px 68px rgba(51, 51, 89, 0.1);
 
 /* Table */
 $table-color: $text-color;
@@ -176,7 +206,7 @@ $input-line-height: 20px;
 $input-font-size: 14px;
 $input-bg: #ffffff;
 $input-bg-disabled: $color-gray-light;
-$input-border-color: #dfdfdf;
+$input-border-color: #C1CFE4;
 $input-border-color-active: $color-primary;
 $input-box-shadow-active: none;
 $input-border-radius: 2px;
@@ -240,8 +270,8 @@ $message-shadow: 0px 0px 10px 1px rgba(0,0,0,0.13);
 
 $box-bg: #fff;
 $box-padding: 30px;
-$box-shadow: 0px 6px 35px 0px rgba(0,0,0,0.1);
-$box-radius: 6px;
+$box-shadow: $shadow3 !default;
+$box-radius: $radius-all;
 
 /* Top navbar */
 $navbar-top-height: 130px;

@@ -26,7 +26,9 @@
     }
   }
 }
-
+*[class^="btn"]:not(.btn-stroke) {
+  transition: background-color 0.2s ease; // 0 10px 30px 0 rgba(0,0,0,0.25)
+}
 *[class^="btn"] .icon {
   display: inline-block;
   vertical-align: bottom;
