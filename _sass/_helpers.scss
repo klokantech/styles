@@ -294,24 +294,24 @@ center, .center, .text-center{text-align: center;}
     margin-right: $i*10px;
   }
 }
-@for $i from 1 through 5 {
+@for $i from 1 through 8 {
   .mart-#{$i}-minus {
-    margin-top: $i*10px;
+    margin-top: $i*-10px;
   }
 }
-@for $i from 1 through 5 {
+@for $i from 1 through 8 {
   .marr-#{$i}-minus {
-    margin-right: $i*10px;
+    margin-right: $i*-10px;
   }
 }
-@for $i from 1 through 5 {
+@for $i from 1 through 8 {
   .marb-#{$i}-minus {
-    margin-bottom: $i*10px;
+    margin-bottom: $i*-10px;
   }
 }
-@for $i from 1 through 5 {
+@for $i from 1 through 8 {
   .marl-#{$i}-minus {
-    margin-left: $i*10px;
+    margin-left: $i*-10px;
   }
 }
 
@@ -333,6 +333,17 @@ center, .center, .text-center{text-align: center;}
   }
 }
 
+/* Sizes */
+@for $i from 1 through 7 {
+  .min-height-#{$i} {
+    min-height: $i*100px;
+  }
+}
+@for $i from 1 through 7 {
+  .min-width-#{$i} {
+    min-width: $i*100px;
+  }
+}
 /* colors */
 .primary{color: $color-primary;}
 .secondary{color: $color-secondary;}
