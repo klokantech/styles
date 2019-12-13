@@ -139,8 +139,8 @@ center, .center, .text-center{text-align: center;}
 }
 
 .unskewed {
-  -webkit-transform: skewY($skew);
-  transform: skewY($skew);
+  -webkit-transform: skewY($skew* -1);
+  transform: skewY($skew* -1);
 }
 
 /* Rounding */
