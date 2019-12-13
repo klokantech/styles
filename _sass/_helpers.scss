@@ -239,7 +239,7 @@ center, .center, .text-center{text-align: center;}
 }
 
 /* pad mobile*/
-@for $i from 1 through 10 {
+@for $i from 0 through 10 {
     .padx-#{$i}-mob {
       @media (max-width: $sc-small){
         padding-left: $i*10px;
@@ -247,7 +247,7 @@ center, .center, .text-center{text-align: center;}
     }
   }
 }
-@for $i from 1 through 10 {
+@for $i from 0 through 10 {
     .pady-#{$i}-mob {
       @media (max-width: $sc-small){
         padding-top: $i*10px;
@@ -318,15 +318,15 @@ center, .center, .text-center{text-align: center;}
 }
 
 /* margin mob */
-@for $i from 1 through 10 {
+@for $i from 0 through 10 {
     .mary-#{$i}-mob {
       @media (max-width: $sc-small){
-        padding-top: $i*10px;
-        padding-bottom: $i*10px;
+        margin-top: $i*10px;
+        margin-bottom: $i*10px;
     }
   }
 }
-@for $i from 1 through 10 {
+@for $i from 0 through 10 {
     .marx-#{$i}-mob {
       @media (max-width: $sc-small){
         margin-left: $i*10px;
