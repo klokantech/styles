@@ -123,7 +123,7 @@ a img:hover{
 .stick-top{top: 0;}
 .stick-bottom{bottom: 0;}
 center, .center, .text-center{text-align: center;}
-.center-mob .mob-center {
+.center-mob, .mob-center {
   @media(max-width: $sc-small) {
     text-align: center;
   }

@@ -36,14 +36,13 @@ html, body {
   height: $footer-height + $footer-bordertop-size;
   position: relative;
   font-size: $footer-fontsize;
-  line-height: $footer-fontsize;
   border-top: $footer-bordertop-size solid $footer-border-color;
 
   a{
+    display: block;
     color: $footer-link-color;
     font-size: $footer-fontsize;
-    line-height: $footer-fontsize;
-    vertical-align: baseline;
+    margin: $footer-link-margin;
     &:hover{
       color: $footer-link-hover-color;
       text-decoration: $footer-link-hover-decoration;
@@ -52,20 +51,6 @@ html, body {
 
   .container{
     padding: $footer-padding;
-  }
-}
-
-@media(max-width: $sc-medium){
-  .footer{
-    a{
-      font-size: $footer-fontsize / 3 * 2;
-    }
-    .klokan{
-      font-size: 32px;
-      &::after{
-        height: $footer-fontsize / 3 * 2;
-      }
-    }
   }
 }
 
