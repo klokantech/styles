@@ -336,12 +336,12 @@ center, .center, .text-center{text-align: center;}
 }
 
 /* Sizes */
-@for $i from 1 through 7 {
+@for $i from 1 through 10 {
   .min-height-#{$i} {
     min-height: $i*100px;
   }
 }
-@for $i from 1 through 7 {
+@for $i from 1 through 10 {
   .min-width-#{$i} {
     min-width: $i*100px;
   }
