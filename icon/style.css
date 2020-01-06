@@ -1,0 +1,546 @@
+@font-face {
+  font-family: 'icons';
+  src:
+    url('fonts/icons.woff2?z0wk5y') format('woff2'),
+    url('fonts/icons.ttf?z0wk5y') format('truetype'),
+    url('fonts/icons.woff?z0wk5y') format('woff'),
+    url('fonts/icons.svg?z0wk5y#icons') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon"], [class*=" icon"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icons' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.iconview-list1:before {
+  content: "\e903";
+}
+.iconview-module1:before {
+  content: "\e90c";
+}
+.iconGps2:before {
+  content: "\e92b";
+}
+.iconMyData-ico:before {
+  content: "\e92c";
+}
+.iconphone-android:before {
+  content: "\e92f";
+}
+.iconsettings:before {
+  content: "\e930";
+}
+.iconVectorData-ico:before {
+  content: "\e932";
+}
+.iconinfo-outline:before {
+  content: "\69";
+}
+.iconsave:before {
+  content: "\e92a";
+}
+.iconeye:before {
+  content: "\65";
+}
+.iconcloud:before {
+  content: "\63";
+}
+.iconsettings1:before {
+  content: "\36";
+}
+.iconstorage:before {
+  content: "\37";
+}
+.iconcolor-lens1:before {
+  content: "\3a";
+}
+.iconcontent-copy:before {
+  content: "\64";
+}
+.iconsocial-linkedin:before {
+  content: "\4e";
+}
+.iconpinterest2:before {
+  content: "\51";
+}
+.iconfacebook:before {
+  content: "\49";
+}
+.iconlaunch1:before {
+  content: "\66";
+}
+.icondone:before {
+  content: "\31";
+}
+.iconremove2:before {
+  content: "\2212";
+}
+.iconmore-horiz:before {
+  content: "\2e";
+}
+.iconmore-vert:before {
+  content: "\3b";
+}
+.iconkeyboard-arrow-down2:before {
+  content: "\77";
+}
+.iconcrop:before {
+  content: "\72";
+}
+.iconlock:before {
+  content: "\75";
+}
+.iconlock-open:before {
+  content: "\76";
+}
+.iconredo:before {
+  content: "\78";
+}
+.iconundo:before {
+  content: "\7a";
+}
+.iconrotate-right:before {
+  content: "\30";
+}
+.icongps-fixed2:before {
+  content: "\81";
+}
+.icongps-not-fixed:before {
+  content: "\7b";
+}
+.iconadd2:before {
+  content: "\2b";
+}
+.iconremove:before {
+  content: "\2d";
+}
+.iconremove22:before {
+  content: "\2213";
+}
+.iconclear:before {
+  content: "\58";
+}
+.icondown:before {
+  content: "\2228";
+}
+.iconleft:before {
+  content: "\3c";
+}
+.iconright:before {
+  content: "\3e";
+}
+.iconup:before {
+  content: "\2227";
+}
+.iconmarker:before {
+  content: "\7c";
+}
+.iconadd-circle:before {
+  content: "\7d";
+}
+.iconadd-circle-outline:before {
+  content: "\41";
+}
+.iconbackspace:before {
+  content: "\2190";
+}
+.iconperson1:before {
+  content: "\7e";
+}
+.iconperson-add1:before {
+  content: "\5a";
+}
+.iconperson-outline:before {
+  content: "\6b";
+}
+.iconlanguage:before {
+  content: "\5b";
+}
+.iconsync:before {
+  content: "\7f";
+}
+.iconhamburger2:before {
+  content: "\4c";
+}
+.iconvisibility:before {
+  content: "\80";
+}
+.iconvisibility-off:before {
+  content: "\82";
+}
+.iconstar:before {
+  content: "\2a";
+}
+.iconstar-outline:before {
+  content: "\23";
+}
+.iconedit1:before {
+  content: "\83";
+}
+.iconlink1:before {
+  content: "\38";
+}
+.iconerase:before {
+  content: "\5c";
+}
+.iconuni3F:before {
+  content: "\3f";
+}
+.iconsearch:before {
+  content: "\5d";
+}
+.icondelete1:before {
+  content: "\4f";
+}
+.iconcolor-lens:before {
+  content: "\39";
+}
+.iconMapPin:before {
+  content: "\e935";
+}
+.iconadd:before {
+  content: "\e936";
+}
+.iconarrow-back:before {
+  content: "\e937";
+}
+.iconbaseline-cancel-24px:before {
+  content: "\e938";
+}
+.iconbaseline-offline_pin-24px:before {
+  content: "\e939";
+}
+.iconbaseline-opacity-24px:before {
+  content: "\e93a";
+}
+.iconcheck2:before {
+  content: "\e93b";
+}
+.iconchevron-left:before {
+  content: "\e93c";
+}
+.iconclose:before {
+  content: "\e93d";
+}
+.iconData-ico:before {
+  content: "\e93e";
+}
+.icondelete:before {
+  content: "\e93f";
+}
+.iconedit:before {
+  content: "\e940";
+}
+.iconGps1:before {
+  content: "\e941";
+}
+.iconicon1:before {
+  content: "\e942";
+}
+.iconicon2:before {
+  content: "\e943";
+}
+.iconlaunch:before {
+  content: "\e944";
+}
+.iconlink:before {
+  content: "\e945";
+}
+.iconMaps-ico:before {
+  content: "\e946";
+}
+.iconmore-vert1:before {
+  content: "\e947";
+}
+.iconmy-location:before {
+  content: "\e948";
+}
+.iconoutline-cloud_download-24px:before {
+  content: "\e949";
+}
+.iconoutline-cloud_upload-24px:before {
+  content: "\e94a";
+}
+.iconperson-add:before {
+  content: "\e94b";
+}
+.iconperson:before {
+  content: "\e94c";
+}
+.iconRecord:before {
+  content: "\e94d";
+}
+.iconsearch2:before {
+  content: "\e94e";
+}
+.iconTiles-ico:before {
+  content: "\e94f";
+}
+.iconGeoJson-icon:before {
+  content: "\e913";
+}
+.iconGps:before {
+  content: "\e915";
+}
+.iconGps21:before {
+  content: "\e92d";
+}
+.iconicon11:before {
+  content: "\e92e";
+}
+.iconicon21:before {
+  content: "\6f";
+}
+.iconlayers:before {
+  content: "\e931";
+}
+.iconPlaceholder:before {
+  content: "\6e";
+}
+.iconuni7C:before {
+  content: "\e961";
+}
+.iconmedium:before {
+  content: "\e929";
+}
+.iconibm:before {
+  content: "\e905";
+}
+.iconbbc:before {
+  content: "\e906";
+}
+.iconSiemens:before {
+  content: "\e907";
+}
+.iconlinux:before {
+  content: "\e911";
+}
+.icongoogleplay:before {
+  content: "\79";
+}
+.icongeoreferencer:before {
+  content: "\47";
+}
+.iconoctogeo-vertical:before {
+  content: "\62";
+}
+.iconuni6F2:before {
+  content: "\70";
+}
+.iconraster:before {
+  content: "\61";
+}
+.iconweb-service:before {
+  content: "\42";
+}
+.iconprint-img:before {
+  content: "\74";
+}
+.iconvector:before {
+  content: "\56";
+}
+.icontwiter2:before {
+  content: "\54";
+}
+.iconuni672:before {
+  content: "\57";
+}
+.iconuni6F22:before {
+  content: "\71";
+}
+.iconuntitled:before {
+  content: "\68";
+}
+.iconpointer:before {
+  content: "\e633";
+}
+.iconmouse:before {
+  content: "\e633";
+}
+.iconfeed:before {
+  content: "\46";
+}
+.iconwindows8:before {
+  content: "\e910";
+}
+.iconadd-layer:before {
+  content: "\e909";
+}
+.icongithub2:before {
+  content: "\67";
+}
+.iconMobile-icon1-black:before {
+  content: "\e925";
+}
+.iconMobile-icon2-ImportMap-black:before {
+  content: "\e926";
+}
+.iconMobile-icon3-Offline-black:before {
+  content: "\e927";
+}
+.iconMobile-icon4-black:before {
+  content: "\e928";
+}
+.iconGeoPackage-icon-real:before {
+  content: "\e920";
+}
+.iconClou-icon:before {
+  content: "\e921";
+}
+.iconFolder-icon:before {
+  content: "\e922";
+}
+.iconMBTiles-icon:before {
+  content: "\e923";
+}
+.iconMobileDevices-icon:before {
+  content: "\e924";
+}
+.iconCluster-icon2-Dashboard-black:before {
+  content: "\e91d";
+}
+.iconCluster-icon3-lock-black:before {
+  content: "\e91e";
+}
+.iconCluster-icon4-Cloud-black:before {
+  content: "\e91f";
+}
+.iconEngine-icon1-Commandline-black:before {
+  content: "\e908";
+}
+.iconEngine-icon2-Integration-black:before {
+  content: "\e90a";
+}
+.iconEngine-icon3-Control-black:before {
+  content: "\e90e";
+}
+.iconEngine-icon4-Fast-black:before {
+  content: "\e912";
+}
+.iconDesktop-icon3-Modify-black:before {
+  content: "\e914";
+}
+.iconCloud-icon2-black:before {
+  content: "\e916";
+}
+.iconCloud-icon3-black:before {
+  content: "\e917";
+}
+.iconCloud-icon4-black:before {
+  content: "\e918";
+}
+.iconicon4:before {
+  content: "\e919";
+}
+.iconicon3-black:before {
+  content: "\e91a";
+}
+.iconicon2-black:before {
+  content: "\e91b";
+}
+.iconicon1-black:before {
+  content: "\e91c";
+}
+.iconadd1:before {
+  content: "\e900";
+}
+.iconcommandline-icon:before {
+  content: "\e901";
+}
+.iconCostumize-icon:before {
+  content: "\e902";
+}
+.iconlike:before {
+  content: "\e904";
+}
+.iconMapTiler-Cloud-icon-white:before {
+  content: "\43";
+}
+.iconMapTiler-Cluster-icon-white:before {
+  content: "\55";
+}
+.iconMapTiler-Desktop-icon-white:before {
+  content: "\44";
+}
+.iconMapTiler-Engine-icon-white:before {
+  content: "\45";
+}
+.iconMapTiler-Mobile-icon-white:before {
+  content: "\4d";
+}
+.iconMapTiler-Server-icon-white:before {
+  content: "\e90b";
+}
+.iconplanet-icon:before {
+  content: "\e90d";
+}
+.iconMapTiler-Stroke-logo-Icon:before {
+  content: "\6d";
+}
+.iconcode:before {
+  content: "\2f";
+}
+.iconyoutube-play:before {
+  content: "\59";
+}
+.iconnasa-logo:before {
+  content: "\e602";
+}
+.icongoogle-logo:before {
+  content: "\e603";
+}
+.iconec-logo:before {
+  content: "\e604";
+}
+.iconwunderground-logo:before {
+  content: "\e600";
+}
+.iconnoaa_logo:before {
+  content: "\e601";
+}
+.iconUSAirForce-logo:before {
+  content: "\e63b";
+}
+.iconApple-logo:before {
+  content: "\e63c";
+}
+.iconplus-icon:before {
+  content: "\50";
+}
+.iconfree-icon:before {
+  content: "\48";
+}
+.iconpro-icon:before {
+  content: "\52";
+}
+.iconstart-icon:before {
+  content: "\53";
+}
+.iconlogo3:before {
+  content: "\73";
+}
+.icongoogleplus:before {
+  content: "\4a";
+}
+.iconklokantech2:before {
+  content: "\4b";
+}
+.iconupload:before {
+  content: "\e90f";
+}
+.iconusers:before {
+  content: "\33";
+}
