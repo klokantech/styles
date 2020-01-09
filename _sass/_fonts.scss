@@ -32,26 +32,3 @@
     font-size: 60px;
   }
 }
-a.circled-icon{
-  display: block;
-  position: relative;
-}
-a.circled-icon::before{
-  content: attr(icons);
-  font-family: 'icons';
-  text-align: center;
-  position: absolute;
-  font-size: 32px;
-  width: 60px;
-  height: 60px;
-  left: 50%;
-  margin-left: -30px;
-  top: 50%;
-  margin-top: -30px;
-  background: rgba(90, 89, 89, 0.55);
-  color: #fff;
-  line-height: 60px;
-  vertical-align: middle;
-  border-radius: 50%;
-  z-index: 2;
-}
