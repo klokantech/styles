@@ -44,10 +44,43 @@ title: Fonts and symbols
           <a class="btn" href="{{ '/' | relative_url }}icon/">All icons</a>
         </div>
       </div>
+
+
       <h2>Syntax highlighter</h2>
       <p>You can use syntax highlighter which is included in jekyll template
         language (liquid). Styling is also included in this library. For usage
         you can use use liquid's macro
         <code>&#123;% highlight html %&#125;&#123;% endhighlight %&#125;</code></p>
   </div>
+</div>
+<div class="row">
+    <h2>Link with icon in circle in the middle</h2>
+    <p>Choose your icon with icons attribute</p>
+    {% highlight html %}
+    <!-- with image  -->
+    <div class="col5">
+      <a class="circled-icon" icons="]" href="#search">
+        <img class="width-100" src="https://www.maptiler.com/press/mediakit/thumbnails/video-5.jpg" alt="Boston">
+      </a>
+    </div>
+
+    <!-- with empty box  -->
+    <div class="col5">
+      <a class="circled-icon" icons="W" href="#download">
+        <div class="box width-100">
+        </div>
+      </a>
+    </div>
+    {% endhighlight %}
+  </div>
+  <div class="col5">
+    <a class="circled-icon" icons="]" href="https://www.maptiler.com/press/">
+      <img class="width-100" src="https://www.maptiler.com/press/mediakit/thumbnails/video-5.jpg" alt="Boston">
+    </a>
+  </div>
+<div class="offset1 col5">
+  <a class="circled-icon" icons="W" href="#download">
+    <div class="shadow3 width-100 pady-10">
+    </div>
+  </a>
 </div>
