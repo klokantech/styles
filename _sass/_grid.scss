@@ -89,21 +89,21 @@ $grid-screens: (
 /* Responsive visibility */
 @media (max-width: $sc-medium) {
   .tablet-no {
-    display: none;
+    display: none !important;
   }
 }
 @media (max-width: $sc-small) {
   .mobile-no {
-    display: none;
+    display: none !important;
   }
 }
 @media (min-width: $sc-medium) {
   .computer-no {
-    display: none;
+    display: none !important;
   }
 }
 @media (min-width: $sc-small) {
   .mobile-only {
-    display: none;
+    display: none !important;
   }
 }
