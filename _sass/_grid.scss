@@ -97,3 +97,13 @@ $grid-screens: (
     display: none;
   }
 }
+@media (min-width: $sc-medium) {
+  .computer-no {
+    display: none;
+  }
+}
+@media (min-width: $sc-small) {
+  .mobile-only {
+    display: none;
+  }
+}

@@ -79,7 +79,9 @@ a img:hover{
 .square-list{
   list-style-type: square;
 }
-
+.empty-list{
+  list-style-type: none;
+}
 /* width % */
 
 @for $i from 0 through 10 {
@@ -92,7 +94,11 @@ a img:hover{
     width : round(percentage($i/10))+ 5;
   }
 }
-
+@media (max-width: $sc-small) {
+  .width-100-mob {
+    width: 100%;
+  }
+}
 /* display */
 
 .inline{
