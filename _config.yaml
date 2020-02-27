@@ -2,7 +2,11 @@ permalink: /:year-:month-:day-:title/
 
 sass:
   style: :compressed
+  sass_dir: 'twbs/scss/'
 
+exclude:
+  - 'twbs/site'
+  
 defaults:
   -
     scope:
