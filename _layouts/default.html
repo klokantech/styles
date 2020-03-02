@@ -12,51 +12,38 @@
     <meta name="theme-color" content="#115e94">
 
     <link href="{{ '/base.css' | relative_url }}" rel="stylesheet" />
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700%7CUbuntu:400,700&amp;display=swap&amp;subset=latin-ext" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400i,600,700,700i&amp;display=swap&amp;subset=latin-ext" rel="stylesheet">
     <script type="text/javascript" src="{{ '/js/index.js' | relative_url }}"></script>
   </head>
   <body>
-    <div id="navbar-top">
-      <div class="container">
-        <div class="col-1">
-          <a class="title" href="{{ '/' | relative_url }}">
-            <img class="w-100" src="{{ '/img/logo.svg' | relative_url }}" alt="logo">
-          </a>
-        </div>
-
-        <nav class="nav">
-          <a href="{{ '/' | relative_url }}">Styling</a>
-          <a href="{{ '/html5/' | relative_url }}">Markup</a>
-          <a href="{{ '/fonts/' | relative_url }}">Fonts</a>
-          <a href="{{ '/components/' | relative_url }}">Components</a>
-          <a class="nav-btn" href="https://github.com/klokantech/styles">GitHub</a>
-        </nav>
-        <div class="nav-mobile">
-          <div id="nav-mobile-btn">H</div>
-          <div id="nav-mobile-nav">
-            <a class="b" href="{{ site.baseurl }}/">Styling</a>
-            <a href="{{ '/' | relative_url }}#typography">Typography</a>
-            <a href="{{ '/' | relative_url }}#buttons">Buttons</a>
-            <a href="{{ '/' | relative_url }}#borders">Borders</a>
-            <a href="{{ '/' | relative_url }}#boxes">Boxes</a>
-            <a href="{{ '/' | relative_url }}#helpers">Helpers</a>
-            <a href="{{ '/' | relative_url }}#grid">Grid system</a>
-            <a href="{{ '/' | relative_url }}#tables">Tables</a>
-            <a href="{{ '/' | relative_url }}#forms">Forms</a>
-            <a href="{{ '/' | relative_url }}#msgs">Messages</a>
-            <a class="b" href="{{ '/' | relative_url }}/html5/">Markup</a>
-            <a href="{{ '/' | relative_url }}fonts">Fonts</a>
-            <a class="b" href="{{ '/' | relative_url }}/components/">Components</a>
-            <a href="https://github.com/klokantech/styles">GitHub</a>
+    <div class="container mt-3 border-bottom">
+      <div class="row">
+        <nav class="navbar navbar-expand-sm navbar-dark w-100">
+          <a class="navbar-brand" href="{{ '/' | relative_url }}"><img height="54" src="{{ '/img/logo.svg' | relative_url }}" alt="logo"></a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+            <div class="navbar-nav ml-auto font-weight-bold">
+              <a class="nav-item nav-link" href="{{ '/' | relative_url }}">Styling</a>
+              <a class="nav-item nav-link" href="{{ '/html5/' | relative_url }}">Markup</a>
+              <a class="nav-item nav-link" href="{{ '/fonts/' | relative_url }}">Fonts</a>
+              <a class="nav-item nav-link" href="{{ '/components/' | relative_url }}">Components</a>
+            </div>
+            <a class="btn btn-outline-dark" href="https://github.com/klokantech/styles">GitHub</a>
           </div>
-        </div>
+        </nav>
       </div>
     </div>
-    <div class="container">
+
+    <div class="container mt-3">
       <div class="row">
-        <div class="col-2">
-          <h4 class="padt-4">Styleguide</h4>
+        <div class="col-2 text-right">
+          <h4 class="pt-2">Styleguide</h4>
           <a class="b" href="{{ site.baseurl }}/">CSS and styling</a><br>
           <a href="{{ '/' | relative_url }}#typography">Typography</a><br>
           <a href="{{ '/' | relative_url }}#buttons">Buttons</a><br>
@@ -71,7 +58,7 @@
           <a class="b" href="{{ '/' | relative_url }}fonts">Fonts and symbols</a><br>
           <a class="b" href="{{ '/' | relative_url }}/components/">Components</a><br>
         </div>
-        <div class="col-10">
+        <div class="col">
           {{ content }}
         </div>
 
