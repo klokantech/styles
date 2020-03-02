@@ -12,15 +12,19 @@
     <meta name="theme-color" content="#115e94">
 
     <link href="{{ '/base.css' | relative_url }}" rel="stylesheet" />
-    <link href='https://fonts.googleapis.com/css?family=Ubuntu%7COpen+Sans:400,400i,600,700&subset=latin-ext' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700%7CUbuntu:400,700&amp;display=swap&amp;subset=latin-ext" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400i,600,700,700i&amp;display=swap&amp;subset=latin-ext" rel="stylesheet">
     <script type="text/javascript" src="{{ '/js/index.js' | relative_url }}"></script>
   </head>
   <body>
     <div id="navbar-top">
       <div class="container">
-        <a class="title" href="{{ '/' | relative_url }}">
-          <img src="{{ '/img/logo.svg' | relative_url }}" alt="logo">
-        </a>
+        <div class="col-1">
+          <a class="title" href="{{ '/' | relative_url }}">
+            <img class="w-100" src="{{ '/img/logo.svg' | relative_url }}" alt="logo">
+          </a>
+        </div>
+
         <nav class="nav">
           <a href="{{ '/' | relative_url }}">Styling</a>
           <a href="{{ '/html5/' | relative_url }}">Markup</a>
@@ -49,15 +53,9 @@
         </div>
       </div>
     </div>
-    <div class="container main">
+    <div class="container">
       <div class="row">
-        <!-- content -->
-        <div class="col10 flip">
-          {{ content }}
-        </div>
-        <!-- end content -->
-        <!-- nav-left -->
-        <div class="col2 flip text-right">
+        <div class="col-2">
           <h4 class="padt-4">Styleguide</h4>
           <a class="b" href="{{ site.baseurl }}/">CSS and styling</a><br>
           <a href="{{ '/' | relative_url }}#typography">Typography</a><br>
@@ -73,7 +71,10 @@
           <a class="b" href="{{ '/' | relative_url }}fonts">Fonts and symbols</a><br>
           <a class="b" href="{{ '/' | relative_url }}/components/">Components</a><br>
         </div>
-        <!-- end nav-left  -->
+        <div class="col-10">
+          {{ content }}
+        </div>
+
       </div>
     </div>
   </body>
