@@ -28,7 +28,7 @@
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-            <div class="navbar-nav ml-auto font-weight-bold">
+            <div class="navbar-nav ml-auto font-weight-bold text-dark">
               <a class="nav-item nav-link" href="{{ '/' | relative_url }}">Styling</a>
               <a class="nav-item nav-link" href="{{ '/html5/' | relative_url }}">Markup</a>
               <a class="nav-item nav-link" href="{{ '/fonts/' | relative_url }}">Fonts</a>
@@ -42,9 +42,9 @@
 
     <div class="container mt-3">
       <div class="row">
-        <div class="col-2 text-right">
+        <div class="col-sm-2 py-15 text-center text-sm-right">
           <h4 class="pt-2">Styleguide</h4>
-          <a class="b" href="{{ site.baseurl }}/">CSS and styling</a><br>
+          <a class="font-weight-bold text-dark" href="{{ site.baseurl }}/">CSS and styling</a><br>
           <a href="{{ '/' | relative_url }}#typography">Typography</a><br>
           <a href="{{ '/' | relative_url }}#buttons">Buttons</a><br>
           <a href="{{ '/' | relative_url }}#borders">Borders</a><br>
@@ -54,11 +54,11 @@
           <a href="{{ '/' | relative_url }}#forms">Forms</a><br>
           <a href="{{ '/' | relative_url }}#tables">Tables</a><br>
           <a href="{{ '/' | relative_url }}#msgs">Messages</a><br><br>
-          <a class="b" href="{{ '/' | relative_url }}/html5/">HTML and markup</a><br>
-          <a class="b" href="{{ '/' | relative_url }}fonts">Fonts and symbols</a><br>
-          <a class="b" href="{{ '/' | relative_url }}/components/">Components</a><br>
+          <a class="font-weight-bold text-dark" href="{{ '/' | relative_url }}/html5/">HTML and markup</a><br>
+          <a class="font-weight-bold text-dark" href="{{ '/' | relative_url }}fonts">Fonts and symbols</a><br>
+          <a class="font-weight-bold text-dark" href="{{ '/' | relative_url }}/components/">Components</a><br>
         </div>
-        <div class="col">
+        <div class="col py-15">
           {{ content }}
         </div>
 

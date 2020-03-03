@@ -62,19 +62,30 @@ $colors: map-merge(
     "white":      $white,
     "gray":       $gray-600,
     "gray-light": $gray-100,
-    "gray-dark":  $gray-900
+    "gray-dark":  $gray-900,
+
   ),
   $colors
 );
 
-$primary:       $blue !default;
+$primary:       #3174FF !default;
 $secondary:     #333359 !default;
-$success:       $green !default;
+$success:       #90cb90 !default;
 $info:          #a1acb7 !default;
-$warning:       $yellow !default;
-$danger:        $red !default;
+$warning:       #ff905e !default;
+$danger:        #dc3545 !default;
 $light:         $gray-100 !default;
 $dark:          $gray-900 !default;
+$cloud: #0E61C6 !default;
+$cloud-s: #2B8BFB !default;
+$desktop: #724FA7 !default;
+$desktop-s: #A82AB6 !default;
+$mobile: #00D5DF !default;
+$engine: #E58035 !default;
+$engine-s: #FF6F4C !default;
+$cluster: #E58035 !default;
+$cluster-s: #FFC957 !default;
+$server: #E6353D !default;
 
 $theme-colors: () !default;
 // stylelint-disable-next-line scss/dollar-variable-default
@@ -87,7 +98,17 @@ $theme-colors: map-merge(
     "warning":    $warning,
     "danger":     $danger,
     "light":      $light,
-    "dark":       $dark
+    "dark":       $dark,
+    "cloud":      $cloud,
+    "cloud-s":    $cloud-s,
+    "desktop":    $desktop,
+    "desktop-s":  $desktop-s,
+    "mobile":     $mobile,
+    "engine":     $engine,
+    "engine-s":   $engine-s,
+    "cluster":    $cluster,
+    "cluster-s":  $cluster-s,
+    "server":     $server,
   ),
   $theme-colors
 );
@@ -150,7 +171,9 @@ $spacers: map-merge(
     7: ($spacer * 7),
     8: ($spacer * 8),
     9: ($spacer * 9),
-    10: ($spacer * 10)
+    10: ($spacer * 10),
+    15: ($spacer * 1.5),
+
 
   ),
   $spacers
@@ -266,7 +289,7 @@ $box-shadow:                  0rem 0.625rem 2.1875rem rgba(51,51,89,0.1) !defaul
 $box-shadow-lg:               0rem 0.9375rem 4.25rem rgba(51,51,89,0.1) !default; /* 0/16 */ /* 15/16 */ /* 68/16 */
 
 $component-active-color:      $white !default;
-$component-active-bg:         theme-color("primary") !default;
+$component-active-bg:         transparent !default;
 
 $caret-width:                 .3em !default;
 $caret-vertical-align:        $caret-width * .85 !default;
@@ -436,17 +459,17 @@ $btn-font-size:               15px !default; /* 14/16 */
 $btn-line-height:             15px !default;
 $btn-white-space:             nowrap !default; // Set to `nowrap` to prevent text wrapping
 
-$btn-padding-y-sm:            8px !default;
-$btn-padding-x-sm:            16px !default;
-$btn-font-size-sm:            $btn-font-size !default;
+$btn-padding-y-sm:            4px !default;
+$btn-padding-x-sm:            8px !default;
+$btn-font-size-sm:            12px !default;
 $btn-line-height-sm:          15px !default;
 
-$btn-padding-y-lg:            8px !default;
-$btn-padding-x-lg:            16px !default;
+$btn-padding-y-lg:            12px !default;
+$btn-padding-x-lg:            24px !default;
 $btn-font-size-lg:            $btn-font-size !default;
 $btn-line-height-lg:          15px !default;
 
-$btn-border-width:            2px !default;
+$btn-border-width:            0 !default;
 
 $btn-font-weight:             600 !default;
 $btn-box-shadow:              0 0.625rem 1.875rem 0 rgba(0,0,0,0.25)!default; /* 10/16 */ /* 30/16 */
@@ -464,7 +487,7 @@ $btn-border-radius:           0.25rem !default; /* 4/16 */
 $btn-border-radius-lg:        0.25rem !default;
 $btn-border-radius-sm:        $border-radius !default;
 
-$btn-transition:              color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out !default;
+$btn-transition:              background-color 0.2s ease !default;
 
 
 // Forms
@@ -750,8 +773,8 @@ $navbar-toggler-font-size:          0.9375rem !default; /* 15/16 */
 $navbar-toggler-border-radius:      $btn-border-radius !default;
 
 $navbar-dark-color:                 $secondary !default;
-$navbar-dark-hover-color:           rgba($white, .75) !default;
-$navbar-dark-active-color:          $white !default;
+$navbar-dark-hover-color:           $secondary !default;
+$navbar-dark-active-color:          $secondary !default;
 $navbar-dark-disabled-color:        rgba($white, .25) !default;
 $navbar-dark-toggler-icon-bg:       url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'><path stroke='#{$navbar-dark-color}' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/></svg>") !default;
 $navbar-dark-toggler-border-color:  0 !default;

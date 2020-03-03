@@ -3,3 +3,14 @@
     border-bottom: 1px ;
     font-weight: 600;
 }
+@each $color, $value in $theme-colors {
+  .btn-outline-#{$color} {
+    @include button-outline-variant($value);
+    border: solid 2px $value;
+    &:hover{
+      background-color: transparent;
+      color: darken($value, 5%);
+      border:solid 2px darken($value, 5%);
+    }
+  }
+}
