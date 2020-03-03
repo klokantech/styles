@@ -3,52 +3,49 @@ layout: default
 title: Components
 ---
 
-<div class="row">
-  <div class="col12 padb-8">
+  <div class="col-10 my-2">
     <h1>Components</h1>
 
     <h2>Navigation</h2>
-    <div class="navside-btn"><span class="icon"> H </span></div>
-    <div class="navside">
-      <a class="user-action" href="#logout">Log out</a>
-      <a class="user-login" href="#profile">Username</a>
-
-      <a class="open" href="#1">Item 1</a>
-      <a href="#2">Item 2</a>
-      <a href="#3">Item 3</a>
-      <a class="last" href="#4">Item 4</a>
-      <p>Item 5</p>
-      <div class="sub">
-        <a href="#5">Sub item 1</a>
-        <a href="#6">Sub item 2</a>
-        <a href="#2">Sub item 3</a>
+    <div class="container mt-3 border-bottom">
+      <div class="row">
+        <nav class="navbar navbar-expand-sm navbar-dark">
+          <a class="navbar-brand" href="{{ '/' | relative_url }}"><img height="54" src="{{ '/img/logo.svg' | relative_url }}" alt="logo"></a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+            <div class="navbar-nav ml-auto font-weight-bold text-dark">
+              <a class="nav-item nav-link" href="{{ '/' | relative_url }}">Styling</a>
+              <a class="nav-item nav-link" href="{{ '/html5/' | relative_url }}">Markup</a>
+              <a class="nav-item nav-link" href="{{ '/fonts/' | relative_url }}">Fonts</a>
+              <a class="nav-item nav-link" href="{{ '/components/' | relative_url }}">Components</a>
+            </div>
+            <a class="btn btn-outline-dark" href="https://github.com/klokantech/styles">GitHub</a>
+          </div>
+        </nav>
       </div>
-      <a class="last" href="#4">Item 6</a>
-      <a href="#5">Item 7</a>
-      <a href="#6">Item 8</a>
     </div>
 
     {% highlight html %}
-    <div class="navside-btn">
-      <span class="icon">H</span>
-    </div>
-    <div class="navside">
-      <a class="user-action" href="#logout">Log out</a>
-      <a class="user-login" href="#profile">Username</a>
-
-      <a class="open" href="#1">Item 1</a>
-      <a href="#2">Item 2</a>
-      <a href="#3">Item 3</a>
-      <a class="last" href="#4">Item 4</a>
-      <p>Item 5</p>
-      <div class="sub">
-        <a href="#5">Sub item 1</a>
-        <a href="#6">Sub item 2</a>
-        <a href="#2">Sub item 3</a>
+    <div class="container mt-3 border-bottom">
+      <div class="row">
+        <nav class="navbar navbar-expand-sm navbar-dark w-100">
+          <a class="navbar-brand" href="{{ '/' | relative_url }}"><img height="54" src="{{ '/img/logo.svg' | relative_url }}" alt="logo"></a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+            <div class="navbar-nav ml-auto font-weight-bold text-dark">
+              <a class="nav-item nav-link" href="{{ '/' | relative_url }}">Styling</a>
+              <a class="nav-item nav-link" href="{{ '/html5/' | relative_url }}">Markup</a>
+              <a class="nav-item nav-link" href="{{ '/fonts/' | relative_url }}">Fonts</a>
+              <a class="nav-item nav-link" href="{{ '/components/' | relative_url }}">Components</a>
+            </div>
+            <a class="btn btn-outline-dark" href="https://github.com/klokantech/styles">GitHub</a>
+          </div>
+        </nav>
       </div>
-      <a class="last" href="#4">Item 6</a>
-      <a href="#5">Item 7</a>
-      <a href="#6">Item 8</a>
     </div>
     {% endhighlight %}
 
@@ -168,8 +165,6 @@ title: Components
       <span class="label success">Data processing</span> and text after labels.
     </p>
 
-  </div>
-</div>
 
 <div class="row" id="msgs">
   <div class="col12">
@@ -193,4 +188,5 @@ title: Components
     <p>And text in a box is also there!</p>
    </div>
   </div>
+</div>
 </div>
