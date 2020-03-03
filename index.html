@@ -3,21 +3,19 @@ layout: default
 title: Styles
 ---
 
-<div class="row" id="typography">
+<div class="row my-2" id="typography">
   <div class="col-12">
     <h1>Base CSS</h1>
 
     <p>This is the repository for the base cascading styles.</p>
 
-    <h2>Typography</h2>
+    <h2>Layout</h2>
+
+    <p>For layout documentation visit <a href="https://getbootstrap.com/docs/4.0/layout/overview/">layout</a></p>
+
+    <h3>Typography</h3>
 
     <p>Lorem ipsum <small>dolor sit amet</small>, consectetur <big>adipiscing elit</big>. Maecenas dignissim molestie turpis, vitae faucibus sem consectetur ut. Vestibulum vitae tellus tellus. Nullam mollis, ligula non porttitor laoreet, sem metus semper neque, nec condimentum magna velit id risus. Nam cursus laoreet luctus. Aliquam ex tortor, congue nec interdum sit amet, euismod pellentesque arcu. Vivamus mi mauris, volutpat a orci ut, sodales rhoncus magna. Pellentesque posuere vel nulla ut accumsan. Aenean at ligula odio. Pellentesque pulvinar augue neque, sed ultricies enim viverra in. Ut quis nibh orci.</p>
-
-    <h2>Tile text</h2>
-
-    <h3>Number three</h3>
-
-    <p>Nel mel kalum convallis massa. Duis ultrices libero id augue ullamcorper vehicula. Rum sem lass aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Fusce id felis vel metus efficitur faucibus ut at nisi. Proin eros nisl, ultricies quis porta sed, mollis a erat. Duis ex nisl, pharetra maximus lacus nec, porttitor interdum diam. Nulla mattis eu risus sed imperdiet.</p>
 
     <h3>Number three</h3>
 
@@ -31,17 +29,17 @@ title: Styles
     <p>Duis ultrices libero id augue ullamcorper vehicula. Taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Fusce id felis vel metus efficitur faucibus ut at nisi. Proin eros nisl, ultricies quis porta sed, mollis a erat. Duis ex nisl, pharetra maximus lacus nec, porttitor interdum diam. Nulla mattis eu risus sed imperdiet.</p>
     <p>Duis ultrices libero id augue ullamcorper vehicula. Taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Fusce id felis vel metus efficitur faucibus ut at nisi. Proin eros nisl, ultricies quis porta sed, mollis a erat. Duis ex nisl, pharetra maximus lacus nec, porttitor interdum diam. Nulla mattis eu risus sed imperdiet.</p>
 
-<table>
-  <tr><td>Apple</td><td>3</td></tr>
-  <tr><td>Banana</td><td>4</td></tr>
-  <tr><td>Pear</td><td>5</td></tr>
-</table>
+      <table class="table table-bordered">
+        <tr><td>Apple</td><td>3</td></tr>
+        <tr><td>Banana</td><td>4</td></tr>
+        <tr><td>Pear</td><td>5</td></tr>
+      </table>
 
     <p>Duis ultrices libero id augue ullamcorper vehicula. Taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Fusce id felis vel metus efficitur faucibus ut at nisi. Proin eros nisl, ultricies quis porta sed, mollis a erat. Duis ex nisl, pharetra maximus lacus nec, porttitor interdum diam. Nulla mattis eu risus sed imperdiet.</p>
     <p>Duis ultrices libero id augue ullamcorper vehicula. Taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Fusce id felis vel metus efficitur faucibus ut at nisi. Proin eros nisl, ultricies quis porta sed, mollis a erat. Duis ex nisl, pharetra maximus lacus nec, porttitor interdum diam. Nulla mattis eu risus sed imperdiet.</p>
   </div>
 </div>
-<div class="row">
+<div class="row my-2">
   <div class="col-3">
     <p>
       <span class="smaller">smaller 65%</span><br>
@@ -67,13 +65,14 @@ title: Styles
 
   </div>
 </div>
-<div class="row">
+<div class="row my-2">
   <div class="col-3">
     <h1>Heading</h1>
     <h2>Heading</h2>
     <h3>Heading</h3>
     <h4>Heading</h4>
     <h5>Heading</h5>
+    <h6>Heading</h6>
   </div>
   <div class="col-3">
     <h3>List ul</h3>
@@ -96,7 +95,7 @@ title: Styles
   <div class="col-3">
   </div>
 </div>
-<div class="row" id="buttons">
+<div class="row my-2" id="buttons">
   <div class="col-12">
     <h2>Buttons</h2>
     <p>.btn .btn-*</p>
@@ -122,189 +121,70 @@ title: Styles
     <p>.btn-large</p>
     <button type="button" class="btn btn-primary btn-lg">Large button</button>
     <button type="button" class="btn btn-secondary btn-lg">Large button</button>
-    <p>
-      <a class="btn"><span class="icon">s</span>Label</a>
-    </p>
     <h3>Buttons collection</h3>
-    <div class="btns">
-      <a href="#">Location</a>
-      <a href="#">Units</a>
-      <a href="#">Links</a>
-      <a href="#">Names</a>
-    </div>
-    <h3>Buttons collection</h3>
-    <p>
-      <a href="" class="btn-action">ASDF</a>
-    </p>
+    <div class="btn-group">
+      <button type="button" class="btn btn-primary">Location</button>
+      <button type="button" class="btn btn-primary">Units</button>
+      <button type="button" class="btn btn-primary">Links</button>
   </div>
 </div>
-<div class="row" id="borders">
+<div class="row my-2" id="borders">
   <div class="col-12">
     <h2>Borders</h2>
-    <div class="row">
-      <div class="col-2 border-primary">border-*</div>
-      <div class="col-2 offset1 bordertop-primary">bordertop-*</div>
-      <div class="col-2 offset1 borderright-primary">borderright-*</div>
-      <div class="col-2 offset1 borderbottom-primary">borderbottom-*</div>
-    </div>
-    <div class="row">
-      <h3>hr</h3>
-      <div class="col-12 pad-no mar-no"><hr></div>
+    <div class="row my-2">
+      <div class="col-2 mx-1 border">border</div>
+      <div class="col-2 mx-1 border-top border-primary">border-top border-primary</div>
+      <div class="col-2 mx-1 border-right">border-right</div>
+      <div class="col-2 mx-1 border-bottom border-danger">border-bottom border-danger</div>
+      <div class="col-2 mx-1 border-left">border-left"</div>
+
     </div>
   </div>
 </div>
-<div class="row" id="boxes">
+<div class="row my-2" id="boxes">
   <h2>Shadows</h2>
-  <div class="col-2 marx-4 shadow1">
+  <div class="col-2 mx-4 shadow-sm">
     <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
   </div>
-  <div class="col-2 marx-4 shadow2">
+  <div class="col-2 mx-4 shadow">
     <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
   </div>
-  <div class="col-2 marx-4 shadow3">
-    <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-  </div>
-  <div class="col-2 marx-4 shadow4">
+  <div class="col-2 mx-4 shadow-lg">
     <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
   </div>
 
-<div class="col-12 mary-2">
+<div class="col-12 ">
   <h2>Box</h2>
 </div>
-  <div class="col-4 offset4 mary-2 box center width-35">
+  <div class="col-4 offset4  box center width-35">
     <p>This is a default box</p>
   </div>
 
-
   <div class="col-12">
     <h2>Colors</h2>
-    <div class="row">
-      <div class="col-6">
-        <p class="primary">primary</p>
-        <p class="secondary">secondary</p>
-        <p class="gray-light">gray-light</p>
-        <p class="gray-dark">gray-dark</p>
-        <p class="warning">warning</p>
-        <p class="success">success</p>
-        <p class="danger">danger</p>
-        <p class="white">white</p>
-        <p class="black">black</p>
-      </div>
-      <div class="col-6">
-        <p class="bg-primary">primary</p>
-        <p class="bg-secondary">secondary</p>
-        <p class="bg-gray-light">gray-light</p>
-        <p class="bg-gray-dark">gray-dark</p>
-        <p class="bg-warning">warning</p>
-        <p class="bg-success">success</p>
-        <p class="bg-danger">danger</p>
-        <p class="bg-white">white</p>
-        <p class="bg-black">black</p>
-      </div>
+    <div class="p-1 mb-2 bg-primary text-white">.bg-primary</div>
+    <div class="p-1 mb-2 bg-secondary text-white">.bg-secondary</div>
+    <div class="p-1 mb-2 bg-success text-white">.bg-success</div>
+    <div class="p-1 mb-2 bg-danger text-white">.bg-danger</div>
+    <div class="p-1 mb-2 bg-warning text-dark">.bg-warning</div>
+    <div class="p-1 mb-2 bg-info text-white">.bg-info</div>
+    <div class="p-1 mb-2 bg-light text-dark">.bg-light</div>
+    <div class="p-1 mb-2 bg-dark text-white">.bg-dark</div>
+    <div class="p-1 mb-2 bg-white text-dark">.bg-white</div>
     </div>
   </div>
 </div>
-<div class="row" id="helpers">
-  <div class="col-12">
-    <div class="row2">
-      <h2>Helpers</h2>
-      <div class="col-1 round bg-primary center">
-        <p>.round</p>
-      </div>
-      <div class="col-1 offset1 round-top-left bg-primary center">
-        <p>.round-left-top</p>
-      </div>
-      <div class="col-1 offset1 round-bottom-right bg-primary center">
-        <p>.round-right-bottom</p>
-      </div>
-      <div class="col-1 offset1 center" style="height: 100%">
-        <div class="bg-primary circle">
-          <p>.circle</p>
-        </div>
-      </div>
-      <div class="col-1 offset1 center">
-        <p>Other:<br> .clearfix<br> .hidden</p>
-      </div>
-      <div class="col-1 offset1 center">
-        <p>.center<br> .clip<br> .contain</p>
-      </div>
-    </div>
-  </div>
-</div>
-<div class="row" id="grid">
-  <div class="col-12">
-    <h2>Grid system</h2>
-    <p>12 columns</p>
-    <div class="row">
-      <div class="col-12 bg-gray-dark gray-light">col-12</div>
-    </div>
-    <div class="row">
-      <div class="col-6 bg-gray-light">col-6</div>
-      <div class="col-6 bg-gray-light">col-6</div>
-    </div>
-    <div class="row">
-      <div class="col-3 bg-gray-dark gray-light">col-3</div>
-      <div class="col-3 bg-gray-dark gray-light">col-3</div>
-      <div class="col-3 bg-gray-dark gray-light">col-3</div>
-      <div class="col-3 bg-gray-dark gray-light">col-3</div>
-    </div>
-    <div class="row">
-      <div class="col-2 bg-gray-light">col-2</div>
-      <div class="col-2 bg-gray-light">col-2</div>
-      <div class="col-2 bg-gray-light">col-2</div>
-      <div class="col-2 bg-gray-light">col-2</div>
-      <div class="col-2 bg-gray-light">col-2</div>
-      <div class="col-2 bg-gray-light">col-2</div>
-    </div>
-    <div class="row">
-      <div class="col-1 bg-gray-dark gray-light">col-1</div>
-      <div class="col-1 bg-gray-dark gray-light">col-1</div>
-      <div class="col-1 bg-gray-dark gray-light">col-1</div>
-      <div class="col-1 bg-gray-dark gray-light">col-1</div>
-      <div class="col-1 bg-gray-dark gray-light">col-1</div>
-      <div class="col-1 bg-gray-dark gray-light">col-1</div>
-      <div class="col-1 bg-gray-dark gray-light">col-1</div>
-      <div class="col-1 bg-gray-dark gray-light">col-1</div>
-      <div class="col-1 bg-gray-dark gray-light">col-1</div>
-      <div class="col-1 bg-gray-dark gray-light">col-1</div>
-      <div class="col-1 bg-gray-dark gray-light">col-1</div>
-      <div class="col-1 bg-gray-dark gray-light">col-1</div>
-    </div>
-  </div>
-</div>
-<div class="row">
-  <div class="col-12">
-    <h3>Grid offset</h3>
-    <div class="row">
-      <div class="col-10 offset2 bg-gray-dark">offset2</div>
-      <div class="col-8 offset4 bg-gray-light">offset4</div>
-      <div class="col-6 offset6 bg-gray-dark">offset6</div>
-      <div class="col-4 offset8 bg-gray-light">offset8</div>
-      <div class="col-2 offset10 bg-gray-dark">offset10</div>
-    </div>
-  </div>
-</div>
-<div class="row">
-  <h3>Vertical grid</h3>
-  <div class="row1 bg-gray-light"><div class="col-12">row1</div></div>
-  <br>
-  <div class="row2 bg-gray-light"><div class="col-12">row2</div></div>
-  <br>
-  <div class="row3 bg-gray-light"><div class="col-12">row3</div></div>
-  <br>
-  <div class="row4 bg-gray-light"><div class="col-12">row4</div></div>
-</div>
-<div class="row" id="tables">
+<div class="row my-2" id="tables">
   <div class="col-12">
     <h2>Tables</h2>
     <p>Usage:</p> <pre>
-&lt;table&gt;
-  &lt;thead&gt;
-    &lt;tr&gt;&lt;td&gt;Header&lt;/td&gt;&lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;&lt;td&gt;Content&lt;/td&gt;&lt;/tr&gt;
-  &lt;/tbody&gt;
+&lt;table class=&quot;table table-bordered&quot;&gt;
+      &lt;thead class=&quot;thead-light&quot;&gt;
+        &lt;tr&gt;&lt;td&gt;Header&lt;/td&gt;&lt;/tr&gt;
+      &lt;/thead&gt;
+      &lt;tbody&gt;
+        &lt;tr&gt;&lt;td&gt;Content&lt;/td&gt;&lt;/tr&gt;
+      &lt;/tbody&gt;
 &lt;/table&gt;</pre>
     <br>
     <table class="table table-bordered">
@@ -340,7 +220,7 @@ title: Styles
           </tfoot>
         </table>
     <h3>Striped & hover</h3>
-    <p>Usage: <code>  &lt;table class="striped hover"&gt; ... &lt;/table&gt; </code></p>
+    <p>Usage: <code>     &lt;table class=&quot;table table-striped table-hover&quot;&gt; </code></p>
     <table class="table table-striped table-hover">
       <thead class="thead-light">
         <tr>
@@ -364,36 +244,28 @@ title: Styles
           <td>#3</td><td>Report 4</td><td>1</td><td>2014.02.13</td>
         </tr>
       </tbody>
-      <tfoot>
-        <tr>
-          <td>Sum</td>
-          <td>4</td>
-          <td>3</td>
-          <td></td>
-        </tr>
-      </tfoot>
     </table>
   </div>
 </div>
-<div class="row" id="forms">
-  <form>
-    <div class="form-group">
-      <label for="exampleInputEmail1">Email address</label>
-      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-    </div>
-    <div class="form-group">
-      <label for="exampleInputPassword1">Password</label>
-      <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-    </div>
-    <div class="form-check">
-      <input type="checkbox" class="form-check-input" id="exampleCheck1">
-      <label class="form-check-label" for="exampleCheck1">Check me out</label>
-    </div>
-    <button type="submit" class="btn btn-primary">Submit</button>
-  </form>
-</div>
+<div class="row my-2" id="forms">
+  <div class="col-4">
+    <h2>forms</h2>
+    <form>
+      <div class="form-group">
+        <label for="exampleInputEmail1">Email address</label>
+        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+      </div>
+      <div class="form-group">
+        <label for="exampleInputPassword1">Password</label>
+        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+      </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+  </div>
 
-<div class="row">
+  </div>
+
+<div class="row my-2">
   <div class="col-12">
     <h3>Radio, checkbox</h3>
     <h4>System</h4>
@@ -439,7 +311,7 @@ title: Styles
   </div>
 </div>
 
-<div class="row">
+<div class="row my-2">
   <div class="col-12">
     <form>
       <input type="text" name="name" id="name"><input type="submit" value="Search">
@@ -475,7 +347,7 @@ title: Styles
   </div>
 </div>
 
-<div class="row" id="code">
+<div class="row my-2" id="code">
   <div class="col-12 pady-5">
     <h2>Progress bars</h2>
 
