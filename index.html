@@ -174,7 +174,7 @@ title: Styles
 <div class="row my-2" id="tables">
   <div class="col-12">
     <h2>Tables</h2>
-    <p>Usage:</p> <pre>
+    <p>Usage:</p> <pre class="bg-light">
 &lt;table class=&quot;table table-bordered&quot;&gt;
       &lt;thead class=&quot;thead-light&quot;&gt;
         &lt;tr&gt;&lt;td&gt;Header&lt;/td&gt;&lt;/tr&gt;
@@ -265,76 +265,99 @@ title: Styles
 <div class="row my-2">
   <div class="col-12">
     <h3>Radio, checkbox</h3>
-    <h4>System</h4>
-    <form>
-      <input type="checkbox" name="use" value="yes" id="use">
-      <label for="use" class="inline">use me</label><br>
-      <input type="radio" name="format" value="PNG" id="format-PNG">
-      <label for="format-PNG" class="inline">WGS84</label>
-      <input type="radio" name="format" value="JPG" id="format-JPG">
-      <label for="format-JPG" class="inline">Mercator</label>
-    </form><br>
-    <h4>Fancy</h4>
-    <form>
-      <input class="fancy" type="checkbox" name="check" value="yes" id="check">
-      <label for="check" class="inline"><span></span>use me</label><br>
-      <input class="fancy" type="radio" name="srs" value="4326" id="srs-4326">
-      <label for="srs-4326" class="inline"><span></span>WGS84</label>
-      <input class="fancy" type="radio" name="srs" value="3857" id="srs-3857">
-      <label for="srs-3857" class="inline"><span></span>Mercator</label>
-    </form>
-    <h4>Usage</h4>
-    <p>Add class "fancy" to checkbox and empty span into labels. Don't forget add <i>id</i> and <i>for</i> attributres.</p>
-    <pre>
 
-  &lt;input <b>class="fancy"</b> type="checkbox" name="check" value="yes" id="check">
-  &lt;label for="check" class="inline"><b>&lt;span>&lt;/span></b>use me&lt;/label>
+    <h4>Default</h4>
+    <div class="input-group mb-3">
+  <div class="input-group-prepend">
+    <div class="input-group-text">
+      <input type="checkbox" aria-label="Checkbox for following text input">
+    </div>
+  </div>
+  <input type="text" class="form-control" aria-label="Text input with checkbox">
+</div>
 
-  &lt;input class="fancy" type="radio" name="srs" value="4326" id="srs-4326">
-  &lt;label for="srs-4326" class="inline">&lt;span>&lt;/span>WGS84&lt;/label>
-  &lt;input class="fancy" type="radio" name="srs" value="3857" id="srs-3857">
-  &lt;label for="srs-3857" class="inline">&lt;span>&lt;/span>Mercator&lt;/label>
+<div class="input-group">
+  <div class="input-group-prepend">
+    <div class="input-group-text">
+    <input type="radio" aria-label="Radio button for following text input">
+    </div>
+  </div>
+  <input type="text" class="form-control" aria-label="Text input with radio button">
+</div>
+<pre class="bg-light">
+&lt;div class=&quot;input-group mb-3&quot;&gt;
+  &lt;div class=&quot;input-group-prepend&quot;&gt;
+    &lt;div class=&quot;input-group-text&quot;&gt;
+      &lt;input type=&quot;checkbox&quot; aria-label=&quot;Checkbox for following text input&quot;&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;input type=&quot;text&quot; class=&quot;form-control&quot; aria-label=&quot;Text input with checkbox&quot;&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;input-group&quot;&gt;
+  &lt;div class=&quot;input-group-prepend&quot;&gt;
+    &lt;div class=&quot;input-group-text&quot;&gt;
+    &lt;input type=&quot;radio&quot; aria-label=&quot;Radio button for following text input&quot;&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;input type=&quot;text&quot; class=&quot;form-control&quot; aria-label=&quot;Text input with radio button&quot;&gt;
+&lt;/div&gt;
+</pre>
+  <h4>Custom</h4>
+    <div class="custom-control custom-checkbox">
+      <input type="checkbox" class="custom-control-input" id="customCheck1">
+      <label class="custom-control-label" for="customCheck1">Check this custom checkbox</label>
+    </div>
+    <div class="custom-control custom-radio">
+      <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input">
+      <label class="custom-control-label" for="customRadio1">Toggle this custom radio</label>
+    </div>
+    <div class="custom-control custom-radio">
+      <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
+      <label class="custom-control-label" for="customRadio2">Or toggle this other custom radio</label>
+    </div>
+  <pre class="bg-light">
+&lt;div class=&quot;custom-control custom-checkbox&quot;&gt;
+    &lt;input type=&quot;checkbox&quot; class=&quot;custom-control-input&quot; id=&quot;customCheck1&quot;&gt;
+    &lt;label class=&quot;custom-control-label&quot; for=&quot;customCheck1&quot;&gt;Check this custom checkbox&lt;/label&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;custom-control custom-radio&quot;&gt;
+    &lt;input type=&quot;radio&quot; id=&quot;customRadio1&quot; name=&quot;customRadio&quot; class=&quot;custom-control-input&quot;&gt;
+    &lt;label class=&quot;custom-control-label&quot; for=&quot;customRadio1&quot;&gt;Toggle this custom radio&lt;/label&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;custom-control custom-radio&quot;&gt;
+    &lt;input type=&quot;radio&quot; id=&quot;customRadio2&quot; name=&quot;customRadio&quot; class=&quot;custom-control-input&quot;&gt;
+    &lt;label class=&quot;custom-control-label&quot; for=&quot;customRadio2&quot;&gt;Or toggle this other custom radio&lt;/label&gt;
+  &lt;/div&gt;
     </pre>
 
-    <h3>Select</h3>
 
-    <select>
+    <h3>Select</h3>
+    <select  class="custom-select">
       <option>World Geodetic System (WGS 84)</option>
       <option>Mercator</option>
       <option>UTM</option>
       <option>ETRS</option>
     </select>
-
   </div>
 </div>
 
-<div class="row my-2">
-  <div class="col-12">
-    <form>
-      <input type="text" name="name" id="name"><input type="submit" value="Search">
-    </form>
-    <br>
-    <form>
-      <input type="text" name="search" placeholder="Address, city, place"><input type="button" class="search" value="Q">
-    </form>
+<nav class="navbar navbar-light bg-light">
+  <form class="form-inline">
+    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+    <button class="btn btn-outline-primary my-2 my-sm-0" type="submit">Search</button>
+  </form>
+</nav>
 
     <h3>Switchers</h3>
-
-    <label class="switch">
-      <input type="checkbox">
-      <span></span>
-    </label> standard switcher<br>
-
-    <label class="switch equal">
-      <input type="checkbox" checked>
-      <span></span>
-    </label> equal sides<br>
-
-    <label class="switch success">
-      <input type="checkbox" checked>
-      <span></span>
-    </label> success color
-
+    <div class="custom-control custom-switch">
+      <input type="checkbox" class="custom-control-input" id="customSwitch1">
+      <label class="custom-control-label" for="customSwitch1">Toggle this switch element</label>
+    </div>
+    <div class="custom-control custom-switch">
+      <input type="checkbox" class="custom-control-input" disabled id="customSwitch2">
+      <label class="custom-control-label" for="customSwitch2">Disabled switch element</label>
+    </div>
    <h4>Code</h4>
     {% highlight html%}
 <label class="switch">

@@ -7,10 +7,10 @@
   .btn-outline-#{$color} {
     @include button-outline-variant($value);
     border: solid 2px $value;
-    &:hover{
-      background-color: transparent;
-      color: darken($value, 5%);
-      border:solid 2px darken($value, 5%);
+    &:active, &:hover{
+      background-color: transparent !important;
+      color: darken($value, 5%)!important;
+      border:solid 2px darken($value, 5%)!important;
     }
   }
 }
@@ -18,3 +18,8 @@ mark {
     color: $secondary;
     background-color: $gray-100;
 }
+.custom-control.custom-switch {
+    .custom-control-input:checked:not(:disabled) ~ .custom-control-label::before {
+      background-color: $custom-switch-indicator-checked-bg !important;
+    }
+  }
